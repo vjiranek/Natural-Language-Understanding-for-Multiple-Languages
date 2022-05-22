@@ -1,178 +1,177 @@
 nlu: 
 - intent: ALL
   example: | 
-    -  
-    -  
-    -  
-    -  
+    - Good day! Welcome to Boris, the Bochum restaurant information system. You can choose a restaurant based on the type of cuisine, the time of day or the price of the meal, the approximate location of the restaurant or its opening hours. What is your request?
+    - Good evening! Welcome to Boris, the Bochum restaurant information system. Boris allows you to search according to the following criteria: the type of cuisine, the time of day or the price of the meal, the approximate location of the restaurant or its opening hours. Please ask your question.
+    - You can make an inquiry based on the type of cuisine, the time of day or the price of the meal, the approximate location of the restaurant or its opening hours. What is your request? 
+    - Unfortunately, the system did not understand your request. Could you please repeat them?
 
 - intent: foodtype
   example: | 
-    -  
-    -  
-    -  
-    -  
+    - You can choose between the following options: Italian, French, Greek or Chinese cuisine or no preference.
+    - Do you prefer a particular cuisine, for example Italian, French, Greek... ?
+    - Please repeat the type of cuisine.
+    - Could you please repeat the type of cuisine requested?
 
 - intent: time
   example: | 
-    -  
-    -  
-    -  
-    -  
+    - Are you looking for a restaurant for lunch or for dinner?
+    - Please repeat the time of day of the meal. 
+    - Could you please repeat the desired time of day of the meal?
+    - You can choose between the following options: lunch, dinner or no preference.
 
 - intent: date
   example: | 
-    -  
-    -  
-    -  
-    -  
+    - On what day do you intend to go out to eat? 
+    - The options are as follows: the days of the week, Saturdays, Sundays or no preference.
+    - Could you please repeat the desired day of the week?
+    - Please repeat the day of the week.
 
 - intent: price
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Approximately how much do you want to spend per person?
+    - You have the following options: upper, middle or lower price range or no preference.
+    - Could you please repeat the desired price of the meal?
+    - What amount do you intend to spend per person? 
+    - Please repeat your choice regarding the price of the meal.
 
 - intent: logical
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - There is no suitable restaurant for your request. Would you like to modify the request?
+    - There are more than three suitable restaurants for your request. Would you like to specify your question?
+    - {Bambushain               Dorstener Str. 158} {China                    Brückstr. 47    } {Fan Hingh                Hans Böckler Str. 19} Would you like to hear more answers?  
+    - {Mandarin Peking          Herner Str. 127 } {Ozean                    Kortumstr. 101  } {PekingV                   Viktoriastr. 51 } There are other answers. Would you like to hear them?
+    - {Bambushain               Dorstener Str. 158} {Chinamauer               Friedrich Ebert Str. 4} {China                    Brückstr. 47    } Would you like to hear more answers?
+    - {Haus Hanefeld             Brenscheder Str. 56} {Haus Oekey                Auf dem Alten Kamp 10} {Haus Seier               Wiemelhauser Str. 423} Would you like to hear more answers? 
+    - {Gasthaus Lindenhöhe      Sonnenberg 48a  } {Aeolos                   Keilstr. 108    } {The Irish Cottage        Ruhrmühle 2     } Would you like to hear more answers?
+    - There are other answers. Would you like to hear them?
+    - {Altes Brauhaus Rietkötter Große Beckstr. 7} {Alt Nürnberg             Königsallee 16  } {Cafe Zentral             Luisenstr. 15} Would you like to hear more answers?
+    - {Borgböhmer Haus Waldesruh Papenloh 8      } {Forsthaus                Blankensteiner Str. 147} {Vitrine                  Drusenbergstr. 164} Would you like to hear more answers?
 
 - intent: field
   example: | 
-    -  
-    -  
-    -  
+    - You can change the type of cuisine, the time of day or the price of the meal, the approximate location of the restaurant or its opening hours. Please indicate your change.
+    - Only the following information can be processed by the current system: the type of cuisine, the time of day and the price of the meal, the approximate location of the restaurant or its opening hours. What is your request?
+    - You can specify the type of cuisine, the time of day or the price of the meal, the approximate location of the restaurant or its opening hours. Please specify your question.
 
 - intent: bye
   example: | 
-    -  
-    -  
-    -  
+    - Thank you for using Boris. Goodbye and have a nice day!
+    - {Shanghai                 Brüderstr. 2    } {Asia                     Steinring 43    } Thank you for using Boris. Goodbye and have a nice evening!
+    - Thank you for using Boris. Goodbye and have a nice evening!
 
 - intent: localization
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - You have the following options: in the center, in Wiemelhausen, in Querenburg, other options or no preference.
+    - The other options are Langendreer, Riemke, Gerthe or Weitmar.
+    - You have the following options: City center, Uni-Center, other options or no preference.
+    - The other options are Langendreer, Querenburg and Wiemelhausen. 
+    - Could you please repeat the requested location of the restaurant?
+    - Which part of the city would you like to eat out in?
+    - Please repeat the location of the restaurant.
 
 - intent: 
-  example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+  example: |
+    - Here is the right restaurant for your request.  {Arthemis                 Wasserstr. 149  } Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request. {Ozean                    Kortumstr. 101  } {Shanghai                 Brüderstr. 2    } Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request.  {Basilea am alten Rathaus Untermarkt 10    } {Da Capo                  Springerplatz 34} {Pinocchio Hörder Str. 330} Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request.  {Beckmannshof             Berliner Str. 39} {Taj Mahal                Kortumstr. 9    } Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request.  {Haus Oekey                Auf dem Alten Kamp 10} {China                    Brückstr. 47    } {Mandarin Peking          Herner Str. 127 } Thank you for using Boris. Goodbye and have a nice evening!
+    - Here is the right restaurant for your request.  {Asia                     Steinring 43    } Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request.  {Summa cum Laude          Querenburger Höhe 282} {Mediteranee Querenburger Höhe 267} Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request.  {Taj Mahal                Kortumstr. 9    } {Shalimar Große Borbach 11} Thank you for using Boris. Goodbye and have a nice evening!
+    - There are several restaurants to match your request.  {Haus Oekey                Auf dem Alten Kamp 10} {China                    Brückstr. 47    } {Mandarin Peking          Herner Str. 127 } Thank you for using Boris. Goodbye and have a nice day!
+    - Here is the right restaurant for your request.  {Arthemis                 Wasserstr. 149  } Thank you for using Boris. Goodbye and have a nice day!
+    - Here is the right restaurant for your request.  {Da Capo                  Springerplatz 34} Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Summa cum Laude          Querenburger Höhe 282} {Mediteranee Querenburger Höhe 267} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go eat poultry?
+    - So you want to eat out in Weitmar?
+    - So you want to go to the city center for Indian food?
+    - Here is the right restaurant for your request.  {Taj Mahal                Kortumstr. 9    } Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go out for dinner on Saturday?
+    - So you want to go to the city center for Asian food?
+    - So you want to eat in the upper price range?
+    - So you want to go out for lunch?
+    - So you want to eat out in the lower price range?
+    - So you want to eat out in Hamme or Hofstede?
+    - So you want to go out for dinner on Sunday?
+    - So you want to eat out in Langendreer or Werne?
+    - Here is the right restaurant for your request.  {Uri                      Werner Hellweg 465} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go to Grumme for a Greek meal on Sunday night?
+    - So you want to go out for dinner on Tuesday night?
+    - So you would like to have a Greek meal in Weitmar on Tuesday evening?
+    - So you want to eat Chinese in the city center in the upper price range?
+    - So you want to eat Italian in Querenburg?
+    - So you want to go out for Indian dinner on Saturday night?
+    - There are several restaurants to match your request.  {Taj Mahal                Kortumstr. 9    } {Shalimar Große Borbach 11} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go out for dinner on Tuesday?
+    - So you want to go out to dinner in the evening?
+    - So you want to go out for a Greek meal?
+    - There are several restaurants to match your request.  {Arthemis                 Wasserstr. 149  } {Attika                   Massenbergstr. 1} Thank you for using Boris. Goodbye and have a nice evening!
+    - So you want to go eat Chinese?
+    - So you want to eat out in the middle price range?
+    - So you want to eat out in Wiemelhausen?
+    - So you want to go out for Italian cuisine?
+    - Here is the right restaurant for your request.  {Pisa Markstr. 137} Thank you for using Boris. Goodbye and have a nice evening!
+    - Would you also like to have a Greek meal in Grumme on Tuesday evening?
+    - Would you also like to have Chinese lunch in the city center?
+    - Would you also like to go out to eat on Monday?
+    - There are several restaurants to match your request.  {Brinkhoff's Stammhaus    Harpener Hellweg 157} {Casa Portuguesa          Breite Str. 81  } Thank you for using Boris. Goodbye and have a nice evening!
+    - So you want to go to the city center for Chinese?
+    - Here is the right restaurant for your request.  {Asia                     Steinring 43    } Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to eat out in Grumme?
+    - So you want to eat out in Querenburg?
+    - So you want to go out for a French meal?
+    - So you want to eat in the city center?
+    - There are several restaurants to match your request.  {Alt Nürnberg             Königsallee 16  } {Du Cote de chez Fred     Nordring 65     } Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go out to dinner on Friday?
+    - Here is the right restaurant for your request.  {Enten Haus               Kemnader Str. 23} Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Basilea am alten Rathaus Untermarkt 10    } {Da Capo                  Springerplatz 34} {Pinocchio Hörder Str. 330} Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Athen                    Westring 37     } {Attika                   Massenbergstr. 1} {Kosta im Kortländer      Herner Str. 1   } Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Amigos Mexicano Massenbergstr. 14} {Barrio Brothers Viktoriastr. 66} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go out to dinner on Thursday?
+    - There are several restaurants to match your request.  {Beckmannshof             Berliner Str. 39} {Taj Mahal                Kortumstr. 9    } Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Bosporus Stiepeler Str. 134} {Goldenes Horn Kortumstr. 20a} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go out to eat on Wednesday?
+    - There are several restaurants to match your request.  {Mandarin Peking          Herner Str. 127 } {Ozean                    Kortumstr. 101  } {Shanghai                 Brüderstr. 2    } Thank you for using Boris. Goodbye and have a nice day!
+    - Here is the right restaurant for your request.  {Arabesque Castroper Str. 195} Thank you for using Boris. Goodbye and have a nice evening!
+    - So you want to go out for an Iberian meal?
+    - So you want to eat out in Linden or Dahlhausen?
+    - So you want to go out for poultry on Thursday night?
+    - So you want to go out for a middle price range Chinese meal?
+    - So you want to go out for Asian food?
+    - So you want to go out for a middle price range Italian meal during the week?
+    - There are several restaurants to match your request.  {Casa Portuguesa          Breite Str. 81  } {La Nonna Breite Str. 33} Thank you for using Boris. Goodbye and have a nice evening!
+    - Here is the right restaurant for your request.  {Alt Nürnberg             Königsallee 16  } Thank you for using Boris. Goodbye and have a nice day!
+    - Here is the right restaurant for your request.  {La Nonna Breite Str. 33} Thank you for using Boris. Goodbye and have a nice day!
+    - Here is the right restaurant for your request.  {Stammhaus Abel           Kreyenfeldstr. 96} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go eat poultry in Langendreer or Werne on Monday?
+    - So you want to go out for a good plain meal in the city center on Saturday evening?
+    - So you want to go to Grumme for a Greek meal?
+    - Here is the right restaurant for your request.  {Casa Portuguesa          Breite Str. 81  } Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go to Grumme for dinner on Tuesday evening?
+    - So you want to go out for dinner on Thursday night?
+    - So you want to go out to eat some poultry for dinner?
+    - So you would like to have a Greek meal in Grumme in the evening?
+    - So you would like to have a vegetarian meal in Linden or Dahlhausen in the evening?
+    - There are several restaurants to match your request.  {Arthemis                 Wasserstr. 149  } {Attika                   Massenbergstr. 1} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to go out for poultry on Monday?
+    - There are several restaurants to match your request.  {Gaststätte Jünemann      Hiltroper Str. 108} {Dionysos                 Hiltroper Str. 13} Thank you for using Boris. Goodbye and have a nice day!
+    - So you want to eat Greek in Grumme in the lower price range?
+    - So you would like to eat out in Querenburg in the middle price range?
+    - Here is the right restaurant for your request.  {Zum Neuling              Neulingstr. 42  } Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Fan Hingh                Hans Böckler Str. 19} {PekingV                   Viktoriastr. 51 } Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Brinkhoff's Stammhaus    Harpener Hellweg 157} {Casa Portuguesa          Breite Str. 81  } Thank you for using Boris. Goodbye and have a nice day!
+    - Here is the right restaurant for your request.  {Grunewald                Markstr. 139    } Thank you for using Boris. Goodbye and have a nice day!
+    - There are several restaurants to match your request.  {Athen                    Westring 37     } {Attika                   Massenbergstr. 1} {Kosta im Kortländer      Herner Str. 1   } Thank you for using Boris. Goodbye and have a nice evening!
+    - So you would like to have a Greek meal in Langendreer or Werne in the evening?
+    - There are several restaurants to match your request.  {Dolce Vita               Werner Hellweg 459} {La Distelleria Museum Brennerei Oberstr. 43} Thank you for using Boris. Goodbye and have a nice evening!
+    - So you want to eat out in Ehrenfeld?
+    - So you want to go out for poultry on Wednesday night?
+    - So you want to have an Iberian lunch in the city center in the upper price range?
+    - So you would like to have an Italian meal in Querenburg on Saturday evening?
+    - Here is the right restaurant for your request.  {Pastaio Huestr. 5} Thank you for using Boris. Goodbye and have a nice evening!
 
 - intent: errorMessage
   example: | 
-    -  
-
+  - Unfortunately, this function is currently not available. Thank you and goodbye.
