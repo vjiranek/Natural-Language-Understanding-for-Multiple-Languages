@@ -1,0 +1,178 @@
+nlu: 
+- intent: ALL
+  example: | 
+    -  
+    -  
+    -  
+    -  
+
+- intent: foodtype
+  example: | 
+    -  
+    -  
+    -  
+    -  
+
+- intent: time
+  example: | 
+    -  
+    -  
+    -  
+    -  
+
+- intent: date
+  example: | 
+    -  
+    -  
+    -  
+    -  
+
+- intent: price
+  example: | 
+    -  
+    -  
+    -  
+    -  
+    -  
+
+- intent: logical
+  example: | 
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+
+- intent: field
+  example: | 
+    -  
+    -  
+    -  
+
+- intent: bye
+  example: | 
+    -  
+    -  
+    -  
+
+- intent: localization
+  example: | 
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+
+- intent: 
+  example: | 
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+    -  
+
+- intent: errorMessage
+  example: | 
+    -  
+
