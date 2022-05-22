@@ -1,0 +1,178 @@
+nlu: 
+- intent: ALL
+  example: | 
+    - Guten Tag! Herzlich Willkommen bei Boris, dem Bochumer Restaurant-Informationssystem. Sie können ein Restaurant auswählen nach der Art der Küche, nach der Tageszeit oder dem Preis der Mahlzeit, dem ungefähren Ort des Restaurants oder nach dessen Öffnungszeiten. Wie lautet Ihre Anfrage? 
+    - Guten Abend! Herzlich Willkommen bei Boris, dem Bochumer Restaurant-Informationssystem. Boris erlaubt es Ihnen, eine Recherche nach den folgenden Kriterien durchzuführen: der Art der Küche, der Tageszeit oder dem Preis der Mahlzeit, dem ungefähren Ort des Restaurants oder nach dessen Öffnungszeiten. Stellen Sie bitte Ihre Frage. 
+    - Sie können eine Anfrage durchführen nach der Art der Küche, nach der Tageszeit oder dem Preis der Mahlzeit, nach dem ungefähren Ort des Restaurants oder nach seinen Öffnungszeiten. Wie lautet Ihre Anfrage? 
+    - Das System hat Ihre Anfrage leider nicht verstanden. Könnten Sie sie bitte wiederholen? 
+
+- intent: foodtype
+  example: | 
+    - Sie können zwischen den folgenden Möglichkeiten wählen: italienische, französische, griechische oder chinesische Küche oder keine Präferenz. 
+    - Bevorzugen Sie eine bestimmte Küche, zum Beispiel italienisch, französisch, griechisch... ? 
+    - Wiederholen Sie bitte die Art der Küche. 
+    - Könnten Sie bitte die gewünschte Art der Küche wiederholen? 
+
+- intent: time
+  example: | 
+    - Suchen Sie ein Restaurant für das Mittagessen oder für das Abendessen? 
+    - Wiederholen Sie bitte die Tageszeit der Mahlzeit. 
+    - Könnten Sie bitte die gewünschte Tageszeit der Mahlzeit wiederholen? 
+    - Sie können zwischen den folgenden Möglichkeiten wählen: Mittagessen, Abendessen oder keine Präferenz. 
+
+- intent: date
+  example: | 
+    - An welchem Tag beabsichtigen Sie essen zu gehen?  
+    - Die Möglichkeiten lauten wie folgt: die Wochentage, samstags, sonntags oder keine Präferenz. 
+    - Könnten Sie bitte den gewünschten Wochentag wiederholen? 
+    - Wiederholen Sie bitte den Wochentag. 
+
+- intent: price
+  example: | 
+    - Wieviel möchten Sie ungefähr pro Person ausgeben? 
+    - Sie haben folgende Auswahlmöglichkeiten: obere, mittlere, oder untere Preisklasse oder keine Präferenz. 
+    - Könnten Sie bitte den gewünschten Preis der Mahlzeit wiederholen? 
+    - Welche Summe beabsichtigen Sie pro Person auszugeben?  
+    - Wiederholen Sie bitte Ihre Wahl bezüglich des Preises der Mahlzeit. 
+
+- intent: logical
+  example: | 
+    - Es gibt kein passendes Restaurant auf Ihre Anfrage. Möchten Sie die Anfrage modifizieren? 
+    - Es gibt mehr als drei passende Restaurants auf Ihre Anfrage. Möchten Sie Ihre Frage präzisieren? 
+    - {Bambushain               Dorstener Str. 158} {China                    Brückstr. 47    } {Fan Hingh                Hans Böckler Str. 19} Möchten Sie noch weitere Antworten hören?  
+    - {Mandarin Peking          Herner Str. 127 } {Ozean                    Kortumstr. 101  } {PekingV                   Viktoriastr. 51 } Es gibt noch andere Antworten. Möchten Sie sie hören?  
+    - {Bambushain               Dorstener Str. 158} {Chinamauer               Friedrich Ebert Str. 4} {China                    Brückstr. 47    } Möchten Sie noch weitere Antworten hören?  
+    - {Haus Hanefeld             Brenscheder Str. 56} {Haus Oekey                Auf dem Alten Kamp 10} {Haus Seier               Wiemelhauser Str. 423} Möchten Sie noch weitere Antworten hören?  
+    - {Gasthaus Lindenhöhe      Sonnenberg 48a  } {Aeolos                   Keilstr. 108    } {The Irish Cottage        Ruhrmühle 2     } Möchten Sie noch weitere Antworten hören?  
+    - Es gibt noch andere Antworten. Möchten Sie sie hören? 
+    - {Altes Brauhaus Rietkötter Große Beckstr. 7} {Alt Nürnberg             Königsallee 16  } {Cafe Zentral             Luisenstr. 15} Möchten Sie noch weitere Antworten hören?  
+    - {Borgböhmer Haus Waldesruh Papenloh 8      } {Forsthaus                Blankensteiner Str. 147} {Vitrine                  Drusenbergstr. 164} Möchten Sie noch weitere Antworten hören?  
+
+- intent: field
+  example: | 
+    - Sie können die Art der Küche, die Tageszeit oder den Preis der Mahlzeit, den ungefähren Ort des Restaurants oder dessen Öffnungszeiten ändern. Geben Sie bitte Ihre Änderung an. 
+    - Vom derzeitigen System können nur die folgenden Informationen bearbeitet werden: die Art der Küche, die Tageszeit und der Preis der Mahlzeit, der ungefähre Ort des Restaurants oder dessen Öffnungszeiten. Wie lautet Ihre Anfrage? 
+    - Sie können die Art der Küche, die Tageszeit oder den Preis der Mahlzeit, den ungefähren Ort des Restaurants oder dessen Öffnungszeiten angeben. Präzisieren Sie bitte Ihre Frage. 
+
+- intent: bye
+  example: | 
+    - Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag! 
+    - {Shanghai                 Brüderstr. 2    } {Asia                     Steinring 43    } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend! 
+
+- intent: localization
+  example: | 
+    - Sie haben folgende Auswahlmöglichkeiten: im Zentrum, in Wiemelhausen, in Querenburg, andere Möglichkeiten oder keine Präferenz. 
+    - Die anderen Möglichkeiten sind Langendreer, Riemke, Gerthe oder Weitmar. 
+    - Sie haben folgende Auswahlmöglichkeiten: Stadtmitte, Uni-Center, andere Möglichkeiten oder keine Präferenz. 
+    - Die anderen Möglichkeiten sind Langendreer, Querenburg und Wiemelhausen. 
+    - Könnten Sie bitte den gewünschten Ort des Restaurants wiederholen? 
+    - In welchem Stadtteil möchten Sie essen gehen? 
+    - Wiederholen Sie bitte den Ort des Restaurants. 
+
+- intent: 
+  example: | 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Arthemis                 Wasserstr. 149  } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Mandarin Peking          Herner Str. 127 } {Ozean                    Kortumstr. 101  } {Shanghai                 Brüderstr. 2    } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Basilea am alten Rathaus Untermarkt 10    } {Da Capo                  Springerplatz 34} {Pinocchio Hörder Str. 330} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Beckmannshof             Berliner Str. 39} {Taj Mahal                Kortumstr. 9    } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Haus Oekey                Auf dem Alten Kamp 10} {China                    Brückstr. 47    } {Mandarin Peking          Herner Str. 127 } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Asia                     Steinring 43    } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Summa cum Laude          Querenburger Höhe 282} {Mediteranee Querenburger Höhe 267} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Taj Mahal                Kortumstr. 9    } {Shalimar Große Borbach 11} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Haus Oekey                Auf dem Alten Kamp 10} {China                    Brückstr. 47    } {Mandarin Peking          Herner Str. 127 } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Arthemis                 Wasserstr. 149  } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Da Capo                  Springerplatz 34} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Summa cum Laude          Querenburger Höhe 282} {Mediteranee Querenburger Höhe 267} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Geflügel essen gehen? 
+    - Sie möchten also in Weitmar essen gehen? 
+    - Sie möchten also in der Innenstadt indisch essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Taj Mahal                Kortumstr. 9    } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Samstag essen gehen? 
+    - Sie möchten also in der Innenstadt asiatisch essen gehen? 
+    - Sie möchten also in der oberen Preisklasse essen gehen? 
+    - Sie möchten also mittags essen gehen? 
+    - Sie möchten also in der unteren Preisklasse essen gehen? 
+    - Sie möchten also in Hamme oder Hofstede essen gehen? 
+    - Sie möchten also Sonntag essen gehen? 
+    - Sie möchten also in Langendreer oder Werne essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Uri                      Werner Hellweg 465} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Sonntag Abend in Grumme griechisch essen gehen? 
+    - Sie möchten also Dienstag Abend essen gehen? 
+    - Sie möchten also Dienstag Abend in Weitmar griechisch essen gehen? 
+    - Sie möchten also in der Innenstadt in der oberen Preisklasse chinesisch essen gehen? 
+    - Sie möchten also in Querenburg italienisch essen gehen? 
+    - Sie möchten also Samstag Abend indisch essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Taj Mahal                Kortumstr. 9    } {Shalimar Große Borbach 11} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Dienstag essen gehen? 
+    - Sie möchten also abends essen gehen? 
+    - Sie möchten also griechisch essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Arthemis                 Wasserstr. 149  } {Attika                   Massenbergstr. 1} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Sie möchten also chinesisch essen gehen? 
+    - Sie möchten also in der mittleren Preisklasse essen gehen? 
+    - Sie möchten also in Wiemelhausen essen gehen? 
+    - Sie möchten also italienisch essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Pisa Markstr. 137} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Sie möchten also Dienstag Abend in Grumme griechisch essen gehen? 
+    - Sie möchten also mittags in der Innenstadt chinesisch essen gehen? 
+    - Sie möchten also Montag essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Brinkhoff's Stammhaus    Harpener Hellweg 157} {Casa Portuguesa          Breite Str. 81  } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Sie möchten also in der Innenstadt chinesisch essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Asia                     Steinring 43    } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also in Grumme essen gehen? 
+    - Sie möchten also in Querenburg essen gehen? 
+    - Sie möchten also französisch essen gehen? 
+    - Sie möchten also in der Innenstadt essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Alt Nürnberg             Königsallee 16  } {Du Cote de chez Fred     Nordring 65     } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Freitag essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Enten Haus               Kemnader Str. 23} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Basilea am alten Rathaus Untermarkt 10    } {Da Capo                  Springerplatz 34} {Pinocchio Hörder Str. 330} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Athen                    Westring 37     } {Attika                   Massenbergstr. 1} {Kosta im Kortländer      Herner Str. 1   } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Amigos Mexicano Massenbergstr. 14} {Barrio Brothers Viktoriastr. 66} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Donnerstag essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Beckmannshof             Berliner Str. 39} {Taj Mahal                Kortumstr. 9    } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Bosporus Stiepeler Str. 134} {Goldenes Horn Kortumstr. 20a} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Mittwoch essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Mandarin Peking          Herner Str. 127 } {Ozean                    Kortumstr. 101  } {Shanghai                 Brüderstr. 2    } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Arabesque Castroper Str. 195} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Sie möchten also iberisch essen gehen? 
+    - Sie möchten also in Linden oder Dahlhausen essen gehen? 
+    - Sie möchten also Donnerstag Abend Geflügel essen gehen? 
+    - Sie möchten also in der mittleren Preisklasse chinesisch essen gehen? 
+    - Sie möchten also asiatisch essen gehen? 
+    - Sie möchten also in der Woche in der mittleren Preisklasse italienisch essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Casa Portuguesa          Breite Str. 81  } {La Nonna Breite Str. 33} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Alt Nürnberg             Königsallee 16  } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {La Nonna Breite Str. 33} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Stammhaus Abel           Kreyenfeldstr. 96} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Montag in Langendreer oder Werne Geflügel essen gehen? 
+    - Sie möchten also Samstag Abend in der Innenstadt gutbürgerlich essen gehen? 
+    - Sie möchten also in Grumme griechisch essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Casa Portuguesa          Breite Str. 81  } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Dienstag Abend in Grumme essen gehen? 
+    - Sie möchten also Donnerstag Abend essen gehen? 
+    - Sie möchten also abends Geflügel essen gehen? 
+    - Sie möchten also abends in Grumme griechisch essen gehen? 
+    - Sie möchten also abends in Linden oder Dahlhausen vegetarisch essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Arthemis                 Wasserstr. 149  } {Attika                   Massenbergstr. 1} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also Montag Geflügel essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Gaststätte Jünemann      Hiltroper Str. 108} {Dionysos                 Hiltroper Str. 13} Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Sie möchten also in Grumme in der unteren Preisklasse griechisch essen gehen? 
+    - Sie möchten also in Querenburg in der mittleren Preisklasse italienisch essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Zum Neuling              Neulingstr. 42  } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Fan Hingh                Hans Böckler Str. 19} {PekingV                   Viktoriastr. 51 } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Brinkhoff's Stammhaus    Harpener Hellweg 157} {Casa Portuguesa          Breite Str. 81  } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Grunewald                Markstr. 139    } Vielen dank, dass Sie Boris benutzt haben. Auf Wiederhören und einen schönen Tag!  
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Athen                    Westring 37     } {Attika                   Massenbergstr. 1} {Kosta im Kortländer      Herner Str. 1   } Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Sie möchten also abends in Langendreer oder Werne griechisch essen gehen? 
+    - Es gibt mehrere auf Ihre Anfrage passende Restaurants.  {Dolce Vita               Werner Hellweg 459} {La Distelleria Museum Brennerei Oberstr. 43} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+    - Sie möchten also in Ehrenfeld essen gehen? 
+    - Sie möchten also Mittwoch Abend Geflügel essen gehen? 
+    - Sie möchten also mittags in der Innenstadt in der oberen Preisklasse iberisch essen gehen? 
+    - Sie möchten also Samstag Abend in Querenburg italienisch essen gehen? 
+    - Hier ist das passende Restaurant auf Ihre Anfrage.  {Pastaio Huestr. 5} Vielen dank, dass sie Boris benutzt haben. Auf Wiedersehen und einen schönen Abend!  
+
+- intent: errorMessage
+  example: | 
+    - Diese Funktion ist zur Zeit leider nicht verfügbar. Vielen Dank und auf Wiederhören.  
+
