@@ -1,673 +1,779 @@
 nlu: 
 - intent: ALL
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - The venue.
+    - The type of restaurant.
+    - The location of the restaurant.
+    - The general location of the restaurant.
+    - The type of cuisine.
+    - Type of cuisine.
+    - Cuisine.
+    - Food.
+    - Type of food.
+    - The type of food.
+    - I want to eat duck.
+    - Where can I eat greek food in Grumme?
+    - Where can I eat chinese food for lunch in the Bochumer Innenstadt?
+    - I want to um eat indian food in Bochum.
+    - I would like to know where I can go to eat duck.
+    - I would like to eak greek food in Grumme on Tuesday. The food should be affordable.
+    - I would like to eak greek food in Grumme on Tuesday. The food should be cheap.
+    - I would like to eat chinese. Hello?
+    - The food should be italian and it should be in Querenburg at the Ruhr University.
+    - I would like to eat italian for dinner at the the Bochumer Innenstadt.
+    - I would like to select a restaurant based on the kind of food they serve.
+    - I would like to eak greek food in Grumme on Tuesday. The food should be resonably affordable.
+    - I would like to eak greek food in Grumme on Tuesday. The food should be resonably cheap.
+    - I would like to eat chinese in my lunch break in the Bochumer Innenstadt.
+    - I'd like to know where I can go to eat duck.
+    - I'd like to eak greek food in Grumme on Tuesday. The food should be affordable.
+    - I'd like to eak greek food in Grumme on Tuesday. The food should be cheap.
+    - I'd like to eat chinese. Hello?
+    - The food should be italian and it should be in Querenburg at the Ruhr University.
+    - I'd like to eat italian for dinner at the the Bochumer Innenstadt.
+    - I'd like to select a restaurant based on the kind of food they serve.
+    - I'd like to eak greek food in Grumme on Tuesday. The food should be resonably affordable.
+    - I'd like to eak greek food in Grumme on Tuesday. The food should be resonably cheap.
+    - I'd like to eat chinese in my lunch break in the Bochumer Innenstadt.
+    - The type of venue and the location. Um, I'm looking for an italian restaurant in Bochum Querenberg.
+    - The kind of food and the place. Um, I'm looking for an italian restaurant in Bochum Querenberg.
+    - I am looking for an italian restaurant at the center of Bochum that is open in the evening. 
+    - Time of day.
+    - The cusine.
+    - Type of food .
+    - cuisine .
+    - General location.
+    - Um, the time of day.
+    - Um, the time.
+    - Um the, the type of food. Where I can, um, I would like to know where I can eat duck.
+    - Um the, the type of food. Where I can, um, I'd like to know where I can eat duck.
+    - I would like to eat greek in Grumme on Tuesday evening. The price should be medium.
+    - I would like to eat chinese in the city center, in my lunch break.
+    - I'd like to eat greek in Grumme on Tuesday evening at a medium price range.
+    - I'd like to eat chinese in the city center, in my lunch break.
+    - Hello I would like to eat italian in the general area of Querenburg, Querenburg at a medium price range.
+    - Hello I'd like to eat italian in the general area of Querenburg, Querenburg at a medium price range.
+    - I would like to eat asian food. In the general area of Altenbochum Stadtmitte and the price range should be medium and preferably Saturday evening.
+    - I'd like to eat asian food. In the general area of Altenbochum Stadtmitte and the price range should be medium and preferably Saturday evening. 
+    - Yes I would like to eat duck.
+    - Yes I'd like to eat duck.
+    - I would like to eat greek food in Grumme tonight, very affordable.
+    - I'd like to eat greek food in Grumme tonight, very affordable.
+    - I would like to eat greek food in Grumme tonight, at a low price.
+    - I'd like to eat greek food in Grumme tonight, at a low price.
+    - I would like to eat chinese in the city center in my lunch break, quite expensive.
+    - I'd like to eat chinese in the city center in my lunch break, quite expensive.
+    - I would like to eat italian in Querenburg at a medium price range.
+    - I'd like to eat italian in Querenburg at a medium price range.
+    - On Saturday evening I would like to eat indian food at a medium price range.  
+    - On Saturday evening I'd like to eat indian food at a medium price range.
+    - Hm, the type of venue.
+    - Hm, the type of restaurant.
+    - Hm, the kind of venue.
+    - Hm, the kind of restaurant.
+    - Tuesday.
+    - The type of venue.
+    - The type of restaurant.
+    - The kind of venue.
+    - The kind of restaurant.
+    - Price.
+    - Cost.
+    - Location.
+    - Place.
+    - Where can I eat duck?
+    - I would like to eat greek food in Bochum Grumme on Tuesday evening at a lower price range.
+    - I would like to eat chinese in the city center at 12 pm at a higher price range.
+    - Um, I am looking for a restaurant with italian food in the general area of Bochum, Querenburg at a medium price range.
+    - Um, I am looking for a restaurant with italian cuisine in the general area of Bochum, Querenburg at a medium price range.
+    - Um, I am looking for an italian restaurant in Bochum, Querenburg at a medium price range.
+    - I am looking for a chinese restaurant for lunch in the general area of the city center.
+    - Chinese.
+    - Opening hours.
+    - The place.
+    - The location.
+    - I would like to eat at 10 pm.
+    - I'd like to eat at 10 pm.
+    - I'd like to know the type of venue.
+    - I'd like to know the kind of venue.
+    - I'd like to know the type of restaurant.
+    - I'd like to know the kind of restaurant.    
+    - I would like to know the type of venue.
+    - I would like to know the kind of venue.
+    - I would like to know the type of restaurant.
+    - I would like to know the kind of restaurant.
+    - I would like to eat greek on Tuesday evening in Grumme.
+    - I'd like to eat greek on Tuesday evening in Grumme.
+    - I would like to eat chinese food.
+    - I'd like to eat chinese food.
+    - The type of restaurant.
+    - The kind of restaurant.
+    - Food.
+    - I would like to eat greek food im Grumme um on Tuesday evening.
+    - I'd like to eat greek food im Grumme um on Tuesday evening.
+    - I would like to eat something at the city center in my lunch break.
+    - I'd like to eat something at the city center in my lunch break.
+    - Italian.
+    - I would like to eat duck .
+    - I'd like to eat duck .
+    - Mediteranian cuisine, near Ruhr-University, medium price range.
+    - Mediteranian food, near Ruhr-University, medium price range.
+    - In the city center mexican, medium price range.
+    - Location of the restaurant.
+    - Location of the venue.
+    - Wiemelhausen.
+    - Um, where is the restaurant?
+    - Where can I eat duck?
+    - I would like to eat greek in Bochum Grumme on Tuesday evening at a low price.
+    - I'd like to eat greek in Bochum Grumme on Tuesday evening at a low price.
+    - I would like to eat chinese in the city center of Bochum between 12 and 1 pm.
+    - I'd like to eat chinese in the city center of Bochum between 12 and 1 pm.
+    - I would like to eat chinese in the city center of Bochum between 12 and 1 pm.
+    - I would like to eat italian near the Ruhr-University Bochum. The price range schon bei medium. Hello?
+    - I would like to eat turkey breast in Bochum Linden. The price range should be high.
+    - I'd like to eat italian near the Ruhr-University Bochum. The price range schon bei medium. Hello?
+    - I would like to eat turkey breast in Bochum Linden. The price range should be high.
+    - I'd like to eat turkey breast in Bochum Linden. The price range should be high.
+    - I would like to eat duck tonight in the city center of Bochum.
+    - I'd like to eat duck tonight in the city center of Bochum.
+    - I would like to eat greek, um, tonight at a price of 15 Euros.
+    - I would like to eat chinese in the city center at 1 pm at a price of 10 to 15 euros.
+    - I would like to eat italian tonight in Querenburg.
+    - I'd like to eat italian tonight in Querenburg.
+    - I would like to eat korean or asian in Bochum tonight.
+    - I'd like to eat korean or asian in Bochum tonight.
+    - I would like to eat greek food on Tuesday evening in Grumme at a low price.
+    - I'd like to eat greek food on Tuesday evening at a low price.
+    - I would like to eat chinese food. Where can I find chinese food? What food is there at a higher price range?
+    - I'd like to eat chinese food. Where can I find chinese food? What food is there at a higher price range?
+    - I would like a recommendation on an italian restaurant in Bochum, Querenburg at a medium price range.
+     - I'd like a recommendation on an italian restaurant in Bochum, Querenburg at a medium price range.
+    - I'd like to know a restaurant with german cuisine open on weekends with a high price range.
+    - Yes hello. I would have liked to eat duck in Bochum on Wednesday at 10am in the morning.
+    - Yes hello. I'd have liked to eat duck in Bochum on Wednesday at 10am in the morning.
+    - In Grumme in Bochum on Tuesday Evening I would like to eat greek but cheap.
+    - In Grumme in Bochum on Tuesday Evening I'd like to eat greek but cheap.
+    - I would like to eat chinese food in the city center at 12 pm. At a good restaurant.
+    - I'd like to eat chinese food in the city center at 12 pm. At a good restaurant.
+    - Yes I would like to know about an italian restaurant at a medium price range in Bochum Querenburg.
+    - Yes I'd like to know about an italian restaurant at a medium price range in Bochum Querenburg.
+    - Yes hello. I would like to eat korean food in Bochum at around 9 pm at a medium price range. Where could I go?
+    - Yes hello. I'd like to eat korean food in Bochum at around 9 pm at a medium price range. Where could I go?
+    - I would like to eat chinese food at noon in the city center.
+    - I'd like to eat chinese food at noon in the city center.
+    - I would like to eat italian food in Querenburg at a medium price range.
+    - I'd like to eat italian food in Querenburg at a medium price range.
+    - I am looking for a restaurant with chinese cuisine, that is very inexpensive in the center of Bochum.
+    - Type of meal. Hello?
+    - Location of the restaurant.
+    - Hm, I would like to eat duck.
+    - Hm, I'd like to eat duck.
+    - Um, on Tuesday I'd like to eat greek.
+    - Um, an italian restaurant near im the University in Bochum at a medium price range.
+    - I would like um, a mexican restaurant in the center of Bochum.
+    - I'd like um, a mexican restaurant in the center of Bochum.
+    - Tuesday evening, in Grumme, greek.
+    - For the price, the cuisine and the location.
+    - For the price, the food and the place.
+    - I am looking for a restaurant in Bochum Grumme in the lowest price category for Tuesday evening.
+    - At noon, in the center of Bochum, well equipt, chinese.
+    - I would like a restaurant at a medium price range, if possible italian cuisine, near the Ruhr University Bochum.
+    - I'd like a restaurant at a medium price range, if possible italian cuisine, near the Ruhr University Bochum.
+    - I am looking for a restaurant in Bochum Langendreer with goog Hausmannskost, up to 17 Euros, and it needs to be open Sunday at noon. Yes, what now?
+    - I would like to eat duck.
+    - I'd like to eat duck.
+    - I would like to eat greek food on Tuesday evening, at an affordable price.
+    - I'd like to eat greek food on Tuesday evening, at an affordable price.
+    - I would like to eat chinese in the city center during my lunch break. Higher price.
+    - I'd like to eat chinese in the city center during my lunch break. Higher price.
+    - I'd like to eat italian food in the general area of Querenburg, Ruhr-University, the price category should be medium.
+    - Well, I'll ask. I would like to eat chinese food. Hmm.
+    - Well, I'll ask. I'd like to eat chinese food. Hmm.
+    - I'd like to know, where I can best eat duck.
+    - I would like to eat greek food on Tuesday evening.
+    - I'd like to eat greek food on Tuesday evening.
+    - In the lunch break I would like to eat chinese food in the city center. Where can I do this best?
+    - In the lunch break I'd like to eat chinese food in the city center. Where can I do this best?
+    - I would like to eat italian food in Querenburg.
+    - I'd like to eat italian food in Querenburg.
+    - I would like to eat bourgeois food at a medium price in the city center.
+    - I'd like to eat bourgeois food at a medium price in the city center.
+    - Hm, where can I eat duck?
+    - Yes I would like a greek restaurant in Grumme.
+    - Yes I would like a chinese restaurant in the city center.
+    - Yes I would like a greek restaurant in Querenburg, an italian one.
+    - I am looking for an indian restaurant in the city center.
+    - I would like to eat out in Grumme.
+    - I'd like to eat out in Grumme.
+    - I would like to decide based on the price. I would like chinese food in the city for around 30 Euros.
+    - I'd like to decide based on the price. I would like chinese food in the city for around 30 Euros.
+    - I would like to decide based on the price. I'd like chinese food in the city for around 30 Euros.
+    - I'd like to decide based on the price. I'd like chinese food in the city for around 30 Euros.
+    - I would like to decide based on the price, cuisine and location.
+    - I'd like to decide based on the price, cuisine and location.
+    - I would like to decide based on the price, food and location.
+    - I'd like to decide based on the price, food and location.
+    - I would like to know where I can go to eat duck.
+    - I'd like to know where I can go to eat duck.
+    - I would like to eat greek on Tuesday evening at a low price range.
+    - I'd like to eat greek on Tuesday evening at a low price range.
+    - I would like to eat chinese food in the city center at an elevated price range.
+    - I'd like to eat chinese food in the city center at an elevated price range.
+    - I would like a restaurant in the medium price range, italien cuisine and in the general area of Ruhr-University Bochum.
+    - I'd like a restaurant in the medium price range, italien cuisine and in the general area of Ruhr-University Bochum.
+    - I would like to eat a duck.
+    - I'd like to eat a duck.
+    - I would like to eat chines in my lunch break in the city center.
+    - I'd like to eat chines in my lunch break in the city center.
+    - The price.
+    - I would like a chinese restaurant.
+    - I'd like a chinese restaurant.
+    - Hello, I would like to eat duck in Wuppertal.
+    - Hello, I'd like to eat duck in Wuppertal.
+    - Good evening, I would like to eat greek food in Grumme on Tuesday evening. The Price should be up to, um, 20 Euros.
+    - Good evening, I'd like to eat greek food in Grumme on Tuesday evening. The Price should be up to, um, 20 Euros.
+    - Hello, I would like to eat chinese food in the city center in Bochum. The price range, um, up to 20 Euros.
+    - Hello, I'd like to eat chinese food in the city center in Bochum. The price range, um, up to 20 Euros.
+    - Hello, I would like to eat italian food, up to 15 Euros. The location Querenburg.
+    - Hello, I'd like to eat italian food, up to 15 Euros. The location Querenburg.
+    - I would like to eat italian food at a Gourmet restaurant in Bochum tonight. The price should be starting at 30 Euros.
+    - I'd like to eat italian food at a Gourmet restaurant in Bochum tonight. The price should be starting at 30 Euros.
+    - Center.
+    - Grumme. Greek food.
+    - Noon, high price range, chinese.
+    - Medium rpcie range, um, italian, in Querenburg.
+    - Fish, dinner, higher price range.
+    - By the location of the restaurant. On Tuesday evening and greek.
+    - I would like to eat, um, chinese food in the lunch break. By the price range.
+    - I'd like to eat, um, chinese food in the lunch break. By the price range.
+    - I would like a restaurant based on the cuisine.
+    - I would like a restaurant based on the type of food.
+    - I'd like a restaurant based on the cuisine.
+    - I'd like a restaurant based on the type of food.
+    - By the opening hours, by the location.
+    - Meals.
+    - Type of food.
+    - General location of the restaurant.
+    - General location.
+    - I would like to know where, in which restaurant I can eat duck.
+    - I'd like to know where, in which restaurant I can eat duck.
+    - Where can you eat greek food in Grumme on Tuesday evening?
+    - I would like to eat chinese food in my lunch break in the city center and would like to know at what price.
+    - I'd like to eat chinese food in my lunch break in the city center and would like to know at what price.
+    - Where can I eat greek food in the evening in Werne?
+    - Um, I would like to eat duck.
+    - Um, I'd like to eat duck.
+    - Greek cuisine, lower price range, in Grumme, Tuesday evening.
+    - I would like to eat greek food. On Tuesday, lower price range, in the evening.
+    - I'd like to eat greek food. On Tuesday, lower price range, in the evening.
+    - I would like to eat lunch, city center and I would like chinese, higher price range.
+    - I'd like to eat lunch, city center and I would like chinese, higher price range.
+    - I would like an italian restaurant in Bochum Querenburg and medium price range.
+    - I'd like an italian restaurant in Bochum Querenburg and medium price range.
+    - I am looking for a restaurant with german cuisine, 15 Euros per Person in Ehrenfeld or Wiemelhausen.
+    - Greek cuisine.
+    - In the lunch break in the city center chinese food.
+    - I would like to eat duck in Bochum Mitte, on Wednesday evening.
+    - I'd like to eat duck in Bochum Mitte, on Wednesday evening.
+    - I would like to eat greek on Tuesday evening in Grumme. At a price of 20 Euros.
+    - I'd like to eat greek on Tuesday evening in Grumme. At a price of 20 Euros.
+    - I would like, um, chinese food in Bochum in the city center at noon. It can be expensive.
+    - I'd like, um, chinese food in Bochum in the city center at noon. It can be expensive.
+    - I would like to eat italian food on Saturday Evening in Bochum, Querenburg at a medium price range.
+    - I'd like to eat italian food on Saturday Evening in Bochum, Querenburg at a medium price range.
+    - I am, looking for a bourgeois restaurant with good food and a large variety that is comfortable and quiet and has good waitstaff and good openening hours.
 
 - intent: foodtype
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Chinese food.
+    - French.
+    - Greek.
+    - Greek food.
+    - Italian food.
+    - No preference.
+    - I would like to eat greek food.
+    - I'd like to eat greek food. 
+    - I would like to find a restaurant where I can eat duck.
+    - I'd like to find a restaurant where I can eat duck.
+    - Chinese.
+    - Italian.
+    - Duck.
+    - I am interested in greek food.
+    - I would like to know more about greek food.
+    - I'd like to know more about greek food.
+    - Hm, italian food.
+    - Italian food.
+    - Well, greek would be great.
+    - Hm, I prefer chinese food.
+    - I like french food.
+    - I would like to eat duck.
+    - I'd like to eat duck.
+    - No preference
+    - Mexican.
+    - No.
+    - Yes.
+    - No, chinese.
+    - Korean or asian.
+    - Asian.
+    - Chinese food please.
+    - Chinese. Chinese food.
+    - German food.
+    - Weitmar.
+    - Good Hausmannskost, german food.
+    - I asked where I can go to eat poultry, duck. At which restaurant?
+    - No preference. I want to eat duck.
+    - No preference. I would like to eat duck.
+    - I want to eat duck or poultry.
+    - I would like to eat duck or poultry.
+    - I'd like to eat duck or poultry.
+    - Yes, greek.
+    - Yes, italian.
+    - Argentinian.
+    - Um, chinese food.
+    - Hm, no preference. 15 Euros per person in Ehrenfeld.
+    - Haha, chinese.
+    - German food.
 
 - intent: time
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Lunch.
+    - Dinner.
+    - For Lunch.
+    - I'm looking for a restaurant for Dinner.
+    - I don't care.
+    - For lunch break.
+    - For dinner.
+    - Tuesday evening.
+    - Evening. Evening.
+    - Can I, hello, back?
+    - Oh fuck you too.
+    - Fuck you. Dinner.
+    - Um, Dinner.
+    - Evenings.
+    - 10pm.
+    - 4 pm.
+    - I am looking for a restaurant to eat duck at noon.
+    - For lunch would be great.
+    - Around noon would be nice.
+    - Noon.
+    - For tonight.
+    - Lunch and the price range should be high.
+    - 9 pm.
+    - Evening.
+    - No preference.
+    - Dinner. Dinner.
+    - Dinner.
+    - For Dinner.
+    - Haha, Dinner.
+    - In the lunch break.
+    - I would like one for dinner.
+    - I'd like one for dinner.
+    - For the lunch break, for lunch.
+    - Lunch. Oh, no, wrong, sorry. It's Tuesday evening.
+    - Hm, Evening.
 
 - intent: date
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Wednesday.
+    - Monday.
+    - On Tuesday.
+    - Tuesday.
+    - Thursday.
+    - On Friday.
+    - Today.
+    - On Monday.
+    - Friday.
+    - Sunday.
+    - I don't care.
+    - Hm, on Saturday.
+    - Sunday.
+    - Weekdays, Monday.
+    - Monday.
+    - Don't care.
+    - Um, weekdays.
+    - Wednesday.
+    - Morning.
+    - Saturday.
+    - On Wednesday.
+    - No Preference.
+    - I don't know.
+    - Hm, Friday.
+    - 16th, 17th.
+    - On Sunday.
+    - On Modays.
+    - On Tuesdays.
+    - On Wednesdays.
+    - On Thursdays.
+    - On Fridays.
+    - On Saturdays.
+    - On Sundays.
+    - On Wednesday, no preference.
+    - Um, preferably Saturday, Sunday. Saturday would be good.
+    - Today.
+    - Hm, Wednesday.
+    - Every day.
+    - On Saturday.
+    - Daily.
+    - Hm, on Monday.
+    - On Thursday.
+    - Yes I would like to eat duck on Monday.
+    - I would like to eat lunch in the city center. On Monday.
+    - Hm, Sunday.
+    - I don't care about the day, I want to eat lunch.
+    - Weekday.
 
 - intent: price
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - 30 euros.   
+    - 40 euros.   
+    - 20 euros.   
+    - 10 euros.   
+    - 15 euros.   
+    - 25 euros.   
+    - I want to choose the middle price range.
+    - I would like to eat out in the middle price range for say 15 euros.
+    - I want a medium price.
+    - Middle price range.  
+    - Lower price range.
+    - About 20 euros.   
+    - It may already be in the high price category.
+    - Any
+    - 50 euros.   
+    - It does not matter.
+    - Upper price range. 
+    - Hm, about 25 euros.    
+    - 25 euros.    
+    - 25 euros per person.    
+    - Around 20 to 25 euros.
+    - Not so much.   
+    - Lower category.
+    - 20.   
+    - Break. 20 Euros.
+    - Upper .   
+    - Upper.   
+    - Middle.   
+    - Lower.   
+    - no preference.   
+    - Medium price range, medium.
+    - 70 euros.   
+    - Um, 15 to 20 euros.
+    - Um, about 15 euros.
+    - 15 D-Mark.   
+    - 15.   
+    - Um, 10 euros.   
+    - 10 Mark.   
+    - 40 Mark.   
+    - About 30 euros.   
+    - 50.   
+    - 60.   
+    - 30.   
+    - 45 euros.   
+    - 80.   
+    - Nothing.   
+    - 90.   
+    - nan 
+    - Lower price range would be good.
+    - High price range.
+    - Medium price level.
+    - Upmarket price range.
+    - 80 euros.   
+    - A lot.   
+    - Hm, lower price range.  
+    - I would like the lower price range. Lower price range.
+    - Upper price range please.
+    - 10 euros maximum.
+    - 5 euros
+    - Still 5 euros.
+    - 8 euros.   
+    - I would like to spend about 50 euros per person.
+    - 150 euros.   
+    - Oh god. 50 euros.
+    - About 20 euros.
+    - Not important.
+    - Upper price range.
+    - Middle price range.
+    - Hmm, 30 euros.   
+    - Hmm, upper price range.   
+    - 15 to 20 euros.   
+    - Hmm, between 10 and 15 euros.
+    - Hmm, take the middle one.
+    - Hm, 20 euros.   
+    - Hm, it can be a bit more expensive. Hmm, 15 euros.
+    - Yes, it can also be 25 euros.
+    - Hm, no preference.   
+    - Hm, so in the middle class.
+    - About 15 euros.   
+    - Still 15 euros.
+    - Haha, 15.   
+    - I want to spend about 15 euros.
+    - I don't care, I want to go eat duck.
+    - Ey, 15 euros.   
+    - Medium price category.
+    - I want to change the above.
+    - The lower one.
+    - The lower ones.   
+    - Maximum per person 12 euros.
+    - Maximum 12 euros per person.
+    - 12 euros per person.   
+    - 12 euros.   
+    - 100 euros.   
+    - Upper category.
+    - Upper price range.
+    - Upper price range.
+    - Middle.    
+    - Medium price.
+    - Upper.    
+    - No preference.    
+    - Hm, per person 30 euros.   
+    - Upper price range, 30 euros.   
+    - Hm, 10 euros.   
+    - More.   
+    - Upper class.
+    - 3 0.   
+    - Upscale dining class.
+    - higher class.
+    - 2 0.   
+    - Nothing.   
+    - I can't anymore, haha. 15.
+    - About 10 euros.   
+    - Hm, 30 euros.   
 
 - intent: logical
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Yes.   
+    - No.   
+    - Yes, I would.
+    - I would like to go out to eat in Weitmar.
+    - Hm, 20 euros, the price. 
+    - Yes, pricewise.
+    - Yo. Yes.   
+    - Yes. I would then like to go out to eat in Weitmar.
+    - Hmm, not that expensive then.
+    - Yes, hahaha. Yes.   
+    - Yes please.   
+    - The price.   
+    - I would like to go to Weitmar for a Greek meal on Tuesday evening.
+    - Is there a restaurant in Weitmar where I could eat?
+    - Please repeat that.
+    - Yes, then I would like to spend 20 euros and have a Chinese meal in the city center at around 1p.m. during the lunch break.
+    - I would like to have a Chinese meal inthe city center in Bochum on Friday for 10 euros.
+    - Type of cuisine.
+    - Yes.    
+    - Yes, I would like to have a Greek meal in Weitmar on Tuesday.
+    - Um, yes, a different price.
+    - nan 
+    - Bor ey, nope, no.
+    - Yes, then I'll look for one in Weitmar.
+    - High price category.
+    - Then I would like to switch to Weitmar. Is that possible?
+    - Then I take the middle price range.
+    - I do not get it. Why isn't there a suitable restaurant if you want to eat poultry?
+    - Um, then name me another restaurant in Grumme.
+    - Then I want to go out to eat in the expensive price range.
+    - Haha. Then I want to go to the city center for Chinese food. Let's see what happens now.
+    - Hm, what about on Tuesday in Weitmar?
+    - Uh yeah In the middle price range please.
+    - What would I like? I would like to go to the city center for Chinese food during my lunch break. Please.
+    - No I do not want to.
+    - What? I do not understand.
+    - Then I would like to go out to eat in Weitmar.
+    - Can you suggest me another restaurant?
+    - Name me another medium-priced restaurant in Bochum Querenburg.
 
 - intent: field
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Type of cuisine.
+    - I want to eat in Grumme.
+    - I want to change the location.
+    - I want to change the price.
+    - Then I would like to eat out in Weitmar.
+    - The price to 30 euros.
+    - The price to 50 euros.
+    - The place: Weitmar.
+    - Increase price 20 euros to 50.
+    - French cuisine, any location, any price.
+    - Time of day.
+    - Der ungefähre Ort.   
+    - Hello, anyone there.
+    - Price of the meal.
+    - Then I would like to eat out in Weitmar.
+    - I would like to eat duck.
+    - Hm. Then I'd like to eat duck.
+    - That will not do. Um yeah, I don't know. Eat Chinese duck. Nothing works anymore.
+    - Then I would like to eat in Weitmar.
+    - Then I would like to eat out in Bochum Werne.
+    - I would like to go to Weitmar for a Greek meal on Tuesday evening.
+    - Duck. i want duck
+    - Price.   
+    - Type of restaurant.
+    - Location.
+    - The price.
+    - I would like to have a Greek meal in Bochum Weitmar on Tuesday evening in the lower price range.
+    - Lower price range.
+    - The location of the restaurant.
+    - The restaurant.
+    - The opening hours.
+    - The place and the price.
+    - The type of cuisine.
+    - The place.
+    - Kitchen. 
+    - I would like to eat in a restaurant in Weitmar.
+    - Location of the restaurant.
+    - Tuesday evening, in Weitmar, Greek.
+    - Change price.
+    - I want to eat duck.
+    - The kitchen.
+    - Hmn the price.
+    - Medium price category.
+    - Lower price category.
+    - Price: no preferences.
+    - Type of food.
+    - The type of cuisine: Korean.
+    - Approximate location: Weitmar.
+    - Please Italian cuisine, in Bochum Querenburg, medium price range.
+    - Wednesday, 1 p.m., downtown Bochum, go out to eat Chinese and 20 euros meal.
+    - I would like to go to downtown Bochum for Chinese dinner at 2 p.m.
+    - On Saturday. Eating Chinese on Saturday at 4 p.m. in downtown Bochum.
+    - Place, please expand the place.
+    - Italian kitchen.
+    - The approximate location.
+    - Change the time.
+    - Type of meal.
+    - Location of the restaurant.
+    - Price of the meal.
+    - A Greek restaurant in Weitmar.
+    - Hmm, for 20.
+    - I would like to change the price.
+    - Lunch break, city center, Chinese.
+    - In Bochum Weitmar.
+    - Yes, then I can also choose a restaurant that is a bit cheaper.
+    - Yes, the price please.
+    - I would like to change the price.
+    - I would like to go to Grumme for a cheap meal on Tuesday evening.
+    - I am changing the price to 20 euros.
+    - The place and the kitchen.
+    - I would like to eat out in Weitmar.
+    - The price. I wasn't even asked, haha.
+    - Lunch, eat Chinese in the city center. On Monday.
+    - I'd like to eat Chinese in Bochum.
+    - I would like to eat cheaply, up to 10 euros.
+    - Grumme, Greek, 10 euros. Hm?
+    - Price: 20 euros.
+    - Location: Weitmar.
+    - City center.
+    - Sicilian. Kitchen.
+    - Cuisine: French.
+    - Evening.
+    - Italian.
+    - Center, dinner, Chinese.
+    - Greek. He doesn't understand.
+    - Approximate location of the restaurant.
+    - Opening time.
+    - Opening hours.
+    - Opening time..
+    - Approximate location.
+    - Estimated price.
+    - Type of cuisine.
+    - Price.
+    - Then I would like to have a Greek meal in Weitmar on Tuesday evening.
+    - Where can I go for an Italian meal in Werne in the evening?
+    - Eating Greek, Tuesday, in Weitmar, lower price level, in the evening.
+    - Lunchtime, downtown, Chinese, middle price range.
+    - I would like to have a Greek meal in Bochum Weitmar. It can be cheap.
+    - I would like to go downtown for Chinese food, in the middle price range.
+    - So then I would like to go out to dinner on Saturday night, with a home-style kitchen that is cozy and quiet.
+    - I would like to go to an Italian restaurant on Saturday night, at a cost of around 30 euros.
+    - I would like to go to an Italian restaurant on Saturday night, for a price of around 20 euros.
+    - I would like to go to an Italian restaurant in Bochum on Wednesday evenings. At a price of 10 euros.
 
 - intent: bye
   example: | 
-    -  
+    - nan 
 
 - intent: localization
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - Other options.
+    - Weitmar.
+    - City center.
+    - Uni Center.
+    - I would like to eat out in Weitmar.
+    - In Weitmar.
+    - In the university center in Querenburg.
+    - Yes, in the Querenburg district, on Querenburger Strasse.
+    - Downtown.
+    - Grumme.
+    - Querenburg.
+    - In Hamme.
+    - Werne.
+    - Wiemelhausen.
+    - No preference.
+    - In the center would be all right.
+    - In Querenburg.
+    - Then we'll take Weitmar.
+    - In the center would be good.
+    - Hm, center.
+    - Center.
+    - Hm, Bochum center.
+    - Bochum center.
+    - Bochum city center.
+    - Bochum Linden.
+    - In the city center.
+    - In the center of Bochum.
+    - Bochum city center.
+    - Langendreer.
+    - Other options.
+    - Wiemelhausen.
+    - Downtown.
+    - Hm, Weitmar.
+    - Uh, in Querenburg.
+    - Bochum Querenburg.
+    - Bochum-Weitmar.
+    - City.
+    - Downtown.
+    - Center.
+    - In the center of Bochum.
+    - Bochum city center.
 
 - intent: other
   example: | 
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
-    -  
+    - nan 
+    - Yes.   
+    - Yes. I would like to go out to eat in Weitmar.
+    - No, go out to eat Chinese.
+    - Yes, on Saturday night.
+    - Not necessarily, actually in the middle.
+    - No.
+    - Wow. Yes.
+    - Hmmm. Yes fine also at noon. Yes. Yes.
+    - Hmmm.
+    - Right.
+    - That's right.
+    - Yes indeed.
+    - No Monday.
+    - Yes that's right.
+    - Correct.
+    - No, Chinese.
+    - Yeah right.
+    - In Linden.
+    - Yes, correct.
+    - Yes, that is duck.
+    - On Tuesday, yes.
+    - Why Monday? Anyway, where can I eat duck?
+    - Yes, please.
+    - Hm, no.
+    - Yes, Tuesday night.
+    - Go out for an Italian meal.
+    - Right, yes.
+    - Italian.
+    - Yes, I want to eat poultry.
+    - No I do not want to.
+    - Yes, I would like in the evening.
+    - Yes. I want to go out to dinner in the evening.
+    - Yes. I have money.
+    - Hmm? Yes.
+    - yes.
+    - Go out to eat Chinese.
 
 - intent: errorMessage
   example: | 
-    -  
+    - nan 
 
