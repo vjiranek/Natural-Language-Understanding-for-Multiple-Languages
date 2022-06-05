@@ -1,0 +1,79 @@
+nlu: 
+- intent: provide 
+  example: | 
+    - According to the type of restaurant. 
+    - Chinese food. 
+    - Lunch. 
+    - Wednesday. 
+    - 30 euros. 
+    - Type of cuisine.  
+    - French. 
+    - According to the location of the restaurant. 
+    - Weitmar.   
+    - Dinner. 
+    - Greek.        
+    - Opening hours.          
+    - High price range. 
+    - I would very much like to eat greek in Bochum Grumme on Tuesday evening. The price should be in the low category. 
+    - I would like the lower price range. Lower price range. 
+    - I would like to have a Chinese meal in the city center of Bochum between 12 and 1 p.m. tomorrow.  
+    - I would like to eat italian near the Ruhr-University Bochum. The price range schon bei medium. Hello?   
+    - I would like to eat turkey breast in Bochum Linden. The price category should be in the upper range.  
+
+- intent: accept 
+  example: | 
+    - Yes.  
+    - Yes, I would.  
+    - Yo. Yes. 
+    - Yes, hahaha. Yes.  
+    - Yes please. 
+    - Yes.   
+
+- intent: neglect 
+  example: | 
+    - No. 
+    - No.   
+    - Bor ey, nope, no. 
+    - No I do not want to. 
+    - No.    
+
+- intent: accept provide 
+  example: | 
+    - Yes, pricewise.  
+    - Yes. I would then like to go out to eat in Weitmar. 
+    - Yes, the price please. 
+    - Uh yeah In the middle price range please. 
+
+- intent: affirm 
+  example: | 
+    - Yes.  
+    - Hmhm.   
+    - Right.  
+    - That's right. 
+    - Yes indeed.  
+    - Correct.   
+
+- intent: affirm provide 
+  example: | 
+    - Yes, on Saturday night. 
+    - Not necessarily, actually in the middle.    
+    - Wow. Yes. 
+    - Hmmm. Yes fine also at noon. Yes. Yes. 
+    - On Tuesday, yes. 
+
+- intent: negate 
+  example: | 
+    - No.   
+    - Hm, no.   
+    - No I do not want to.  
+    - Yes.  
+
+- intent: 
+  example: | 
+    - nan 
+    - Other options.  
+    - Hello, anyone there. 
+    - Can I, hello, back?  
+    - Oh fuck you too. 
+    - Nothing. 
+

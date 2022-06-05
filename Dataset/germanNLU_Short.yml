@@ -1,0 +1,83 @@
+nlu: 
+- intent: provide 
+  example: | 
+    - Nach der Art der Küche.   
+    - Chinesische Küche.   
+    - Das Mittagessen.   
+    - Mittwoch.   
+    - 30 Euro.   
+    - Art der Küche.   
+    - Französiche.   
+    - Nach dem Ort des Restaurants.   
+    - Weitmar.   
+    - Das Abendessen.   
+    - Griechisch.   
+    - Öffnungszeiten.   
+    - Obere Peisklasse.   
+    - Ich möchte gerne wissen, wo, in welchem Restaurant ich Ente essen kann.   
+    - Wo kann man am Dienstag Abend in Grumme griechisch essen gehen?   
+    - Dann möchte ich Dienstag Abend in Weitmar griechisch essen gehen.   
+    - Ich möchte in der Mittagspause in der Innenstadt chinesisches essen gehen, und wollte wissen zu welchem Preis.   
+    - Ich kann nicht mehr, haha. 15.   
+    - Ich möchte gerne, äh, in Bochum in der Innenstadt mittags chinesisch essen gehen. Es kann teuer sein.   
+    - Chinesisch essen gehen.   
+    - Ich möchte gerne in der Innenstadt chinesisch essen gehen, in der mittleren Preisklasse.   
+    - Ich möchte gerne Samstag Abend italienisch essen gehen, in Bochum Querenburg in der mittleren Preisklasse.   
+    - Deutsche Küche.   
+
+- intent: accept 
+  example: | 
+    - Ja.   
+    - Ja möchte ich.   
+    - Yo. Ja.   
+    - Ja, hahaha. Ja   
+    - Ja bitte.   
+    - Ja.    
+
+- intent: neglect 
+  example: | 
+    - Nein.   
+    - Bor ey, nö, nein.   
+    - Nein möchte ich nicht.   
+    - Nein.    
+
+- intent: accept provide 
+  example: | 
+    - Ja, preislich.   
+    - Ja. Ich möchte dann in Weitmar essen gehen.   
+    - Ja, den Preis bitte.   
+    - Äh, ja. In der mittleren Preisklasse bitte.   
+
+- intent: affirm 
+  example: | 
+    - Ja.   
+    - Hmhm.     
+    - Jawohl.   
+    - Ja das ist richtig.   
+    - Korrekt.     
+    - Ja richtig.   
+
+- intent: affirm provide 
+  example: | 
+    - Ja, am Samstag Abend.    
+    - Nicht unbedingt, eigentlich in der mittleren.    
+    - Wau. Ja.   
+    - Hmhm. Ja von mir aus auch mittags. Ja. Ja.   
+    - Am Dienstag, ja.     
+
+- intent: negate 
+  example: | 
+    - Nein.   
+    - Hm, nein.   
+    - Nein, möchte ich nicht.   
+    - Ja.   
+
+- intent: 
+  example: | 
+    - nan 
+    - Andere Möglichkeiten.   
+    - Hallo noch jemand da.   
+    - Kann ich, hallo, zurück?   
+    - Ach leck mich doch am Arsch, zurück.   
+    - Nichts.   
+
