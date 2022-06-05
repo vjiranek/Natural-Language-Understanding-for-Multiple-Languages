@@ -1,0 +1,63 @@
+- entities: field 
+  - foodtype
+  - localization  
+  - time  
+  - price  
+
+- entities: foodtype 
+  - chinese  
+  - french  
+  - greek  
+  - italian  
+  - neutral  
+  - poultry  
+  - mexican  
+  - asian  
+  - german  
+  - argentine  
+  - plain  
+
+- entities: time 
+  - midday  
+  - evening  
+  - neutral  
+
+- entities: date 
+  - wednesday  
+  - monday  
+  - tuesday  
+  - thursday  
+  - friday  
+  - sunday  
+  - neutral  
+  - saturday  
+  - week  
+  - 16ten_7ten.    
+
+- entities: price 
+  - expensive  
+  - average  
+  - cheap  
+  - neutral  
+
+- entities: logical 
+  - yes  
+  - no  
+
+- entities: action 
+  - nextchoice  
+  - not_classifiable  
+  - repeat  
+  - newquery  
+
+- entities: localization 
+  - weitmar  
+  - centre  
+  - querenburg  
+  - grumme  
+  - hamme  
+  - langendreer  
+  - wiemelhausen  
+  - neutral  
+  - linden  
+
