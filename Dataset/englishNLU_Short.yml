@@ -1,79 +1,122 @@
 nlu: 
+- lookup: localization
+  examples: |
+    - Weitmar
+    - Innenstadt
+    - Querenburg
+    - Linden
+    - Grumme
+    - Hamme
+    - Wiemelhausen
+    - Langendreer
+
+- regex: time
+  examples: |
+    - (A|a)bend(\w*)
+    - (M|m)ittag(\w*)
+
+- lookup: date
+  examples: |
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
+    - Sonntag
+
+- synonyms: logical
+  examples: |
+    - ja
+    - Yo
+    - Yes
+    - Jawohl
+    - Korrekt
+    - Richtig
+    - nein
+    - Nö
+    - nee
+    - Falsch
+
+- regex: price
+  examples:
+    - [0-9]* (E|e)uro\b
+
 - intent: provide 
   example: | 
-    - According to the type of restaurant. 
-    - Chinese food. 
-    - Lunch. 
-    - Wednesday. 
-    - 30 euros. 
-    - Type of cuisine.  
-    - French. 
-    - According to the location of the restaurant. 
-    - Weitmar.   
-    - Dinner. 
-    - Greek.        
-    - Opening hours.          
-    - High price range. 
-    - I would very much like to eat greek in Bochum Grumme on Tuesday evening. The price should be in the low category. 
-    - I would like the lower price range. Lower price range. 
-    - I would like to have a Chinese meal in the city center of Bochum between 12 and 1 p.m. tomorrow.  
-    - I would like to eat italian near the Ruhr-University Bochum. The price range schon bei medium. Hello?   
-    - I would like to eat turkey breast in Bochum Linden. The price category should be in the upper range.  
+    - According to the [type of restaurant](field). 
+    - [Chinese](foodtype) food. 
+    - [Lunch](time). 
+    - [Wednesday](date). 
+    - [30](price) euros. 
+    - [Type of cuisine](field).  
+    - [French](foodtype). 
+    - According to the [location](field) of the restaurant. 
+    - [Weitmar](location).   
+    - [Dinner](time). 
+    - [Greek](foodtype).        
+    - [Opening hours](field).          
+    - [High price range](price). 
+    - I would very much like to eat [greek](foodtype) in Bochum [Grumme](localization) on [Tuesday](date) [evening](time). The price should be in the [low category](price). 
+    - I would like the [lower price range](price). [Lower price range](price). 
+    - I would like to have a [Chinese](foodtype) meal in the [city center](localization) of Bochum between [12 and 1 p.m.](time) [tomorrow](date).  
+    - I would like to eat [italian](foodtype) near the [Ruhr-University Bochum](localization). The price range schon be [medium](price). Hello?   
+    - I would like to eat [turkey breast](foodtype) in Bochum [Linden](localization). The price category should be in the [upper range](price).  
 
 - intent: accept 
   example: | 
-    - Yes.  
-    - Yes, I would.  
-    - Yo. Yes. 
-    - Yes, hahaha. Yes.  
-    - Yes please. 
-    - Yes.   
+    - [Yes](logical).  
+    - [Yes](logical), I would.  
+    - [Yo](logical). [Yes](logical). 
+    - [Yes](logical), hahaha. [Yes](logical).  
+    - [Yes](logical) please. 
+    - [Yes](logical).   
 
 - intent: neglect 
   example: | 
-    - No. 
-    - No.   
-    - Bor ey, nope, no. 
-    - No I do not want to. 
-    - No.    
+    - [No](logical). 
+    - [No](logical).   
+    - Bor ey, [nope](logical), [no](logical). 
+    - [No](logical) I do not want to. 
+    - [No](logical).    
 
 - intent: accept provide 
   example: | 
-    - Yes, pricewise.  
-    - Yes. I would then like to go out to eat in Weitmar. 
-    - Yes, the price please. 
-    - Uh yeah In the middle price range please. 
+    - [Yes](logical), pricewise.  
+    - [Yes](logical). I would then like to go out to eat in [Weitmar](localization). 
+    - [Yes], the [price](price) please. 
+    - Uh [yeah](logical) In the [middle price range](price) please. 
 
 - intent: affirm 
   example: | 
-    - Yes.  
-    - Hmhm.   
-    - Right.  
-    - That's right. 
-    - Yes indeed.  
-    - Correct.   
+    - [Yes](logical).  
+    - [Hmhm](logical).   
+    - [Right](logical).  
+    - That's [right](logical). 
+    - [Yes](logical) [indeed](logical).  
+    - [Correct](logical).   
 
 - intent: affirm provide 
   example: | 
-    - Yes, on Saturday night. 
-    - Not necessarily, actually in the middle.    
-    - Wow. Yes. 
-    - Hmmm. Yes fine also at noon. Yes. Yes. 
-    - On Tuesday, yes. 
+    - [Yes](logical), on [Saturday](date) [night](time). 
+    - [Not necessarily](logical), actually in the [middle](price).    
+    - Wow. [Yes](logical). 
+    - Hmmm. [Yes](logical) [fine](logical) also at [noon](time). [Yes](logical). [Yes](logical). 
+    - On [Tuesday](date), [yes](logical). 
 
 - intent: negate 
   example: | 
-    - No.   
-    - Hm, no.   
-    - No I do not want to.  
-    - Yes.  
+    - [No](logical).   
+    - Hm, [no](logical).   
+    - [No](logical) I do not want to.  
+    - [Yes](logical).  
 
 - intent: 
   example: | 
-    - nan 
-    - Other options.  
-    - Hello, anyone there. 
+    - [nan](action) 
+    - [Other options](action).  
+    - Hello, [anyone there](action). 
     - Can I, hello, back?  
     - Oh fuck you too. 
-    - Nothing. 
+    - [Nothing](action). 
 
