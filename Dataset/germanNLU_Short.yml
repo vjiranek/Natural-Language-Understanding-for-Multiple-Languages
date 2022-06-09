@@ -1,83 +1,125 @@
 nlu: 
+- lookup: localization
+  examples: |
+    - Weitmar
+    - Innenstadt
+    - Querenburg
+    - Linden
+    - Grumme
+    - Hamme
+    - Wiemelhausen
+    - Langendreer
+
+- regex: time
+  examples: |
+    - (A|a)bend(\w*)
+    - (M|m)ittag(\w*)
+
+- lookup: date
+  examples: |
+    - Montag
+    - Dienstag
+    - Mittwoch
+    - Donnerstag
+    - Freitag
+    - Samstag
+    - Sonntag
+
+- synonyms: logical
+  examples: |
+    - ja
+    - Yo
+    - Yes
+    - Jawohl
+    - Korrekt
+    - Richtig
+    - nein
+    - Nö
+    - nee
+    - Falsch
+
+- regex: price
+  examples:
+    - [0-9]* (E|e)uro\b
+
 - intent: provide 
   example: | 
-    - Nach der Art der Küche.   
-    - Chinesische Küche.   
-    - Das Mittagessen.   
-    - Mittwoch.   
-    - 30 Euro.   
-    - Art der Küche.   
-    - Französiche.   
-    - Nach dem Ort des Restaurants.   
-    - Weitmar.   
-    - Das Abendessen.   
-    - Griechisch.   
-    - Öffnungszeiten.   
-    - Obere Peisklasse.   
-    - Ich möchte gerne wissen, wo, in welchem Restaurant ich Ente essen kann.   
-    - Wo kann man am Dienstag Abend in Grumme griechisch essen gehen?   
-    - Dann möchte ich Dienstag Abend in Weitmar griechisch essen gehen.   
-    - Ich möchte in der Mittagspause in der Innenstadt chinesisches essen gehen, und wollte wissen zu welchem Preis.   
-    - Ich kann nicht mehr, haha. 15.   
-    - Ich möchte gerne, äh, in Bochum in der Innenstadt mittags chinesisch essen gehen. Es kann teuer sein.   
-    - Chinesisch essen gehen.   
-    - Ich möchte gerne in der Innenstadt chinesisch essen gehen, in der mittleren Preisklasse.   
-    - Ich möchte gerne Samstag Abend italienisch essen gehen, in Bochum Querenburg in der mittleren Preisklasse.   
-    - Deutsche Küche.   
+    - Nach der [Art der Küche](field).   
+    - [Chinesische](foodtype) Küche.   
+    - Das [Mittagessen](time).   
+    - [Mittwoch](date).   
+    - [30](price) Euro.   
+    - [Art der Küche](field).   
+    - [Französiche](foodtype).   
+    - Nach dem [Ort](field) des Restaurants.   
+    - [Weitmar](localization).   
+    - Das [Abendessen](time).   
+    - [Griechisch](foodtype).   
+    - [Öffnungszeiten](field).   
+    - [Obere Peisklasse](price).   
+    - Ich möchte gerne wissen, [wo](localization), in welchem Restaurant ich [Ente](foodtype) essen kann.   
+    - Wo kann man am [Dienstag](date) [Abend](time) in [Grumme](localization) [griechisch](foodtype) essen gehen?   
+    - Dann möchte ich [Dienstag](date) [Abend](time) in [Weitmar](localization) [griechisch](foodtype) essen gehen.   
+    - Ich möchte in der [Mittagspause](time) in der [Innenstadt](localization) [chinesisches](foodtype) essen gehen, und wollte wissen zu welchem [Preis](price).   
+    - Ich kann nicht mehr, haha. [15](price).   
+    - Ich möchte gerne, äh, in Bochum in der [Innenstadt](localization) [mittags](time) [chinesisch](foodtype) essen gehen. Es kann [teuer](price) sein.   
+    - [Chinesisch](foodtype) essen gehen.   
+    - Ich möchte gerne in der [Innenstadt](localization) [chinesisch](foodtype) essen gehen, in der [mittleren Preisklasse](price).   
+    - Ich möchte gerne [Samstag](date) [Abend](time) [italienisch](foodtype) essen gehen, in Bochum [Querenburg](localization) in der [mittleren Preisklasse](price).   
+    - [Deutsche](foodtype) Küche.   
 
 - intent: accept 
   example: | 
-    - Ja.   
-    - Ja möchte ich.   
-    - Yo. Ja.   
-    - Ja, hahaha. Ja   
-    - Ja bitte.   
-    - Ja.    
+    - [Ja](logical).   
+    - [Ja](logical) möchte ich.   
+    - [Yo](logical). [Ja](logical).   
+    - [Ja](logical), hahaha. [Ja](logical)   
+    - [Ja](logical) bitte.   
+    - [Ja](logical).    
 
 - intent: neglect 
   example: | 
-    - Nein.   
-    - Bor ey, nö, nein.   
-    - Nein möchte ich nicht.   
-    - Nein.    
+    - [Nein](logical).   
+    - Bor ey, [nö](logical), [nein](logical).   
+    - [Nein](logical) möchte ich nicht.   
+    - [Nein](logical).    
 
 - intent: accept provide 
   example: | 
-    - Ja, preislich.   
-    - Ja. Ich möchte dann in Weitmar essen gehen.   
-    - Ja, den Preis bitte.   
-    - Äh, ja. In der mittleren Preisklasse bitte.   
+    - [Ja](logical), [preislich](price).   
+    - [Ja](logical). Ich möchte dann in [Weitmar](localization) essen gehen.   
+    - [Ja](logical), den [Preis](price) bitte.   
+    - Äh, [ja](logical). In der [mittleren Preisklasse](price) bitte.   
 
 - intent: affirm 
   example: | 
-    - Ja.   
+    - [Ja](logical).   
     - Hmhm.     
-    - Jawohl.   
-    - Ja das ist richtig.   
-    - Korrekt.     
-    - Ja richtig.   
+    - [Jawohl](logical).   
+    - [Ja](logical) das ist [richtig](logical).   
+    - [Korrekt](logical).     
+    - [Ja](logical) [richtig](logical).   
 
 - intent: affirm provide 
   example: | 
-    - Ja, am Samstag Abend.    
-    - Nicht unbedingt, eigentlich in der mittleren.    
-    - Wau. Ja.   
-    - Hmhm. Ja von mir aus auch mittags. Ja. Ja.   
-    - Am Dienstag, ja.     
+    - [Ja](logical), am [Samstag](date) [Abend](time).    
+    - Nicht unbedingt, eigentlich in der [mittleren](price).    
+    - Wau. [Ja](logical).   
+    - Hmhm. [Ja](logical) von mir aus auch [mittags](time). [Ja](logical). [Ja](logical).   
+    - Am [Dienstag](date), [ja](logical).     
 
 - intent: negate 
   example: | 
-    - Nein.   
-    - Hm, nein.   
-    - Nein, möchte ich nicht.   
-    - Ja.   
+    - [Nein](logical).   
+    - Hm, [mein](logical).   
+    - [Nein](logical), möchte ich nicht.     
 
 - intent: 
   example: | 
     - nan 
-    - Andere Möglichkeiten.   
-    - Hallo noch jemand da.   
-    - Kann ich, hallo, zurück?   
-    - Ach leck mich doch am Arsch, zurück.   
-    - Nichts.   
+    - [Andere Möglichkeiten](action).   
+    - Hallo [noch jemand da](action).   
+    - Kann ich, hallo, [zurück](action)?   
+    - Ach leck mich doch am Arsch, [zurück](action).   
+    - [Nichts](action).   
 
