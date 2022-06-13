@@ -1,0 +1,13 @@
+version: "2.0"
+
+nlu:
+- lookup: localization
+  examples: |
+    - Weitmar
+    - Innenstadt
+    - Querenburg
+    - Linden
+    - Grumme
+    - Hamme
+    - Wiemelhausen
+    - Langendreer

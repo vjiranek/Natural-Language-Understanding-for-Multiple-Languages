@@ -1,0 +1,12 @@
+version: "2.0"
+
+nlu:
+- lookup: date
+  examples: |
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    - Sunday

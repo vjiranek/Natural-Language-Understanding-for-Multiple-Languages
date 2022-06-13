@@ -1,0 +1,101 @@
+version: "2.0"
+
+nlu: 
+- synonym: logical
+  examples: |
+    - ja
+    - Yo
+    - Yes
+    - Yeah
+    - no
+    - no
+    - nope
+    - wrong
+
+- intent: provide 
+  examples: | 
+    - According to the [type of restaurant](field). 
+    - [Chinese](foodtype) food. 
+    - [Lunch](time). 
+    - [Wednesday](date). 
+    - [30](price) euros. 
+    - [Type of cuisine](field).  
+    - [French](foodtype). 
+    - According to the [location](field) of the restaurant. 
+    - [Weitmar](location).   
+    - [Dinner](time). 
+    - [Greek](foodtype).        
+    - [Opening hours](field).          
+    - [High price range](price). 
+    - I would very much like to eat [greek](foodtype) in Bochum [Grumme](localization) on [Tuesday](date) [evening](time). The price should be in the [low category](price). 
+    - I would like the [lower price range](price). [Lower price range](price). 
+    - I would like to have a [Chinese](foodtype) meal in the [city center](localization) of Bochum between [12 and 1 p.m.](time) [tomorrow](date).  
+    - I would like to eat [italian](foodtype) near the [Ruhr-University Bochum](localization). The price range schon be [medium](price). Hello?   
+    - I would like to eat [turkey breast](foodtype) in Bochum [Linden](localization). The price category should be in the [upper range](price).  
+
+- intent: accept 
+  examples: | 
+    - [Yes](logical).  
+    - [Yes](logical), I would.  
+    - [Yo](logical). [Yes](logical). 
+    - [Yes](logical), hahaha. [Yes](logical).  
+    - [Yes](logical) please. 
+    - [Yes](logical).   
+
+- intent: neglect 
+  examples: | 
+    - [No](logical). 
+    - [No](logical).   
+    - Bor ey, [nope](logical), [no](logical). 
+    - [No](logical) I do not want to. 
+    - [No](logical).    
+
+- intent: accept provide 
+  examples: | 
+    - [Yes](logical), pricewise.  
+    - [Yes](logical). I would then like to go out to eat in [Weitmar](localization). 
+    - [Yes], the [price](price) please. 
+    - Uh [yeah](logical) In the [middle price range](price) please. 
+
+- intent: affirm 
+  examples: | 
+    - [Yes](logical).  
+    - [Hmhm](logical).   
+    - [Right](logical).  
+    - That's [right](logical). 
+    - [Yes](logical) [indeed](logical).  
+    - [Correct](logical).   
+
+- intent: affirm provide 
+  examples: | 
+    - [Yes](logical), on [Saturday](date) [night](time). 
+    - [Not necessarily](logical), actually in the [middle](price).    
+    - Wow. [Yes](logical). 
+    - Hmmm. [Yes](logical) [fine](logical) also at [noon](time). [Yes](logical). [Yes](logical). 
+    - On [Tuesday](date), [yes](logical). 
+
+- intent: negate 
+  examples: | 
+    - [No](logical).   
+    - Hm, [no](logical).   
+    - [No](logical) I do not want to.  
+    - [Yes](logical).  
+
+- intent: nothing
+  examples: | 
+    - [nan](action) 
+    - [Other options](action).  
+    - Hello, [anyone there](action). 
+    - Can I, hello, back?  
+    - Oh fuck you too. 
+    - [Nothing](action). 
+
+- regex: price
+  examples: |
+    - \b[0-9]+(E|e)uro\b
+- regex: time
+  examples: |
+    - \b evening\b
+    - \b noon\b
+    - \b afternoon\b
+
