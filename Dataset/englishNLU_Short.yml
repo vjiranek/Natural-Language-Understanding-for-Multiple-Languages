@@ -2,7 +2,8 @@ nlu:
 - lookup: localization
   examples: |
     - Weitmar
-    - Innenstadt
+    - City Center
+    - Downtown
     - Querenburg
     - Linden
     - Grumme
@@ -10,37 +11,34 @@ nlu:
     - Wiemelhausen
     - Langendreer
 
-- regex: time
-  examples: |
-    - (A|a)bend(\w*)
-    - (M|m)ittag(\w*)
-
 - lookup: date
   examples: |
-    - Montag
-    - Dienstag
-    - Mittwoch
-    - Donnerstag
-    - Freitag
-    - Samstag
-    - Sonntag
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    - Sunday
+    - tomorrow
 
 - synonyms: logical
   examples: |
-    - ja
+    - yeah
+    - Hmhm
     - Yo
     - Yes
-    - Jawohl
-    - Korrekt
-    - Richtig
-    - nein
-    - Nö
+    - Indeed
+    - Correkt
+    - right
+    - no
+    - Nope
     - nee
-    - Falsch
+    - Wrong
 
 - regex: price
   examples:
-    - [0-9]* (E|e)uro\b
+    - [0-9]* (E|e)uros\b
 
 - intent: provide 
   example: | 
@@ -116,7 +114,7 @@ nlu:
     - [nan](action) 
     - [Other options](action).  
     - Hello, [anyone there](action). 
-    - Can I, hello, back?  
+    - [Can I, hello, back](action)?  
     - Oh fuck you too. 
     - [Nothing](action). 
 
