@@ -1,44 +1,64 @@
 nlu: 
+- lookup: field
+  examples: |
+  - Location
+  - opening hours
+  - opening time
+  - type of cuisine
+  - type of restaurant
+  - price of the meal
+  - time of day
+
 - lookup: localization
   examples: |
+    - Bochum
     - Weitmar
-    - City Center
-    - Downtown
+    - city center
+    - downtown
     - Querenburg
     - Linden
     - Grumme
     - Hamme
+    - Werne
     - Wiemelhausen
     - Langendreer
+    - center
 
-- lookup: date
+- regex: date
   examples: |
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
-    - Sunday
-    - tomorrow
-
-- synonyms: logical
-  examples: |
-    - yeah
-    - Hmhm
-    - Yo
-    - Yes
-    - Indeed
-    - Correkt
-    - right
-    - no
-    - Nope
-    - nee
-    - Wrong
+    - (M|m)onday(\w*)
+    - (T|t)uesday(\w*)
+    - (w|w)ednesday(\w*)
+    - (T|t)hursday(\w*)
+    - (F|f)riday(\w*)
+    - (S|s)aturday(\w*)
+    - (S|s)unday(\w*)
+    - (T|t)omorrow
 
 - regex: price
   examples:
-    - [0-9]* (E|e)uros\b
+    - [0-9]* (E|e)uro(\w)
+    - (\w*) (P|p)rice(\w*)
+
+- regex: foodtype
+  examples:
+    - (G|g)reek(\w*)
+    - (C|c)hin(\w*)
+    - (I|i)talian(\w*)
+    - (F|f)rench(\w*)
+    - (G|g)erman(\w*)
+    - (A|a)sian(\w*)
+    - (S|s)icilian(\w*)
+    - (A|a)rgentin(\w*)
+    - (M|m)exican(\w*)
+    - (M|m)editeran(\w*)
+    - (K|k)orean(\w)*
+    - (I|i)ndian(\w)
+    - (D|d)uck(\w*)
+    - (T|t)urkey(\w*)
+    - (P|p)oultry(\w*)
+    - (H|h)ome cook(\w*)
+    - (N|n)apoli(\w*)
 
 - intent: provide 
   example: | 
@@ -58,7 +78,7 @@ nlu:
     - I would very much like to eat [greek](foodtype) in Bochum [Grumme](localization) on [Tuesday](date) [evening](time). The price should be in the [low category](price). 
     - I would like the [lower price range](price). [Lower price range](price). 
     - I would like to have a [Chinese](foodtype) meal in the [city center](localization) of Bochum between [12 and 1 p.m.](time) [tomorrow](date).  
-    - I would like to eat [italian](foodtype) near the [Ruhr-University Bochum](localization). The price range schon be [medium](price). Hello?   
+    - I would like to eat [italian](foodtype) near the [Ruhr-University Bochum](localization). The price range should be [medium](price). Hello?   
     - I would like to eat [turkey breast](foodtype) in Bochum [Linden](localization). The price category should be in the [upper range](price).  
 
 - intent: accept 
@@ -114,7 +134,7 @@ nlu:
     - [nan](action) 
     - [Other options](action).  
     - Hello, [anyone there](action). 
-    - [Can I, hello, back](action)?  
+    - Can I, hello, [back](action)?  
     - Oh fuck you too. 
     - [Nothing](action). 
 
