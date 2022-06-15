@@ -1,46 +1,68 @@
 nlu: 
+- lookup: field
+  examples: |
+  - Ort
+  - Öffnungszeiten
+  - Art der Küche
+  - Art des Restaurants
+  - Preis der Mahlzeit
+  - Tageszeit
+
 - lookup: localization
   examples: |
+    - Bochum
     - Weitmar
     - Innenstadt
     - Querenburg
     - Linden
     - Grumme
     - Hamme
+    - Werne
     - Wiemelhausen
     - Langendreer
+    - Zentrum
 
 - regex: time
   examples: |
     - (A|a)bend(\w*)
     - (M|m)ittag(\w*)
+    - (M|m)orgens
 
-- lookup: date
+- regex: date
   examples: |
-    - Montag
-    - Dienstag
-    - Mittwoch
-    - Donnerstag
-    - Freitag
-    - Samstag
-    - Sonntag
-
-- synonyms: logical
-  examples: |
-    - ja
-    - Yo
-    - Yes
-    - Jawohl
-    - Korrekt
-    - Richtig
-    - nein
-    - Nö
-    - nee
-    - Falsch
+    - (M|m)ontag(\w*)
+    - (D|d)ienstag(\w*)
+    - (M|m)ittwoch(\w*)
+    - (D|d)onnerstag(\w*)
+    - (F|f)reitag(\w*)
+    - (S|s)amstag(\w*)
+    - (S|s)onntag(\w*)
 
 - regex: price
-  examples:
-    - [0-9]* (E|e)uro\b
+  examples: |
+    - [0-9]* (E|e)uro(\w*)
+    - (\w*) (P|p)reis(\w*)
+
+- regex: foodtype
+  examples: |
+    - (G|g)riech(\w*)
+    - (C|c)hines(\w*)
+    - (I|i)talien(\w*)
+    - (F|f)ranzös(\w*)
+    - (D|d)eutsch(\w*)
+    - (A|a)siat(\w*)
+    - (S|s)izilian(\w*)
+    - (A|a)rgentin(\w*)
+    - (M|m)exikan(\w)*
+    - (M|m)editeran(\w)*
+    - (K|k)orean(\w)*
+    - (I|i)ndisch(\w)*
+    - (E|e)nte(\w*)
+    - (P|p)ute(\w*)
+    - (G|g)eflügel(\w*)
+    - (H|h)ausmannskost
+
+- 
 
 - intent: provide 
   example: | 
@@ -57,7 +79,7 @@ nlu:
     - [Griechisch](foodtype).   
     - [Öffnungszeiten](field).   
     - [Obere Peisklasse](price).   
-    - Ich möchte gerne wissen, [wo](localization), in welchem Restaurant ich [Ente](foodtype) essen kann.   
+    - Ich möchte gerne wissen, [wo](field), in welchem Restaurant ich [Ente](foodtype) essen kann.   
     - Wo kann man am [Dienstag](date) [Abend](time) in [Grumme](localization) [griechisch](foodtype) essen gehen?   
     - Dann möchte ich [Dienstag](date) [Abend](time) in [Weitmar](localization) [griechisch](foodtype) essen gehen.   
     - Ich möchte in der [Mittagspause](time) in der [Innenstadt](localization) [chinesisches](foodtype) essen gehen, und wollte wissen zu welchem [Preis](price).   
