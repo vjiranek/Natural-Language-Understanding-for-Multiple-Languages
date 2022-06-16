@@ -1,0 +1,904 @@
+[
+  {
+    "text": "Ich möchte in der Mittagspause in der Innenstadt chinesisches essen gehen, und wollte wissen zu welchem Preis.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 30,
+        "value": "Mittagspause",
+        "entity": "time"
+      },
+      {
+        "start": 38,
+        "end": 48,
+        "value": "Innenstadt",
+        "entity": "localization"
+      },
+      {
+        "start": 49,
+        "end": 61,
+        "value": "chinesisches",
+        "entity": "foodtype"
+      },
+      {
+        "start": 104,
+        "end": 109,
+        "value": "Preis",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 18,
+        "end": 30,
+        "confidence_entity": 0.9942508935928345,
+        "value": "Mittagspause",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "localization",
+        "start": 38,
+        "end": 48,
+        "confidence_entity": 0.7500197887420654,
+        "value": "Innenstadt",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "foodtype",
+        "start": 49,
+        "end": 61,
+        "confidence_entity": 0.998769223690033,
+        "value": "chinesisches",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price",
+        "start": 96,
+        "end": 109,
+        "confidence_entity": 0.8236702084541321,
+        "value": "welchem Preis",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hmhm.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5304940342903137,
+        "value": "Hmhm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ja, am Samstag Abend.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "Ja",
+        "entity": "logical"
+      },
+      {
+        "start": 7,
+        "end": 14,
+        "value": "Samstag",
+        "entity": "date"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "Abend",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9969154596328735,
+        "value": "Samstag",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.9991577863693237,
+        "value": "Abend",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ach leck mich doch am Arsch, zurück.",
+    "entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "zurück",
+        "entity": "action"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "price",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.5090048313140869,
+        "value": "Arsch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price",
+        "start": 29,
+        "end": 35,
+        "confidence_entity": 0.47117048501968384,
+        "value": "zurück",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Das Mittagessen.",
+    "entities": [
+      {
+        "start": 4,
+        "end": 15,
+        "value": "Mittagessen",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9092598557472229,
+        "value": "Das",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 4,
+        "end": 15,
+        "confidence_entity": 0.8874840140342712,
+        "value": "Mittagessen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mittwoch.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Mittwoch",
+        "entity": "date"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "foodtype",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.44203469157218933,
+        "value": "Mittwoch",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "30 Euro.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "30",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "foodtype",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.6020423173904419,
+        "value": "30",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "foodtype",
+        "start": 3,
+        "end": 7,
+        "confidence_entity": 0.33039557933807373,
+        "value": "Euro",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nach dem Ort des Restaurants.",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "Ort",
+        "entity": "field"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "field",
+        "start": 9,
+        "end": 28,
+        "confidence_entity": 0.47854819893836975,
+        "value": "Ort des Restaurants",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Obere Peisklasse.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Obere Peisklasse",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.6957529783248901,
+        "value": "Obere",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "logical",
+        "start": 6,
+        "end": 16,
+        "confidence_entity": 0.6727991700172424,
+        "value": "Peisklasse",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ja möchte ich.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "Ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.5577495098114014,
+        "value": "Ja",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "logical",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.5958313345909119,
+        "value": "ich",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Wau. Ja.",
+    "entities": [
+      {
+        "start": 5,
+        "end": 7,
+        "value": "Ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6957529783248901,
+        "value": "Wau",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "logical",
+        "start": 5,
+        "end": 7,
+        "confidence_entity": 0.6727991700172424,
+        "value": "Ja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Andere Möglichkeiten.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "Andere Möglichkeiten",
+        "entity": "action"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.6957529783248901,
+        "value": "Andere",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "logical",
+        "start": 7,
+        "end": 20,
+        "confidence_entity": 0.6727991700172424,
+        "value": "Möglichkeiten",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Französiche.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Französiche",
+        "entity": "foodtype"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.40846607089042664,
+        "value": "Französiche",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ich möchte gerne Samstag Abend italienisch essen gehen, in Bochum Querenburg in der mittleren Preisklasse.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 24,
+        "value": "Samstag",
+        "entity": "date"
+      },
+      {
+        "start": 25,
+        "end": 30,
+        "value": "Abend",
+        "entity": "time"
+      },
+      {
+        "start": 31,
+        "end": 42,
+        "value": "italienisch",
+        "entity": "foodtype"
+      },
+      {
+        "start": 66,
+        "end": 76,
+        "value": "Querenburg",
+        "entity": "localization"
+      },
+      {
+        "start": 84,
+        "end": 105,
+        "value": "mittleren Preisklasse",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 17,
+        "end": 24,
+        "confidence_entity": 0.9804024696350098,
+        "value": "Samstag",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 25,
+        "end": 30,
+        "confidence_entity": 0.9982323050498962,
+        "value": "Abend",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "localization",
+        "start": 59,
+        "end": 65,
+        "confidence_entity": 0.9011898040771484,
+        "value": "Bochum",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "localization",
+        "start": 66,
+        "end": 76,
+        "confidence_entity": 0.6565942168235779,
+        "value": "Querenburg",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ja, hahaha. Ja",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "Ja",
+        "entity": "logical"
+      },
+      {
+        "start": 12,
+        "end": 14,
+        "value": "Ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.34889474511146545,
+        "value": "Ja",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "action",
+        "start": 12,
+        "end": 14,
+        "confidence_entity": 0.27352067828178406,
+        "value": "Ja",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "nan",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.542360246181488,
+        "value": "nan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ich möchte gerne, äh, in Bochum in der Innenstadt mittags chinesisch essen gehen. Es kann teuer sein.",
+    "entities": [
+      {
+        "start": 39,
+        "end": 49,
+        "value": "Innenstadt",
+        "entity": "localization"
+      },
+      {
+        "start": 50,
+        "end": 57,
+        "value": "mittags",
+        "entity": "time"
+      },
+      {
+        "start": 58,
+        "end": 68,
+        "value": "chinesisch",
+        "entity": "foodtype"
+      },
+      {
+        "start": 90,
+        "end": 95,
+        "value": "teuer",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "localization",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.9780508279800415,
+        "value": "Bochum",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "localization",
+        "start": 39,
+        "end": 49,
+        "confidence_entity": 0.7181005477905273,
+        "value": "Innenstadt",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 50,
+        "end": 57,
+        "confidence_entity": 0.9758815765380859,
+        "value": "mittags",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "foodtype",
+        "start": 58,
+        "end": 68,
+        "confidence_entity": 0.9990131855010986,
+        "value": "chinesisch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price",
+        "start": 96,
+        "end": 100,
+        "confidence_entity": 0.8494384288787842,
+        "value": "sein",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Deutsche Küche.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Deutsche",
+        "entity": "foodtype"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5267979502677917,
+        "value": "Deutsche",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yo. Ja.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "Yo",
+        "entity": "logical"
+      },
+      {
+        "start": 4,
+        "end": 6,
+        "value": "Ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.6926596164703369,
+        "value": "Yo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ja das ist richtig.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "Ja",
+        "entity": "logical"
+      },
+      {
+        "start": 11,
+        "end": 18,
+        "value": "richtig",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "action",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.436539888381958,
+        "value": "ist",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "action",
+        "start": 11,
+        "end": 18,
+        "confidence_entity": 0.44747433066368103,
+        "value": "richtig",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hmhm. Ja von mir aus auch mittags. Ja. Ja.",
+    "entities": [
+      {
+        "start": 6,
+        "end": 8,
+        "value": "Ja",
+        "entity": "logical"
+      },
+      {
+        "start": 26,
+        "end": 33,
+        "value": "mittags",
+        "entity": "time"
+      },
+      {
+        "start": 35,
+        "end": 37,
+        "value": "Ja",
+        "entity": "logical"
+      },
+      {
+        "start": 39,
+        "end": 41,
+        "value": "Ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.963882327079773,
+        "value": "mittags",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nichts.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Nichts",
+        "entity": "action"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.5889465808868408,
+        "value": "Nichts",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Weitmar.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Weitmar",
+        "entity": "localization"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ich möchte gerne wissen, wo, in welchem Restaurant ich Ente essen kann.",
+    "entities": [
+      {
+        "start": 25,
+        "end": 27,
+        "value": "wo",
+        "entity": "field"
+      },
+      {
+        "start": 55,
+        "end": 59,
+        "value": "Ente",
+        "entity": "foodtype"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 40,
+        "end": 50,
+        "confidence_entity": 0.5033130645751953,
+        "value": "Restaurant",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "logical",
+        "start": 51,
+        "end": 54,
+        "confidence_entity": 0.8752698302268982,
+        "value": "ich",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ich möchte gerne in der Innenstadt chinesisch essen gehen, in der mittleren Preisklasse.",
+    "entities": [
+      {
+        "start": 24,
+        "end": 34,
+        "value": "Innenstadt",
+        "entity": "localization"
+      },
+      {
+        "start": 35,
+        "end": 45,
+        "value": "chinesisch",
+        "entity": "foodtype"
+      },
+      {
+        "start": 66,
+        "end": 87,
+        "value": "mittleren Preisklasse",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "foodtype",
+        "start": 35,
+        "end": 45,
+        "confidence_entity": 0.998890221118927,
+        "value": "chinesisch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "price",
+        "start": 76,
+        "end": 87,
+        "confidence_entity": 0.46067318320274353,
+        "value": "Preisklasse",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ja bitte.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "Ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.6482660174369812,
+        "value": "Ja",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "logical",
+        "start": 3,
+        "end": 8,
+        "confidence_entity": 0.5987205505371094,
+        "value": "bitte",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Am Dienstag, ja.",
+    "entities": [
+      {
+        "start": 3,
+        "end": 11,
+        "value": "Dienstag",
+        "entity": "date"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "value": "ja",
+        "entity": "logical"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "date",
+        "start": 3,
+        "end": 11,
+        "confidence_entity": 0.994466245174408,
+        "value": "Dienstag",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hallo noch jemand da.",
+    "entities": [
+      {
+        "start": 6,
+        "end": 20,
+        "value": "noch jemand da",
+        "entity": "action"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.5365926623344421,
+        "value": "Hallo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Kann ich, hallo, zurück?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 23,
+        "value": "zurück",
+        "entity": "action"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "logical",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5365926623344421,
+        "value": "Kann",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

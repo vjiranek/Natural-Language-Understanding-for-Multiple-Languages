@@ -1,0 +1,162 @@
+[
+  {
+    "text": "Ich kann nicht mehr, haha. 15.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.999481737613678
+    }
+  },
+  {
+    "text": "Ja.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.46434471011161804
+    }
+  },
+  {
+    "text": "Ja, am Samstag Abend.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999938011169434
+    }
+  },
+  {
+    "text": "Ach leck mich doch am Arsch, zurück.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.9999716281890869
+    }
+  },
+  {
+    "text": "Das Mittagessen.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.9937689900398254
+    }
+  },
+  {
+    "text": "Obere Peisklasse.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5638185739517212
+    }
+  },
+  {
+    "text": "Wau. Ja.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5638185739517212
+    }
+  },
+  {
+    "text": "Andere Möglichkeiten.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5638185739517212
+    }
+  },
+  {
+    "text": "Ich möchte gerne Samstag Abend italienisch essen gehen, in Bochum Querenburg in der mittleren Preisklasse.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.760806679725647
+    }
+  },
+  {
+    "text": "Ja richtig.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.598954975605011
+    }
+  },
+  {
+    "text": "Nicht unbedingt, eigentlich in der mittleren.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9701792001724243
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8044688105583191
+    }
+  },
+  {
+    "text": "Yo. Ja.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.38834282755851746
+    }
+  },
+  {
+    "text": "Ja das ist richtig.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9680603742599487
+    }
+  },
+  {
+    "text": "Hmhm. Ja von mir aus auch mittags. Ja. Ja.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999412298202515
+    }
+  },
+  {
+    "text": "Nichts.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7034064531326294
+    }
+  },
+  {
+    "text": "Ich möchte gerne wissen, wo, in welchem Restaurant ich Ente essen kann.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.9282469749450684
+    }
+  },
+  {
+    "text": "Am Dienstag, ja.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9994901418685913
+    }
+  },
+  {
+    "text": "Hallo noch jemand da.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.48338961601257324
+    }
+  },
+  {
+    "text": "Kann ich, hallo, zurück?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.48338961601257324
+    }
+  }
+]
