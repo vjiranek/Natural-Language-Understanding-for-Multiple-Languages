@@ -1,0 +1,14 @@
+recipe: default.v1
+language: de
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: LanguageModelFeaturizer
+    model_weights: "bert-base-german-cased"
+    model_name: "bert"
+    cache_dir: null
+  - name: RegexFeaturizer
+  - name: EntitySynonymMapper
+  - name: DIETClassifier
+    epochs: 200
+
