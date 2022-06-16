@@ -1,0 +1,178 @@
+[
+  {
+    "text": "30 euros.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.40647557377815247
+    }
+  },
+  {
+    "text": "Dinner.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.48923560976982117
+    }
+  },
+  {
+    "text": "Yes.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.48923560976982117
+    }
+  },
+  {
+    "text": "On Tuesday, yes.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.402020663022995
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.48923560976982117
+    }
+  },
+  {
+    "text": "According to the type of restaurant.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.9463560581207275
+    }
+  },
+  {
+    "text": "Wednesday.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3392045795917511
+    }
+  },
+  {
+    "text": "Type of cuisine.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.34547531604766846
+    }
+  },
+  {
+    "text": "Yes please.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.35163095593452454
+    }
+  },
+  {
+    "text": "Hmmm. Yes fine also at noon. Yes. Yes.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999942779541016
+    }
+  },
+  {
+    "text": "Other options.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.35163095593452454
+    }
+  },
+  {
+    "text": "According to the location of the restaurant.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.9996013045310974
+    }
+  },
+  {
+    "text": "Opening hours.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.31456831097602844
+    }
+  },
+  {
+    "text": "Yes, I would.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.5337908864021301
+    }
+  },
+  {
+    "text": "French.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3275396525859833
+    }
+  },
+  {
+    "text": "Yes, hahaha. Yes.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.602824866771698
+    }
+  },
+  {
+    "text": "That's right.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.602824866771698
+    }
+  },
+  {
+    "text": "Wow. Yes.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.43487435579299927
+    }
+  },
+  {
+    "text": "Nothing.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5545526742935181
+    }
+  },
+  {
+    "text": "Lunch.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.46820029616355896
+    }
+  },
+  {
+    "text": "Yes indeed.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.4085066318511963
+    }
+  },
+  {
+    "text": "Hello, anyone there.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5754174590110779
+    }
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "text": "Öffnungszeiten.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9101401567459106
+    }
+  },
+  {
+    "text": "Ja.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9998546838760376
+    }
+  },
+  {
+    "text": "Korrekt.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.7905917763710022
+    }
+  },
+  {
+    "text": "Wau. Ja.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.6138560771942139
+    }
+  },
+  {
+    "text": "Ja bitte.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.769046425819397
+    }
+  },
+  {
+    "text": "Ja.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9999911785125732
+    }
+  },
+  {
+    "text": "Am Dienstag, ja.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.603865385055542
+    }
+  },
+  {
+    "text": "Andere Möglichkeiten.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.993421733379364
+    }
+  },
+  {
+    "text": "Ja, hahaha. Ja",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.42636942863464355
+    }
+  },
+  {
+    "text": "Nicht unbedingt, eigentlich in der mittleren.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.993134617805481
+    }
+  },
+  {
+    "text": "Ich kann nicht mehr, haha. 15.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9836108684539795
+    }
+  },
+  {
+    "text": "Yo. Ja.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm provide",
+      "confidence": 0.4100472927093506
+    }
+  },
+  {
+    "text": "Hmhm.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.977696418762207
+    }
+  },
+  {
+    "text": "Ja das ist richtig.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9635562300682068
+    }
+  },
+  {
+    "text": "Ja, am Samstag Abend.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.5209150314331055
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.7977532744407654
+    }
+  },
+  {
+    "text": "Jawohl.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.3648395538330078
+    }
+  }
+]

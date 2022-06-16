@@ -1,0 +1,71 @@
+{
+  "affirm provide": {
+    "precision": 0.5,
+    "recall": 0.4,
+    "f1-score": 0.4444444444444445,
+    "support": 5,
+    "confused_with": {
+      "uninspiring": 1,
+      "provide": 1
+    }
+  },
+  "provide": {
+    "precision": 0.9,
+    "recall": 0.5,
+    "f1-score": 0.6428571428571429,
+    "support": 18,
+    "confused_with": {
+      "affirm": 5,
+      "affirm provide": 2
+    }
+  },
+  "affirm": {
+    "precision": 0.2857142857142857,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.4,
+    "support": 6,
+    "confused_with": {
+      "uninspiring": 1,
+      "accept": 1
+    }
+  },
+  "uninspiring": {
+    "precision": 0.2857142857142857,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.30769230769230765,
+    "support": 6,
+    "confused_with": {
+      "affirm": 3,
+      "accept": 1
+    }
+  },
+  "accept": {
+    "precision": 0.2,
+    "recall": 0.2,
+    "f1-score": 0.20000000000000004,
+    "support": 5,
+    "confused_with": {
+      "uninspiring": 2,
+      "affirm": 2
+    }
+  },
+  "accuracy": 0.45,
+  "macro avg": {
+    "precision": 0.4342857142857143,
+    "recall": 0.42000000000000004,
+    "f1-score": 0.398998778998779,
+    "support": 40
+  },
+  "weighted avg": {
+    "precision": 0.5782142857142858,
+    "recall": 0.45,
+    "f1-score": 0.47599511599511607,
+    "support": 40
+  },
+  "micro avg": {
+    "precision": 0.45,
+    "recall": 0.45,
+    "f1-score": 0.45,
+    "support": 40
+  }
+}

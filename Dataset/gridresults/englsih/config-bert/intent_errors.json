@@ -1,0 +1,130 @@
+[
+  {
+    "text": "Hmhm.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.8774712085723877
+    }
+  },
+  {
+    "text": "Wow. Yes.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8679439425468445
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9315569400787354
+    }
+  },
+  {
+    "text": "Yes.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9998401403427124
+    }
+  },
+  {
+    "text": "Hmmm. Yes fine also at noon. Yes. Yes.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.7983618974685669
+    }
+  },
+  {
+    "text": "Other options.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9998100399971008
+    }
+  },
+  {
+    "text": "Yes please.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.6133361458778381
+    }
+  },
+  {
+    "text": "That's right.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.5372191667556763
+    }
+  },
+  {
+    "text": "On Tuesday, yes.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.7802428007125854
+    }
+  },
+  {
+    "text": "Yes.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9999830722808838
+    }
+  },
+  {
+    "text": "Yes indeed.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.999142050743103
+    }
+  },
+  {
+    "text": "Yes, I would.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6427133679389954
+    }
+  },
+  {
+    "text": "Correct.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9979965090751648
+    }
+  },
+  {
+    "text": "Not necessarily, actually in the middle.",
+    "intent": "affirm provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.5474251508712769
+    }
+  },
+  {
+    "text": "Oh fuck you too.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3484191596508026
+    }
+  },
+  {
+    "text": "Nothing.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.39221659302711487
+    }
+  }
+]
