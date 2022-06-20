@@ -1,13 +1,13 @@
 nlu: 
 - lookup: field
   examples: |
-   - Location
-   - opening hours
-   - opening time
-   - type of cuisine
-   - type of restaurant
-   - price of the meal
-   - time of day
+  - Location
+  - opening hours
+  - opening time
+  - type of cuisine
+  - type of restaurant
+  - price of the meal
+  - time of day
 
 - lookup: localization
   examples: |
@@ -36,12 +36,12 @@ nlu:
     - (T|t)omorrow
 
 - regex: price
-  examples: |
+  examples:
     - [0-9]* (E|e)uro(\w)
     - (\w*) (P|p)rice(\w*)
 
 - regex: foodtype
-  examples: |
+  examples:
     - (G|g)reek(\w*)
     - (C|c)hin(\w*)
     - (I|i)talian(\w*)
@@ -61,7 +61,7 @@ nlu:
     - (N|n)apoli(\w*)
 
 - intent: provide 
-  examples: | 
+  example: | 
     - According to the [type of restaurant](field). 
     - [Chinese](foodtype) food. 
     - [Lunch](time). 
@@ -82,7 +82,7 @@ nlu:
     - I would like to eat [turkey breast](foodtype) in Bochum [Linden](localization). The price category should be in the [upper range](price).  
 
 - intent: accept 
-  examples: | 
+  example: | 
     - [Yes](logical).  
     - [Yes](logical), I would.  
     - [Yo](logical). [Yes](logical). 
@@ -91,7 +91,7 @@ nlu:
     - [Yes](logical).   
 
 - intent: neglect 
-  examples: | 
+  example: | 
     - [No](logical). 
     - [No](logical).   
     - Bor ey, [nope](logical), [no](logical). 
@@ -99,14 +99,14 @@ nlu:
     - [No](logical).    
 
 - intent: accept provide 
-  examples: | 
+  example: | 
     - [Yes](logical), pricewise.  
     - [Yes](logical). I would then like to go out to eat in [Weitmar](localization). 
     - [Yes], the [price](price) please. 
     - Uh [yeah](logical) In the [middle price range](price) please. 
 
 - intent: affirm 
-  examples: | 
+  example: | 
     - [Yes](logical).  
     - [Hmhm](logical).   
     - [Right](logical).  
@@ -115,7 +115,7 @@ nlu:
     - [Correct](logical).   
 
 - intent: affirm provide 
-  examples: | 
+  example: | 
     - [Yes](logical), on [Saturday](date) [night](time). 
     - [Not necessarily](logical), actually in the [middle](price).    
     - Wow. [Yes](logical). 
@@ -123,17 +123,18 @@ nlu:
     - On [Tuesday](date), [yes](logical). 
 
 - intent: negate 
-  examples: | 
+  example: | 
     - [No](logical).   
     - Hm, [no](logical).   
     - [No](logical) I do not want to.  
     - [Yes](logical).  
 
-- intent: uninspiring
-  examples: | 
+- intent: 
+  example: | 
     - [nan](action) 
     - [Other options](action).  
     - Hello, [anyone there](action). 
     - Can I, hello, [back](action)?  
     - Oh fuck you too. 
     - [Nothing](action). 
+
