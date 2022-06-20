@@ -1,18 +1,18 @@
 nlu: 
 - lookup: field
   examples: |
-  - Location
-  - place
-  - opening
-  - opening hours
-  - opening time
-  - type of cuisine
-  - type of food
-  - meals
-  - type of restaurant
-  - price of the meal
-  - price category
-  - time of day
+    - Location
+    - place
+    - opening
+    - opening hours
+    - opening time
+    - type of cuisine
+    - type of food
+    - meals
+    - type of restaurant
+    - price of the meal
+    - price category
+    - time of day
 
 - lookup: localization
   examples: |
@@ -82,7 +82,7 @@ nlu:
     - (F|f)ish(\w*)
 
 - intent: provide
-  example: | 
+  examples: | 
     - [Chinese](foodtype) food. 
     - [French](foodtype). 
     - [Greek](foodtype).   
@@ -623,7 +623,7 @@ nlu:
     - Go out to eat [Chinese](foodtype).  
 
 - intent: accept 
-  example: | 
+  examples: | 
     - [Yes](logical).  
     - [Yes](logical), I would.  
     - [Yo](logical). [Yes](logical). 
@@ -632,21 +632,21 @@ nlu:
     - [Yes](logical).   
 
 - intent: neglect 
-  example: | 
+  examples: | 
     - [No](logical). 
     - Bor ey, [nope](logical), [no](logical). 
     - [No](logical) I do not want to. 
     - [No](logical).    
 
 - intent: accept provide 
-  example: | 
+  examples: | 
     - [Yes](logical), [pricewise](price).  
     - [Yes](logical). I would then like to go out to eat in [Weitmar](localization). 
     - [Yes](logical), the [price](price) please. 
     - Uh [yeah](logical) In the [middle price range](price) please. 
 
 - intent: affirm 
-  example: | 
+  examples: | 
     - [Yes](logical).  
     - [Hmhm](logical).   
     - [Right](logical).  
@@ -665,7 +665,7 @@ nlu:
     - [yes](logical).   
 
 - intent: affirm provide 
-  example: | 
+  examples: | 
     - [Yes](logical), on [Saturday](date) [night](time). 
     - [Not necessarily](logical), actually in the [middle](price).    
     - Wow. [Yes](logical). 
@@ -674,14 +674,14 @@ nlu:
     - [Yes](logical), I would like in the [evening](time). 
 
 - intent: negate 
-  example: | 
+  examples: | 
     - [No](logical).  
     - Hm, [no](logical).   
     - [No](logical) I do not want to.  
     - [Yes](logical).  
 
-- intent: 
-  example: | 
+- intent: uninspiring
+  examples: | 
     - nan 
     - [Other options](action).  
     - Hello, [anyone there](action). 
