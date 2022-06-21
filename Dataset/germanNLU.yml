@@ -1,617 +1,617 @@
 nlu: 
 - intent: provide
   example: | 
-    - Chinesische Küche.   
-    - Französiche.   
-    - Griechisch.   
-    - Die griechische Küche.   
-    - Chinesisch.   
-    - Italienische Küche.   
-    - Keine Präferenz.   
-    - Ich möchte griechisch essen gehen.   
-    - Ich möchte ein Restaurant erfahren, wo ich Ente essen kann.   
-    - Chinesische.   
-    - Griechische Küche.   
-    - Italienisch.   
-    - Chinesisch.  
-    - Ente.   
-    - Französisch.   
-    - Die griechische Küche würd mich interessieren.   
-    - Hm, italienische Küche.   
-    - Die italienische Küche.   
-    - Ja, griechisch wäre ganz prima.   
-    - Die griechische.   
-    - Hm, ich bevorzuge die chinesische Küche.   
-    - Italienische Küche   
-    - Die französische Küche finde ich gut.   
-    - Ich würde gerne Ente essen.   
-    - Keine Präferenz   
-    - Mexikanisch.   
-    - Nein, chinesisch.   
-    - Koreanisch oder asiatisch.   
-    - Asiatisch.   
-    - Ich möchte gern Ente essen.   
-    - Chinesische Küche bitte.   
-    - Chinesisch. Chinesische Küche.   
-    - Deutsche Küche.    
-    - Weitmar.   
-    - Gute Hausmannskost, deutsche Küche.   
-    - Ich habe gefragt, wo ich am besten geflügel, ente essen kann. In welchem Restaurant?   
-    - Chinesisches.   
-    - Keine Präferenz. Ich möchte Ente essen gehen.   
-    - Ich möchte Ente bzw Geflügel essen gehen.   
-    - Griechische.   
-    - Ja, griechisch.   
-    - Ja, italienisch.   
-    - Ich hätte gern, äh, Napoli.   
-    - Italienische.   
-    - Argentinisch.    
-    - Keine Präferenz.    
-    - Griechisch.    
-    - Chinesisch essen.   
-    - Ehm, chinesische Küche.   
-    - Hm, keine Präferenz. 15 Euro pro Person im Ehrenfeld.   
-    - Haha, chinesisch.   
-    - Deutsche Küche.   
-    - Das Mittagessen.   
-    - Das Abendessen.   
-    - Für das Mittagessen.   
-    - Ich suche ein Restaurant für das Abendessen.   
-    - Das ist egal.   
-    - Für die Mittagspause   
-    - Für das Abendessen.   
-    - Abendessen.   
-    - Mittagessen.   
-    - Dienstag Abend.   
-    - Abend. Abend.   
-    - Kehr, leck mich doch am Arsch. Abendessen.   
-    - Ähm, Abendessen.   
-    - Abends.   
-    - 22 Uhr.   
-    - 16 Uhr.   
-    - Ich suche eine Restaurant in dem man mittags Ente essen gehen kann.   
-    - Für das Mittagessen wäre prima.   
-    - Gegen Mittag wäre schön.   
-    - Mittags.   
-    - Mittag.   
-    - Fürs Mittagessen.   
-    - Für den Abend.   
-    - Mittagessen und der Preis sollte in der oberen Kategorie liegen.   
-    - 21 Uhr.   
-    - Abend.   
-    - Abendessen. Abendessen.   
-    - Abendessen.    
-    - Fürs Abendessen.   
-    - Haha, abends.   
-    - In der Mittagspause.   
-    - Ich hätte gern eins fürs Abendessen.   
-    - Für die Mittagspause, für das Mittagessen.   
-    - Mittagessen. Ah, ne, gar nicht war, Entschuldigung. Steht ja Dienstag Abend.   
-    - Hm, Abendessen.   
-    - Im Zentrum.   
-    - Uni-Center.   
-    - Ich möchte in Weitmar essen gehen.   
-    - In Weitmar.   
-    - Im Uni-Center in Querenburg.   
-    - Ja im Stadtteil Querenburg, an der Querenburger Strasse.   
-    - Innenstadt.   
-    - Grumme.   
-    - Querenburg.   
-    - In Hamme.   
-    - Werne.   
-    - Wiemelhausen.   
-    - Im Zentrum wäre ganz recht.   
-    - In Querenburg.   
-    - Dann nehmen wir Weitmar.   
-    - Im Zentrum wäre gut.   
-    - Hm, Zentrum.   
-    - Zentrum.   
-    - Hm, Bochum Zentrum.   
-    - Bochum Zentrum.   
-    - Bochum Innenstadt.   
-    - Bochum Linden.   
-    - In der Innenstadt.   
-    - In der Bochumer Innenstadt.   
-    - Bochumer Innenstadt.   
-    - Langendreer.   
-    - Wiemelhausen.    
-    - Stadtmitte.    
-    - Hm, Weitmar.   
-    - Äh, in Querenburg.   
-    - Bochum Querenburg.   
-    - Bochum Weitmar.   
-    - City.   
-    - Stadtmitte.   
-    - Zentrum.    
-    - In Bochum Mitte.   
-    - Bochum Stadtmitte.   
-    - Art der Küche.   
-    - Ich möchte in Grumme essen.   
-    - Ich möchte den Ort ändern.   
-    - Ich möchte den Preis ändern.   
-    - Ich möchte dann in Weitmar essen gehen.   
-    - Den Preis auf 30 Euro.   
-    - Den Preis auf 50 Euro.   
-    - Den Ort: Weitmar.   
-    - Preis 20 Euro erhöhen auf 50.   
-    - Französische Küche, Ort beliebig, Preis beliebig.   
-    - Tageszeit.   
-    - Der ungefähre Ort.   
-    - Preis der Mahlzeit.   
-    - Dann würde ich gerne in Weitmar essen gehen.   
-    - Ich möchte gerne Ente essen.   
-    - Hm. Dann möchte ich gerne Ente essen.   
-    - Das geht nicht. Ähm ja, weiss ich nicht. Chinesisch Ente essen. Da geht gar nix mehr.   
-    - Dann möchte ich gerne in Weitmar essen.   
-    - Dann möchte ich gerne in Bochum Werne essen gehen.   
-    - Ich möchte gerne Dienstag Abend in Weitmar griechisch essen gehen.   
-    - Ente. Ich will Ente.   
-    - Preis.   
-    - Art des Restaurants.   
-    - Ort.   
-    - Der Preis.   
-    - Ich möchte am Dienstag Abend in Bochum Weitmar griechisch essen gehen in der unteren Preisklasse.   
-    - Untere Preisklasse.   
-    - Den Ort des Restaurants.   
-    - Das Restaurant.   
-    - Die Öffnungszeit.   
-    - Den Ort und den Preis.   
-    - Den Preis.   
-    - Die Art der Küche.   
-    - Den Ort.   
-    - Küche.   
-    - Ich würde gerne in einem Restaurant in Weitmar essen gehen.   
-    - Ort des Restaurants.   
-    - Dienstag abend, in Weitmar, griechisch.   
-    - Preis ändern.   
-    - Ich möchte Ente essen.   
-    - Die Küche.   
-    - Hmn den Preis.   
-    - Mittlere Preiskategorie.   
-    - Untere Preiskategorie.   
-    - Preis: keine Präferenzen.   
-    - Art des Essens.   
-    - Die Art der Küche: Koreanisch.   
-    - Ungefährer Ort: Weitmar.   
-    - Bitte italienische Küche, in Bochum Querenburg, mittlere Preisklasse.   
-    - Mittwoch, 13 Uhr, Innenstadt in Bochum, chinesisch essen gehen und 20 Euro das Essen.   
-    - Ich möchte gerne in Bochum in der Innenstadt um 14 Uhr chinesisch essen gehen.   
-    - Am Samstag. Am Samstag um 16 Uhr chinesisch essen in Bochum in der Innenstadt.   
-    - Ort, den Ort erweitern bitte.   
-    - Den ungefähren Ort.   
-    - Die Zeit ändern.   
-    - Art der Mahlzeit.   
-    - Ort des Restaurants.    
-    - Preis der Mahlzeit.    
-    - Ein griechisches Restaurant in Weitmar.   
-    - Hmm, für 20.   
-    - Den Preis würde ich gerne ändern.   
-    - Mittagsause, Innenstadt, chinesisch.   
-    - In Bochum Weitmar.   
-    - Ja dann kann ich auch gerne ein Restaurant nehmen, dass etwas billiger ist.   
-    - Ich möchte gerne den Preis ändern.   
-    - Ich möchte Dienstag Abend in Grumme preisgünstig essen gehen.   
-    - Ich ändere den Preis auf 20 Euro.   
-    - Den Ort und die Küche.   
-    - Ich möchte gerne in Weitmar essen gehen.   
-    - Den Preis. Wurd ich gar nicht gefragt, haha.   
-    - Mittags, in der Innenstadt chinesisch essen. Am Montag.   
-    - Chinesisch möchte ich essen gehn, in Bochum.   
-    - Ich möchte gerne preisgünstig essen, bis 10 Euro.   
-    - Grumme, griechisch, 10 Euro. Hm?   
-    - Preis: 20 Euro.   
-    - Ort: Weitmar.   
-    - Sizilianisch. Küche.   
-    - Küche: Französisch.   
-    - Zentrum, Abendessen, chinesisch.   
-    - Griechisch. Versteht er nicht.   
-    - Ungefährer Ort des Restaurants.   
-    - Öffnungszeit.   
-    - Öffnungszeiten.   
-    - Öffnungszeit..   
-    - Ungefährer Ort.   
-    - Ungefährer Preis.   
-    - Art der Küche.    
-    - Preis.    
-    - Dann möchte ich Dienstag Abend in Weitmar griechisch essen gehen.   
-    - Wo kann ich abends in Werne italienisch essen gehen?   
-    - Griechisch essen, Dienstag, in Weitmar, unteres Preisniveau, abends.   
-    - Mittagszeit, Innenstadt, chinesisch, mittlere Preisklasse.   
-    - Ich möchte gerne in Bochum Weitmar griechisch essen gehen. Es kann billig sein.   
-    - Ich möchte gerne in der Innenstadt chinesisch essen gehen, in der mittleren Preisklasse.   
-    - Also dann möchte ich Samstag Abend essen gehen, mit einer gutbügerlichen Küche, dass gemütlich und ruhig ist.   
-    - Ich möchte Samstag Abend in ein italienisches Restaurant gehen, zu einem Preis von ca 30 Euro.   
-    - Ich möchte Samstag Abend in eine, in ein italienisches Restaurant gehen, für einem Preis von ca 20 Euro.   
-    - Ich möchte in Bochum mittwochs abends in ein italienisches Restaurant gehen. Zu einem Preis von 10 Euro.   
-    - 30 Euro.   
-    - 40 Euro.   
-    - 20 Euro.   
-    - 10 Euro.   
-    - 15 Euro.   
-    - 25 Euro.   
-    - Ich möchte die mittlere Preisklasse wählen.   
-    - Ich möchte in der mitteren, in der mittleren Preisklasse für sagen wir 15 Euro essen gehen.   
-    - Ich möchte einen mittleren Preis.   
-    - Mittlere Preisklasse.   
-    - So 20 Euro.   
-    - Es darf schon die hohe Preiskategorie sein.   
-    - Beliebig.   
-    - 50 Euro.   
-    - Obere Preisklasse.   
-    - Hm, so 25 Euro.    
-    - 25 Euro.    
-    - 25 Euro pro Person.    
-    - Ca 20 bis 25 Euro.    
-    - Nicht so viel.   
-    - Untere Kategorie.   
-    - 20.   
-    - Geh kaputt. 20 Euro.   
-    - Obere .   
-    - Obere.   
-    - Mittlere.   
-    - Untere.   
-    - Mittlere Preisklasse, mittlere.   
-    - 70 Euro.   
-    - Ähm, 15 bis 20 Euro.   
-    - Ähm, ca 15 Euro.   
-    - 15 D-Mark.   
-    - 15.   
-    - Äh, 10 Euro.   
-    - 10 Mark.   
-    - 40 Mark.   
-    - Ca 30 Euro.   
-    - 50.   
-    - 60.   
-    - 30.   
-    - 45 Euro.   
-    - 80.   
-    - 90.   
-    - Untere Preisklasse wäre gut.   
-    - Hohe Preisklasse.   
-    - Mittleres Preisniveau.   
-    - Gehobene Preisklasse.   
-    - 80 Euro.   
-    - Viel.   
-    - Hm, untere Preisklasse.   
-    - Ich hätte gern die untere Preisklasse. Untere Preisklasse.   
-    - Obere Preisklasse bitte.   
-    - 10 Euro, maximal.   
-    - 5 Euro.   
-    - Immer noch 5 Euro.   
-    - 8 Euro.   
-    - 50 Euro pro Person möchte ich ungefähr ausgeben.   
-    - 150 Euro.   
-    - Ach Gott. 50 Euro.   
-    - Etwa 20 Euro.   
-    - Nicht wichtig.    
-    - Obere Preisklasse.    
-    - Mittlere Preisklasse.    
-    - Hmm, 30 Euro.   
-    - Hmm, obere Preisklasse.   
-    - 15 bis 20 Euro.   
-    - Hmm, zwischen 10 und 15 Euro.   
-    - Hm, nehme die mittlere.   
-    - Hm, 20 Euro.   
-    - Hm, es kann ruhig etwas teurer sein. Hm, 15 Euro.   
-    - Ja, es können auch ruhig 25 Euro sein.   
-    - Hm, keine Präferenz.   
-    - Hm, so in der mittleren Klasse.   
-    - Ca 15 Euro.   
-    - Immer noch 15 Euro.   
-    - Haha, 15.   
-    - Ich möchte ca 15 Euro ausgeben.   
-    - Dat ist mir egal, ich möchte Ente essen gehen.   
-    - Ey, 15 Euro.   
-    - Die obere möchte ich ändern.   
-    - Die untere.   
-    - Den unteren.   
-    - Maximal pro Person 12 Euro.   
-    - Maximal 12 Euro pro Person.   
-    - 12 Euro pro Person.   
-    - 12 Euro.   
-    - 100 Euro.   
-    - Obere Kategorie.   
-    - Obere Peisklasse.   
-    - Obere Preiskasse.   
-    - Mittel.    
-    - Mittlerer Preis.    
-    - Obere.    
-    - Hm, pro Person 30 Euro.   
-    - Obere Preisklasse, 30 Euro.   
-    - Hm, 10 Euro.   
-    - Mehr.   
-    - Gehobene Klasse.   
-    - 3 0.   
-    - Gehobene Essensklasse.   
-    - Höhere Klasse.   
-    - 2 0.   
-    - Ich kann nicht mehr, haha. 15.   
-    - Ca 10 Euro.   
-    - Hm, 30 Euro.   
-    - Mittwoch.   
-    - Montags.   
-    - Am Dienstag.   
-    - Dienstag.   
-    - Donnerstag.   
-    - Am Freitag.   
-    - Heute.   
-    - Am Montag.   
-    - Freitag.   
-    - Sonntags.   
-    - Hm, am Samstag.   
-    - Sonntag.   
-    - Wochentags, montags.   
-    - Montag.   
-    - Ist egal.   
-    - Ähm, wochentags.   
-    - Mittwochs.   
-    - Morgen.   
-    - Samstag.   
-    - Am Mittwoch.   
-    - Keine Ahnung.   
-    - Hm, Freitag.   
-    - 16ten 7ten.   
-    - Am Sonntag.   
-    - Am Mittwoch, keine Präferenz.   
-    - Äh, am besten samstags, sonntags. Samstag wäre gut.   
-    - Heute.    
-    - Hm, Mittwoch.   
-    - Jeden Tag.   
-    - Am Samstag.   
-    - Täglich.   
-    - Hm, am Montag.   
-    - Am Donnerstag.   
-    - Ja ich möchte gerne Ente essen, und zwar Montag.   
-    - Ich möchte gerne Mittag essen, in der Innenstadt. Montags.   
-    - Hm, Sonntag.   
-    - Der Tag ist mir egal, ich wollte gerne zum Mittagessen gehen.   
-    - Wochentags.   
-    - Nach der Art der Küche.   
-    - Nach dem Ort des Restaurants.   
-    - Der Ort des Restaurants.   
-    - Der ungefähre Ort des Restaurants.   
-    - Wo kann ich in Grumme griechisch essen gehen?   
-    - Wo kann ich in der Bochumer Innenstadt mittags chinesisch essen gehen?   
-    - Wo kann in Bochum im Uni-Center italienisch essen gehen?   
-    - Ich möchte äh in Bochum indisch essen gehen.   
-    - Ich möchte gerne wissen, wo ich Ente essen könnte.   
-    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen. Der Preis soll dabei gering sein.   
-    - Ich möchte gern in der Innenstadt chinesisch essen gehen. Hallo?   
-    - Die Küche soll italienisch sein und das soll Ganze soll in Querenburg an der Ruhr-Universität stattfinden.   
-    - Ich möchte gerne im in der Bochumer Innenstadt in Nähe des Hauptbahnhofs abends beim Italiener essen gehen.   
-    - Ich möchte ein Restaurant auswählen nach der Art der Küche.   
-    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen. Der Preis sollte relativ gering sein.   
-    - Ich möchte gerne in der Mittagspause in der Innenstadt chinesisch essen gehen.   
-    - Nach der Art der Küche und den Ort. Ähm, ich suche ein italienisches Restaurant in Bochum Querenburg.   
-    - Ich suche ein italienisches Restaurant in der Innenstadt Bochums, dass abends geöffnet hat.   
-    - Art der Küche .   
-    - Hm, nach der Zeit.   
-    - Ähm nach dem, nach dem Essen. Wo ich gerne, ähm. Ich möchte gerne wissen, wo ich Ente essen könnte.   
-    - Ich würde gern am Dienstag Abend in Grumme griechisch essen gehen. Der Preis könnte so mittlerer Bereich liegen.   
-    - Ich möchte gerne in der Innenstadt chinesisch essen gehen, zur Mittagspause.  
-    - Guten Tag ich würde gerne italienisch essen gehen, im Raum Querenburg, Querenburg und der Preis soll in mittlerer Preisklasse sein.   
-    - Ich würde gerne asiatisch essen gehen. Im Umkreis Altenbochum Stadtmitte, und der Preis könnte so in der mittleren Preisklasse liegen, und am besten so Samstag Abend.    
-    - Ja ich möchte gerne Ente essen gehen.   
-    - Ich möchte heute Abend in Grumme griechisch essen gehen, relativ günstig.   
-    - Ich möchte in der Mittagspause in der Innenstadt chinesisch essen gehen, relativ teuer.   
-    - Ich möchte gerne italienisch essen gehen in Querenburg in der mittleren Preisklasse.   
-    - Ich möchte gerne Samstag Abend indisch essen gehen in der mittleren Preisklasse.   
-    - Hm, Art des Restaurants.   
-    - Wo kann ich Ente essen gehen?  
-    - Ich möchte gerne am Dienstag Abend in Bochum Grumme griechisch essen gehen in der unteren Preisklasse.   
-    - Ich möchte mittags ab 12 Uhr in der Innenstadt chinesisch essen gehen in der oberen Preisklasse.   
-    - Ähm, ich suche ein Restaurant mit italienischer Küche in mittlerer Preisklasse im Raum Bochum Querenburg.   
-    - Ich suche ein chinesisches Restaurant für den Mittagstisch im Raum Innenstadt.   
-    - Ich möchte ganz gerne gegen 22 Uhr essen gehen.   
-    - Art des Restaurants hätte ich gerne.   
-    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen.   
-    - Der Ort.   
-    - Ich möchte chinesisch essen.   
-    - Die Art des Restaurants.   
-    - Ich möchte gerne Dienstag Abend ähm in Grumme griechisch essen gehen.   
-    - Ich möchte gerne in der Mittagspause in der Innenstadt essen.   
-    - Ich möchte gerne Ente essen .   
-    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen.   
-    - ich mÖchte mittags xin der innenstadt imbiss essen gehen  xder preis ist recht xhoch  
-    - Mediterane Küche, Umgebung Ruhr-Universität, mittlere Preiskategorie.   
-    - In der Innenstadt mexikanisch, mittlere Preiskategorie.   
-    - Lage des Restaurants.   
-    - Nach der Küche.   
-    - Nach dem Preis.   
-    - Wo kann ich Ente essen?   
-    - Ich möchte ganz gerne Dienstag Abend in Bochum Grumme griechisch essen gehen. Der Preis sollte dabei in der unteren Kategorie liegen.   
-    - Ich möchte ganz gerne zwischen 12 und 13 Uhr morgen in der Innenstadt in Bochum chinesisch essen gehen.   
-    - Ich möchte ganz gerne in der Nähe der Ruhr-Universität Bochum italienisch essen gehen. Der Preis sollte dabei in der mittleren Kategorie liegen. Hallo?   
-    - Ich möchte ganz gerne in Bochum Linden Putenbrust essen gehen. Die Preiskategorie sollte im oberen Bereich liegen.   
-    - Ich würde gerne heute Abend in Bochum Zentrum Ente essen.   
-    - Ich würde gerne heute Abend, ähm, in Grumme griechisch essen gehen, zum Preis von sagen wir 15 Euro.   
-    - Ich würde gerne gegen 13 Uhr in der Innenstadt chinesisch essen gehen, zum Preis bis 10 ne 15 Euro.   
-    - Ich würde gerne heute Abend italienisch essen gehen, in Querenburg.   
-    - Ich würde gerne heute Abend in Bochum koreanisch oder asiatisch essen gehen.   
-    - Ich würde gerne chinesisch essen.   
-    - Ich möchte gerne griechisch essen gehen, und zwar am Dienstag Abend in Grumme in der unteren Preisklasse.   
-    - Ich würde gerne chinesisch essen gehen. Wo gibt es chinesisches Essen? Was gibt es für Essen in der oberen Preisskala?   
-    - Ich würde gerne ein italienische Restaurant in Bochum Querenburg in der mittleren Preislage empfohlen bekommen.   
-    - Ich hätte gerne im Bochumer Süden in der hohen Preisklasse ein Restaurant mit deutscher Küche, dass am Wochenende offen hat.   
-    - Ja schönen guten Tag. Ich hätte gern Ente gegessen in Bochum, und zwar mittwochs so um 10 Uhr vormittags.   
-    - Ich möchte gerne in Grumme in Bochum am Dienstag Abend griechisch essen gehen, aber preiswert.   
-    - Ich möchte gerne in der Innenstadt um 12 Uhr in der Woche chinesisch essen gehen. In einem guten Restaurant.   
-    - Ja ich hätte gerne ein italienisches Restaurant und zwar in der mittleren Preisklasse in Bochum Querenburg.   
-    - Ja schönen guten Tag. Ich möchte gerne in Bochum koreanisch essen gehen, und zwar so um 21 Uhr und mittlere preisklasse. Wo könnte ich da hin?   
-    - Ich möchte mittags im Zentrum chinesisch essen gehen.   
-    - Ich möchte in Querenburg in der mittleren Preisklasse italienisch essen.   
-    - Ich suche ein Restaurant mit chinesischer Küche, das preislich recht günstig ist in der Bochumer Innenstadt.   
-    - Art der Mahlzeit. Hallo?   
-    - Hm, ich würde gerne Ente essen gehen.   
-    - Ähm, gerne am Dienstag in Grumme griechisch essen gehen.   
-    - Ähm, ich würde gerne in der Mittagspause in der Innenstadt chinesisch essen gehen.   
-    - Ähm, ein italienisches Restaurant in ähm im Unibereich in Bochum und mittlere Preiskategorie.   
-    - Ich hätte gerne eine, ein mexikanisches Restaurant in der Bochumer Innenstadt.   
-    - Dienstag Abend, in Grumme, griechisch.   
-    - Nach dem Preis, der Küche und den Ort.   
-    - Ich suche ein Restaurant in Bochum Grumme in der niedrigen Preiskategorie für dienstags Abends.   
-    - Mittags, in der Innenstadt von Bochum, gehobene Ausstattung, chinesisch.   
-    - Ich hätte gerne ein Restaurant in der mittleren Preisklasse, wenns, wenn möglich italienische Küche, und in der nähe der Ruhr-Universität Bochum.   
-    - Ich suche ein Restaurant in Bochum Langendreer mit guter Hausmannskost, bis zu 17 Euro, und die Öffnungszeit muss auch am Sonntag Mittags sein. Ja, was denn?   
-    - Ich möchte gerne Dientag Abend in Grumme griechisch essen gehen, zu einem natürlichen Preis.   
-    - Ich möchte in meiner Mittagspause in der Innenstadt chinesisch essen gehen. Preis eher höher.   
-    - Ich möch gerne italienisch essen gern gehen, im Raum Querenburg, Ruhr-Universität, die Preiskategorie sollte in der Mitte sein.   
-    - Tja, dann frag ich mal. Ich möchte gerne chinesisch essen gehn. Hmhm.   
-    - Ich möchte gerne wissen, wo ich am besten Ente essen kann.   
-    - Ich möchte am Dienstag Abend in Bochum Grumme griechisch essen gehen.   
-    - In der Mittagspause möchte ich chinesisch essen in der Innenstadt. Wo ist es am besten möglich?   
-    - Ich möchte italienisch in Querenburg essen.   
-    - Ich möchte am Samstag Abend zur mittleren Preisklasse gutbürgerlich in der Innenstadt essen.   
-    - Hm, wo kann ich Ente essen?   
-    - Ja ich hätte gerne ein griechisches Restaurant in Grumme.   
-    - Ja ich hätte gerne ein chinesisches Restaurant in der Innenstadt.   
-    - Ja ich hätte gerne ein Restaurant in Querenburg, und zwar ein italienisches.   
-    - Ich suche ein indisches Restaurant in der Innenstadt.   
-    - Nach Art der Küche.   
-    - Ich möchte in Grumme essen gehen.   
-    - Ich möchte nach dem Preis entscheiden. Und zwar möchte ich chinesisch essen gehen, in der Stadt für ungefähr 30 Euro.   
-    - Ich möchte nach Preis, Küche und Ort bestimmen.   
-    - Ich möchte gerne wissen, wo ich Ente essen kann.   
-    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen, niedrige Preisklasse.   
-    - Ich möchte gerne Mittags in der Innenstadt chinesisch essen gehen, gehobene Preisklasse.   
-    - Ich hätte gerne ein Restaurant in der mittleren Preiskategorie, italienische Küche und im Umfeld der Ruhr-Universität Bochum.   
-    - Ich möchte gern eine Ente essen.   
-    - Ich möchte gerne in meiner Mittagspause in der Innenstadt chinesisch essen gehen.   
-    - Ich hätte gern ein chinesisches Restaurant.   
-    - Guten Tag, ich möchte gerne Ente essen, und zwar in Wuppertal.   
-    - Guten Abend, ich möchte gerne am Dienstag Abend in Grumme griechisch essen gehen. Der preis sollte bis, äh, 20 Euro betragen.   
-    - Guten Tag, ich möchte gerne in der Innenstadt chinesisch essen gehen, in Bochum. Die Preisklasse, äh, bis 20 Euro.   
-    - Guten Tag, ich möchte gerne italienisch essen gehen, bis 15 Euro. Der Ort Querenburg.   
-    - Ich möchte heute Abend in einem Gourmetrestaurant in Bochum essen gehen. Der Preis kann ab 30 Euro sein.   
-    - Grumme. Griechisch essen.   
-    - Mittag, obere Preisklasse, chinesisch.   
-    - Mittlere Preisklasse,äh, italienisch, in Querenburg.   
-    - Fisch, Abendessen, obere Preisklasse.   
-    - Nach dem Ort des Restaurants. Am Dienstag Abend und griechisch.   
-    - Ich möchte heute in der Mittagspause, in der Bochumer Innenstadt, ähm, chinesisch essen gehen. Und zwar nach der Preiskategorie.   
-    - Ich möchte ein Restaurant nach der Art der Küche.   
-    - Nach den Öffnungs, nach dem Ort.   
-    - Mahlzeit.   
-    - Ungefährer Ort.    
-    - Ich möchte gerne wissen, wo, in welchem Restaurant ich Ente essen kann.   
-    - Wo kann man am Dienstag Abend in Grumme griechisch essen gehen?   
-    - Ich möchte in der Mittagspause in der Innenstadt chinesisches essen gehen, und wollte wissen zu welchem Preis.   
-    - Wo kann ich abends in Werne griechisch essen gehen?   
-    - Äh, ich möchte gerne Ente essen gehen.   
-    - Griechische Küche, unteres Preisniveau, in Grumme, Dienstag Abend.   
-    - Ich möchte gerne griechisch essen. Am Dienstag, unteres Preisniveau, abends.   
-    - Ich möchte gerne zum Mittagessen, Innenstadt und chinesisch essen möchte ich gerne, gehobene Preisklasse.   
-    - Ich möchte gerne ein italienisches Restaurant in Bochum Querenburg und mittlere Preisklasse.   
-    - Ich suche ein Restaurant mit deutscher Küche, 15 Euro pro Person in Ehrenfeld oder Wiemelhausen.   
-    - In der Mittagspause in der Innenstadt chinesisch essen.   
-    - Ich möchte gerne in Bochum Mitte Ente essen gehen, am Mittwoch Abend.   
-    - Ich möchte gerne am Dienstag Abend in Grumme griechisch essen gehen. Zu einem Preis von 20 Euro.   
-    - Ich möchte gerne, äh, in Bochum in der Innenstadt mittags chinesisch essen gehen. Es kann teuer sein.   
-    - Ich möchte gerne Samstag Abend italienisch essen gehen, in Bochum Querenburg in der mittleren Preisklasse.   
-    - Ich suche ein, ein gutbürgerliches Restaurant mit guter Küche und einem breit gefächerten Angebot, dass gemütlich ist und ruhig, und eine gute Bedienung hat, und gute Öffnungszeiten.   
-    - Hm, 20 Euro, den Preis.   
-    - Ja. Ich möchte gerne in Weitmar essen gehen.   
-    - Nein, chinesisch essen gehen.  
-    - Hm, dann nicht ganz so teuer.   
-    - Nein Montag.   
-    - Ich möchte gerne Dienstag Abend in Weitmar essen gehen, griechisch.   
-    - In Linden.   
-    - Gibt es ein Restaurant in Weitmar in dem man essen gehen könnte?   
-    - Ja, und zwar Ente.   
-    - Ja, dann möchte ich gerne 20 Euro ausgeben, und in der Mittagspause so um 1, 13 uhr in der Innenstadt chinesisch essen gehen.   
-    - Ich möchte gerne am Freitag in der Innenstadt in Bochum chinesisch essen gehen, für 10 Euro.   
-    - Ja, ich will gerne in, in Weitmar dann am Dienstag griechisch essen gehen.   
-    - Ähm, ja, einen anderen Preis.   
-    - Ja, dann suche ich eins in Weitmar.   
-    - Gehobene Preiskategorie.   
-    - Dann möchte ich gerne ausweichen nach Weitmar. Ist das möglich?   
-    - Dann nehme ich die mittlere Preisklasse.   
-    - Warum montag? Überhaupt, wo kann ich Ente essen?   
-    - Ähm, dann nennen Sie mir ein anderes Restaurant in Grumme.   
-    - Dann möchte ich in der teuren Preisklasse essen gehen.   
-    - Haha. Dann möchte ich in der Innenstadt chinesisch essen gehen. Mal sehen, was jetzt passiert.   
-    - Hm, wie siehts denn am Dienstag in Weitmar aus?   
-    - Ja, Dienstag Abend.   
-    - Italienisch essen gehen.   
-    - Ja, ich möchte Geflügel essen.   
-    - Was möchte ich? Ich möchte gerne in der Mittagspause in der Innenstadt chinesich essen gehen. Bitte.   
-    - Ja. Ich möchte abends essen gehen.   
-    - Dann möchte ich gerne in Weitmar essen gehen.   
-    - Nennen sie mir ein anderes Restaurant der mittleren Preisklasse in Bochum Querenburg.   
-    - Chinesisch essen gehen.   
+    - Chinesische Küche.
+    - Französiche.
+    - Griechisch.
+    - Die griechische Küche.
+    - Chinesisch.
+    - Italienische Küche.
+    - Keine Präferenz.
+    - Ich möchte griechisch essen gehen.
+    - Ich möchte ein Restaurant erfahren, wo ich Ente essen kann.
+    - Chinesische.
+    - Griechische Küche.
+    - Italienisch.
+    - Chinesisch.
+    - Ente.
+    - Französisch.
+    - Die griechische Küche würd mich interessieren.
+    - Hm, italienische Küche.
+    - Die italienische Küche.
+    - Ja, griechisch wäre ganz prima.
+    - Die griechische.
+    - Hm, ich bevorzuge die chinesische Küche.
+    - Italienische Küche
+    - Die französische Küche finde ich gut.
+    - Ich würde gerne Ente essen.
+    - Keine Präferenz
+    - Mexikanisch.
+    - Nein, chinesisch.
+    - Koreanisch oder asiatisch.
+    - Asiatisch.
+    - Ich möchte gern Ente essen.
+    - Chinesische Küche bitte.
+    - Chinesisch. Chinesische Küche.
+    - Deutsche Küche.
+    - Weitmar.
+    - Gute Hausmannskost, deutsche Küche.
+    - Ich habe gefragt, wo ich am besten geflügel, ente essen kann. In welchem Restaurant?
+    - Chinesisches.
+    - Keine Präferenz. Ich möchte Ente essen gehen.
+    - Ich möchte Ente bzw Geflügel essen gehen.
+    - Griechische.
+    - Ja, griechisch.
+    - Ja, italienisch.
+    - Ich hätte gern, äh, Napoli.
+    - Italienische.
+    - Argentinisch.
+    - Keine Präferenz.
+    - Griechisch.
+    - Chinesisch essen.
+    - Ehm, chinesische Küche.
+    - Hm, keine Präferenz. 15 Euro pro Person im Ehrenfeld.
+    - Haha, chinesisch.
+    - Deutsche Küche.
+    - Das Mittagessen.
+    - Das Abendessen.
+    - Für das Mittagessen.
+    - Ich suche ein Restaurant für das Abendessen.
+    - Das ist egal.
+    - Für die Mittagspause
+    - Für das Abendessen.
+    - Abendessen.
+    - Mittagessen.
+    - Dienstag Abend.
+    - Abend. Abend.
+    - Kehr, leck mich doch am Arsch. Abendessen.
+    - Ähm, Abendessen.
+    - Abends.
+    - 22 Uhr.
+    - 16 Uhr.
+    - Ich suche eine Restaurant in dem man mittags Ente essen gehen kann.
+    - Für das Mittagessen wäre prima.
+    - Gegen Mittag wäre schön.
+    - Mittags.
+    - Mittag.
+    - Fürs Mittagessen.
+    - Für den Abend.
+    - Mittagessen und der Preis sollte in der oberen Kategorie liegen.
+    - 21 Uhr.
+    - Abend.
+    - Abendessen. Abendessen.
+    - Abendessen.
+    - Fürs Abendessen.
+    - Haha, abends.
+    - In der Mittagspause.
+    - Ich hätte gern eins fürs Abendessen.
+    - Für die Mittagspause, für das Mittagessen.
+    - Mittagessen. Ah, ne, gar nicht war, Entschuldigung. Steht ja Dienstag Abend.
+    - Hm, Abendessen.
+    - Im Zentrum.
+    - Uni-Center.
+    - Ich möchte in Weitmar essen gehen.
+    - In Weitmar.
+    - Im Uni-Center in Querenburg.
+    - Ja im Stadtteil Querenburg, an der Querenburger Strasse.
+    - Innenstadt.
+    - Grumme.
+    - Querenburg.
+    - In Hamme.
+    - Werne.
+    - Wiemelhausen.
+    - Im Zentrum wäre ganz recht.
+    - In Querenburg.
+    - Dann nehmen wir Weitmar.
+    - Im Zentrum wäre gut.
+    - Hm, Zentrum.
+    - Zentrum.
+    - Hm, Bochum Zentrum.
+    - Bochum Zentrum.
+    - Bochum Innenstadt.
+    - Bochum Linden.
+    - In der Innenstadt.
+    - In der Bochumer Innenstadt.
+    - Bochumer Innenstadt.
+    - Langendreer.
+    - Wiemelhausen.
+    - Stadtmitte.
+    - Hm, Weitmar.
+    - Äh, in Querenburg.
+    - Bochum Querenburg.
+    - Bochum Weitmar.
+    - City.
+    - Stadtmitte.
+    - Zentrum.
+    - In Bochum Mitte.
+    - Bochum Stadtmitte.
+    - Art der Küche.
+    - Ich möchte in Grumme essen.
+    - Ich möchte den Ort ändern.
+    - Ich möchte den Preis ändern.
+    - Ich möchte dann in Weitmar essen gehen.
+    - Den Preis auf 30 Euro.
+    - Den Preis auf 50 Euro.
+    - Den Ort: Weitmar.
+    - Preis 20 Euro erhöhen auf 50.
+    - Französische Küche, Ort beliebig, Preis beliebig.
+    - Tageszeit.
+    - Der ungefähre Ort.
+    - Preis der Mahlzeit.
+    - Dann würde ich gerne in Weitmar essen gehen.
+    - Ich möchte gerne Ente essen.
+    - Hm. Dann möchte ich gerne Ente essen.
+    - Das geht nicht. Ähm ja, weiss ich nicht. Chinesisch Ente essen. Da geht gar nix mehr.
+    - Dann möchte ich gerne in Weitmar essen.
+    - Dann möchte ich gerne in Bochum Werne essen gehen.
+    - Ich möchte gerne Dienstag Abend in Weitmar griechisch essen gehen.
+    - Ente. Ich will Ente.
+    - Preis.
+    - Art des Restaurants.
+    - Ort.
+    - Der Preis.
+    - Ich möchte am Dienstag Abend in Bochum Weitmar griechisch essen gehen in der unteren Preisklasse.
+    - Untere Preisklasse.
+    - Den Ort des Restaurants.
+    - Das Restaurant.
+    - Die Öffnungszeit.
+    - Den Ort und den Preis.
+    - Den Preis.
+    - Die Art der Küche.
+    - Den Ort.
+    - Küche.
+    - Ich würde gerne in einem Restaurant in Weitmar essen gehen.
+    - Ort des Restaurants.
+    - Dienstag abend, in Weitmar, griechisch.
+    - Preis ändern.
+    - Ich möchte Ente essen.
+    - Die Küche.
+    - Hmn den Preis.
+    - Mittlere Preiskategorie.
+    - Untere Preiskategorie.
+    - Preis: keine Präferenzen.
+    - Art des Essens.
+    - Die Art der Küche: Koreanisch.
+    - Ungefährer Ort: Weitmar.
+    - Bitte italienische Küche, in Bochum Querenburg, mittlere Preisklasse.
+    - Mittwoch, 13 Uhr, Innenstadt in Bochum, chinesisch essen gehen und 20 Euro das Essen.
+    - Ich möchte gerne in Bochum in der Innenstadt um 14 Uhr chinesisch essen gehen.
+    - Am Samstag. Am Samstag um 16 Uhr chinesisch essen in Bochum in der Innenstadt.
+    - Ort, den Ort erweitern bitte.
+    - Den ungefähren Ort.
+    - Die Zeit ändern.
+    - Art der Mahlzeit.
+    - Ort des Restaurants.
+    - Preis der Mahlzeit.
+    - Ein griechisches Restaurant in Weitmar.
+    - Hmm, für 20.
+    - Den Preis würde ich gerne ändern.
+    - Mittagsause, Innenstadt, chinesisch.
+    - In Bochum Weitmar.
+    - Ja dann kann ich auch gerne ein Restaurant nehmen, dass etwas billiger ist.
+    - Ich möchte gerne den Preis ändern.
+    - Ich möchte Dienstag Abend in Grumme preisgünstig essen gehen.
+    - Ich ändere den Preis auf 20 Euro.
+    - Den Ort und die Küche.
+    - Ich möchte gerne in Weitmar essen gehen.
+    - Den Preis. Wurd ich gar nicht gefragt, haha.
+    - Mittags, in der Innenstadt chinesisch essen. Am Montag.
+    - Chinesisch möchte ich essen gehn, in Bochum.
+    - Ich möchte gerne preisgünstig essen, bis 10 Euro.
+    - Grumme, griechisch, 10 Euro. Hm?
+    - Preis: 20 Euro.
+    - Ort: Weitmar.
+    - Sizilianisch. Küche.
+    - Küche: Französisch.
+    - Zentrum, Abendessen, chinesisch.
+    - Griechisch. Versteht er nicht.
+    - Ungefährer Ort des Restaurants.
+    - Öffnungszeit.
+    - Öffnungszeiten.
+    - Öffnungszeit..
+    - Ungefährer Ort.
+    - Ungefährer Preis.
+    - Art der Küche.
+    - Preis.
+    - Dann möchte ich Dienstag Abend in Weitmar griechisch essen gehen.
+    - Wo kann ich abends in Werne italienisch essen gehen?
+    - Griechisch essen, Dienstag, in Weitmar, unteres Preisniveau, abends.
+    - Mittagszeit, Innenstadt, chinesisch, mittlere Preisklasse.
+    - Ich möchte gerne in Bochum Weitmar griechisch essen gehen. Es kann billig sein.
+    - Ich möchte gerne in der Innenstadt chinesisch essen gehen, in der mittleren Preisklasse.
+    - Also dann möchte ich Samstag Abend essen gehen, mit einer gutbügerlichen Küche, dass gemütlich und ruhig ist.
+    - Ich möchte Samstag Abend in ein italienisches Restaurant gehen, zu einem Preis von ca 30 Euro.
+    - Ich möchte Samstag Abend in eine, in ein italienisches Restaurant gehen, für einem Preis von ca 20 Euro.
+    - Ich möchte in Bochum mittwochs abends in ein italienisches Restaurant gehen. Zu einem Preis von 10 Euro.
+    - 30 Euro.
+    - 40 Euro.
+    - 20 Euro.
+    - 10 Euro.
+    - 15 Euro.
+    - 25 Euro.
+    - Ich möchte die mittlere Preisklasse wählen.
+    - Ich möchte in der mitteren, in der mittleren Preisklasse für sagen wir 15 Euro essen gehen.
+    - Ich möchte einen mittleren Preis.
+    - Mittlere Preisklasse.
+    - So 20 Euro.
+    - Es darf schon die hohe Preiskategorie sein.
+    - Beliebig.
+    - 50 Euro.
+    - Obere Preisklasse.
+    - Hm, so 25 Euro.
+    - 25 Euro.
+    - 25 Euro pro Person.
+    - Ca 20 bis 25 Euro.
+    - Nicht so viel.
+    - Untere Kategorie.
+    - 20.
+    - Geh kaputt. 20 Euro.
+    - Obere .
+    - Obere.
+    - Mittlere.
+    - Untere.
+    - Mittlere Preisklasse, mittlere.
+    - 70 Euro.
+    - Ähm, 15 bis 20 Euro.
+    - Ähm, ca 15 Euro.
+    - 15 D-Mark.
+    - 15.
+    - Äh, 10 Euro.
+    - 10 Mark.
+    - 40 Mark.
+    - Ca 30 Euro.
+    - 50.
+    - 60.
+    - 30.
+    - 45 Euro.
+    - 80.
+    - 90.
+    - Untere Preisklasse wäre gut.
+    - Hohe Preisklasse.
+    - Mittleres Preisniveau.
+    - Gehobene Preisklasse.
+    - 80 Euro.
+    - Viel.
+    - Hm, untere Preisklasse.
+    - Ich hätte gern die untere Preisklasse. Untere Preisklasse.
+    - Obere Preisklasse bitte.
+    - 10 Euro, maximal.
+    - 5 Euro.
+    - Immer noch 5 Euro.
+    - 8 Euro.
+    - 50 Euro pro Person möchte ich ungefähr ausgeben.
+    - 150 Euro.
+    - Ach Gott. 50 Euro.
+    - Etwa 20 Euro.
+    - Nicht wichtig.
+    - Obere Preisklasse.
+    - Mittlere Preisklasse.
+    - Hmm, 30 Euro.
+    - Hmm, obere Preisklasse.
+    - 15 bis 20 Euro.
+    - Hmm, zwischen 10 und 15 Euro.
+    - Hm, nehme die mittlere.
+    - Hm, 20 Euro.
+    - Hm, es kann ruhig etwas teurer sein. Hm, 15 Euro.
+    - Ja, es können auch ruhig 25 Euro sein.
+    - Hm, keine Präferenz.
+    - Hm, so in der mittleren Klasse.
+    - Ca 15 Euro.
+    - Immer noch 15 Euro.
+    - Haha, 15.
+    - Ich möchte ca 15 Euro ausgeben.
+    - Dat ist mir egal, ich möchte Ente essen gehen.
+    - Ey, 15 Euro.
+    - Die obere möchte ich ändern.
+    - Die untere.
+    - Den unteren.
+    - Maximal pro Person 12 Euro.
+    - Maximal 12 Euro pro Person.
+    - 12 Euro pro Person.
+    - 12 Euro.
+    - 100 Euro.
+    - Obere Kategorie.
+    - Obere Peisklasse.
+    - Obere Preiskasse.
+    - Mittel.
+    - Mittlerer Preis.
+    - Obere.
+    - Hm, pro Person 30 Euro.
+    - Obere Preisklasse, 30 Euro.
+    - Hm, 10 Euro.
+    - Mehr.
+    - Gehobene Klasse.
+    - 3 0.
+    - Gehobene Essensklasse.
+    - Höhere Klasse.
+    - 2 0.
+    - Ich kann nicht mehr, haha. 15.
+    - Ca 10 Euro.
+    - Hm, 30 Euro.
+    - Mittwoch.
+    - Montags.
+    - Am Dienstag.
+    - Dienstag.
+    - Donnerstag.
+    - Am Freitag.
+    - Heute.
+    - Am Montag.
+    - Freitag.
+    - Sonntags.
+    - Hm, am Samstag.
+    - Sonntag.
+    - Wochentags, montags.
+    - Montag.
+    - Ist egal.
+    - Ähm, wochentags.
+    - Mittwochs.
+    - Morgen.
+    - Samstag.
+    - Am Mittwoch.
+    - Keine Ahnung.
+    - Hm, Freitag.
+    - 16ten 7ten.
+    - Am Sonntag.
+    - Am Mittwoch, keine Präferenz.
+    - Äh, am besten samstags, sonntags. Samstag wäre gut.
+    - Heute.
+    - Hm, Mittwoch.
+    - Jeden Tag.
+    - Am Samstag.
+    - Täglich.
+    - Hm, am Montag.
+    - Am Donnerstag.
+    - Ja ich möchte gerne Ente essen, und zwar Montag.
+    - Ich möchte gerne Mittag essen, in der Innenstadt. Montags.
+    - Hm, Sonntag.
+    - Der Tag ist mir egal, ich wollte gerne zum Mittagessen gehen.
+    - Wochentags.
+    - Nach der Art der Küche.
+    - Nach dem Ort des Restaurants.
+    - Der Ort des Restaurants.
+    - Der ungefähre Ort des Restaurants.
+    - Wo kann ich in Grumme griechisch essen gehen?
+    - Wo kann ich in der Bochumer Innenstadt mittags chinesisch essen gehen?
+    - Wo kann in Bochum im Uni-Center italienisch essen gehen?
+    - Ich möchte äh in Bochum indisch essen gehen.
+    - Ich möchte gerne wissen, wo ich Ente essen könnte.
+    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen. Der Preis soll dabei gering sein.
+    - Ich möchte gern in der Innenstadt chinesisch essen gehen. Hallo?
+    - Die Küche soll italienisch sein und das soll Ganze soll in Querenburg an der Ruhr-Universität stattfinden.
+    - Ich möchte gerne im in der Bochumer Innenstadt in Nähe des Hauptbahnhofs abends beim Italiener essen gehen.
+    - Ich möchte ein Restaurant auswählen nach der Art der Küche.
+    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen. Der Preis sollte relativ gering sein.
+    - Ich möchte gerne in der Mittagspause in der Innenstadt chinesisch essen gehen.
+    - Nach der Art der Küche und den Ort. Ähm, ich suche ein italienisches Restaurant in Bochum Querenburg.
+    - Ich suche ein italienisches Restaurant in der Innenstadt Bochums, dass abends geöffnet hat.
+    - Art der Küche .
+    - Hm, nach der Zeit.
+    - Ähm nach dem, nach dem Essen. Wo ich gerne, ähm. Ich möchte gerne wissen, wo ich Ente essen könnte.
+    - Ich würde gern am Dienstag Abend in Grumme griechisch essen gehen. Der Preis könnte so mittlerer Bereich liegen.
+    - Ich möchte gerne in der Innenstadt chinesisch essen gehen, zur Mittagspause.
+    - Guten Tag ich würde gerne italienisch essen gehen, im Raum Querenburg, Querenburg und der Preis soll in mittlerer Preisklasse sein.
+    - Ich würde gerne asiatisch essen gehen. Im Umkreis Altenbochum Stadtmitte, und der Preis könnte so in der mittleren Preisklasse liegen, und am besten so Samstag Abend.
+    - Ja ich möchte gerne Ente essen gehen.
+    - Ich möchte heute Abend in Grumme griechisch essen gehen, relativ günstig.
+    - Ich möchte in der Mittagspause in der Innenstadt chinesisch essen gehen, relativ teuer.
+    - Ich möchte gerne italienisch essen gehen in Querenburg in der mittleren Preisklasse.
+    - Ich möchte gerne Samstag Abend indisch essen gehen in der mittleren Preisklasse.
+    - Hm, Art des Restaurants.
+    - Wo kann ich Ente essen gehen?
+    - Ich möchte gerne am Dienstag Abend in Bochum Grumme griechisch essen gehen in der unteren Preisklasse.
+    - Ich möchte mittags ab 12 Uhr in der Innenstadt chinesisch essen gehen in der oberen Preisklasse.
+    - Ähm, ich suche ein Restaurant mit italienischer Küche in mittlerer Preisklasse im Raum Bochum Querenburg.
+    - Ich suche ein chinesisches Restaurant für den Mittagstisch im Raum Innenstadt.
+    - Ich möchte ganz gerne gegen 22 Uhr essen gehen.
+    - Art des Restaurants hätte ich gerne.
+    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen.
+    - Der Ort.
+    - Ich möchte chinesisch essen.
+    - Die Art des Restaurants.
+    - Ich möchte gerne Dienstag Abend ähm in Grumme griechisch essen gehen.
+    - Ich möchte gerne in der Mittagspause in der Innenstadt essen.
+    - Ich möchte gerne Ente essen .
+    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen.
+    - ich mÖchte mittags xin der innenstadt imbiss essen gehenxder preis ist recht xhoch
+    - Mediterane Küche, Umgebung Ruhr-Universität, mittlere Preiskategorie.
+    - In der Innenstadt mexikanisch, mittlere Preiskategorie.
+    - Lage des Restaurants.
+    - Nach der Küche.
+    - Nach dem Preis.
+    - Wo kann ich Ente essen?
+    - Ich möchte ganz gerne Dienstag Abend in Bochum Grumme griechisch essen gehen. Der Preis sollte dabei in der unteren Kategorie liegen.
+    - Ich möchte ganz gerne zwischen 12 und 13 Uhr morgen in der Innenstadt in Bochum chinesisch essen gehen.
+    - Ich möchte ganz gerne in der Nähe der Ruhr-Universität Bochum italienisch essen gehen. Der Preis sollte dabei in der mittleren Kategorie liegen. Hallo?
+    - Ich möchte ganz gerne in Bochum Linden Putenbrust essen gehen. Die Preiskategorie sollte im oberen Bereich liegen.
+    - Ich würde gerne heute Abend in Bochum Zentrum Ente essen.
+    - Ich würde gerne heute Abend, ähm, in Grumme griechisch essen gehen, zum Preis von sagen wir 15 Euro.
+    - Ich würde gerne gegen 13 Uhr in der Innenstadt chinesisch essen gehen, zum Preis bis 10 ne 15 Euro.
+    - Ich würde gerne heute Abend italienisch essen gehen, in Querenburg.
+    - Ich würde gerne heute Abend in Bochum koreanisch oder asiatisch essen gehen.
+    - Ich würde gerne chinesisch essen.
+    - Ich möchte gerne griechisch essen gehen, und zwar am Dienstag Abend in Grumme in der unteren Preisklasse.
+    - Ich würde gerne chinesisch essen gehen. Wo gibt es chinesisches Essen? Was gibt es für Essen in der oberen Preisskala?
+    - Ich würde gerne ein italienische Restaurant in Bochum Querenburg in der mittleren Preislage empfohlen bekommen.
+    - Ich hätte gerne im Bochumer Süden in der hohen Preisklasse ein Restaurant mit deutscher Küche, dass am Wochenende offen hat.
+    - Ja schönen guten Tag. Ich hätte gern Ente gegessen in Bochum, und zwar mittwochs so um 10 Uhr vormittags.
+    - Ich möchte gerne in Grumme in Bochum am Dienstag Abend griechisch essen gehen, aber preiswert.
+    - Ich möchte gerne in der Innenstadt um 12 Uhr in der Woche chinesisch essen gehen. In einem guten Restaurant.
+    - Ja ich hätte gerne ein italienisches Restaurant und zwar in der mittleren Preisklasse in Bochum Querenburg.
+    - Ja schönen guten Tag. Ich möchte gerne in Bochum koreanisch essen gehen, und zwar so um 21 Uhr und mittlere preisklasse. Wo könnte ich da hin?
+    - Ich möchte mittags im Zentrum chinesisch essen gehen.
+    - Ich möchte in Querenburg in der mittleren Preisklasse italienisch essen.
+    - Ich suche ein Restaurant mit chinesischer Küche, das preislich recht günstig ist in der Bochumer Innenstadt.
+    - Art der Mahlzeit. Hallo?
+    - Hm, ich würde gerne Ente essen gehen.
+    - Ähm, gerne am Dienstag in Grumme griechisch essen gehen.
+    - Ähm, ich würde gerne in der Mittagspause in der Innenstadt chinesisch essen gehen.
+    - Ähm, ein italienisches Restaurant in ähm im Unibereich in Bochum und mittlere Preiskategorie.
+    - Ich hätte gerne eine, ein mexikanisches Restaurant in der Bochumer Innenstadt.
+    - Dienstag Abend, in Grumme, griechisch.
+    - Nach dem Preis, der Küche und den Ort.
+    - Ich suche ein Restaurant in Bochum Grumme in der niedrigen Preiskategorie für dienstags Abends.
+    - Mittags, in der Innenstadt von Bochum, gehobene Ausstattung, chinesisch.
+    - Ich hätte gerne ein Restaurant in der mittleren Preisklasse, wenns, wenn möglich italienische Küche, und in der nähe der Ruhr-Universität Bochum.
+    - Ich suche ein Restaurant in Bochum Langendreer mit guter Hausmannskost, bis zu 17 Euro, und die Öffnungszeit muss auch am Sonntag Mittags sein. Ja, was denn?
+    - Ich möchte gerne Dientag Abend in Grumme griechisch essen gehen, zu einem natürlichen Preis.
+    - Ich möchte in meiner Mittagspause in der Innenstadt chinesisch essen gehen. Preis eher höher.
+    - Ich möch gerne italienisch essen gern gehen, im Raum Querenburg, Ruhr-Universität, die Preiskategorie sollte in der Mitte sein.
+    - Tja, dann frag ich mal. Ich möchte gerne chinesisch essen gehn. Hmhm.
+    - Ich möchte gerne wissen, wo ich am besten Ente essen kann.
+    - Ich möchte am Dienstag Abend in Bochum Grumme griechisch essen gehen.
+    - In der Mittagspause möchte ich chinesisch essen in der Innenstadt. Wo ist es am besten möglich?
+    - Ich möchte italienisch in Querenburg essen.
+    - Ich möchte am Samstag Abend zur mittleren Preisklasse gutbürgerlich in der Innenstadt essen.
+    - Hm, wo kann ich Ente essen?
+    - Ja ich hätte gerne ein griechisches Restaurant in Grumme.
+    - Ja ich hätte gerne ein chinesisches Restaurant in der Innenstadt.
+    - Ja ich hätte gerne ein Restaurant in Querenburg, und zwar ein italienisches.
+    - Ich suche ein indisches Restaurant in der Innenstadt.
+    - Nach Art der Küche.
+    - Ich möchte in Grumme essen gehen.
+    - Ich möchte nach dem Preis entscheiden. Und zwar möchte ich chinesisch essen gehen, in der Stadt für ungefähr 30 Euro.
+    - Ich möchte nach Preis, Küche und Ort bestimmen.
+    - Ich möchte gerne wissen, wo ich Ente essen kann.
+    - Ich möchte gerne Dienstag Abend in Grumme griechisch essen gehen, niedrige Preisklasse.
+    - Ich möchte gerne Mittags in der Innenstadt chinesisch essen gehen, gehobene Preisklasse.
+    - Ich hätte gerne ein Restaurant in der mittleren Preiskategorie, italienische Küche und im Umfeld der Ruhr-Universität Bochum.
+    - Ich möchte gern eine Ente essen.
+    - Ich möchte gerne in meiner Mittagspause in der Innenstadt chinesisch essen gehen.
+    - Ich hätte gern ein chinesisches Restaurant.
+    - Guten Tag, ich möchte gerne Ente essen, und zwar in Wuppertal.
+    - Guten Abend, ich möchte gerne am Dienstag Abend in Grumme griechisch essen gehen. Der preis sollte bis, äh, 20 Euro betragen.
+    - Guten Tag, ich möchte gerne in der Innenstadt chinesisch essen gehen, in Bochum. Die Preisklasse, äh, bis 20 Euro.
+    - Guten Tag, ich möchte gerne italienisch essen gehen, bis 15 Euro. Der Ort Querenburg.
+    - Ich möchte heute Abend in einem Gourmetrestaurant in Bochum essen gehen. Der Preis kann ab 30 Euro sein.
+    - Grumme. Griechisch essen.
+    - Mittag, obere Preisklasse, chinesisch.
+    - Mittlere Preisklasse,äh, italienisch, in Querenburg.
+    - Fisch, Abendessen, obere Preisklasse.
+    - Nach dem Ort des Restaurants. Am Dienstag Abend und griechisch.
+    - Ich möchte heute in der Mittagspause, in der Bochumer Innenstadt, ähm, chinesisch essen gehen. Und zwar nach der Preiskategorie.
+    - Ich möchte ein Restaurant nach der Art der Küche.
+    - Nach den Öffnungs, nach dem Ort.
+    - Mahlzeit.
+    - Ungefährer Ort.
+    - Ich möchte gerne wissen, wo, in welchem Restaurant ich Ente essen kann.
+    - Wo kann man am Dienstag Abend in Grumme griechisch essen gehen?
+    - Ich möchte in der Mittagspause in der Innenstadt chinesisches essen gehen, und wollte wissen zu welchem Preis.
+    - Wo kann ich abends in Werne griechisch essen gehen?
+    - Äh, ich möchte gerne Ente essen gehen.
+    - Griechische Küche, unteres Preisniveau, in Grumme, Dienstag Abend.
+    - Ich möchte gerne griechisch essen. Am Dienstag, unteres Preisniveau, abends.
+    - Ich möchte gerne zum Mittagessen, Innenstadt und chinesisch essen möchte ich gerne, gehobene Preisklasse.
+    - Ich möchte gerne ein italienisches Restaurant in Bochum Querenburg und mittlere Preisklasse.
+    - Ich suche ein Restaurant mit deutscher Küche, 15 Euro pro Person in Ehrenfeld oder Wiemelhausen.
+    - In der Mittagspause in der Innenstadt chinesisch essen.
+    - Ich möchte gerne in Bochum Mitte Ente essen gehen, am Mittwoch Abend.
+    - Ich möchte gerne am Dienstag Abend in Grumme griechisch essen gehen. Zu einem Preis von 20 Euro.
+    - Ich möchte gerne, äh, in Bochum in der Innenstadt mittags chinesisch essen gehen. Es kann teuer sein.
+    - Ich möchte gerne Samstag Abend italienisch essen gehen, in Bochum Querenburg in der mittleren Preisklasse.
+    - Ich suche ein, ein gutbürgerliches Restaurant mit guter Küche und einem breit gefächerten Angebot, dass gemütlich ist und ruhig, und eine gute Bedienung hat, und gute Öffnungszeiten.
+    - Hm, 20 Euro, den Preis.
+    - Ja. Ich möchte gerne in Weitmar essen gehen.
+    - Nein, chinesisch essen gehen.
+    - Hm, dann nicht ganz so teuer.
+    - Nein Montag.
+    - Ich möchte gerne Dienstag Abend in Weitmar essen gehen, griechisch.
+    - In Linden.
+    - Gibt es ein Restaurant in Weitmar in dem man essen gehen könnte?
+    - Ja, und zwar Ente.
+    - Ja, dann möchte ich gerne 20 Euro ausgeben, und in der Mittagspause so um 1, 13 uhr in der Innenstadt chinesisch essen gehen.
+    - Ich möchte gerne am Freitag in der Innenstadt in Bochum chinesisch essen gehen, für 10 Euro.
+    - Ja, ich will gerne in, in Weitmar dann am Dienstag griechisch essen gehen.
+    - Ähm, ja, einen anderen Preis.
+    - Ja, dann suche ich eins in Weitmar.
+    - Gehobene Preiskategorie.
+    - Dann möchte ich gerne ausweichen nach Weitmar. Ist das möglich?
+    - Dann nehme ich die mittlere Preisklasse.
+    - Warum montag? Überhaupt, wo kann ich Ente essen?
+    - Ähm, dann nennen Sie mir ein anderes Restaurant in Grumme.
+    - Dann möchte ich in der teuren Preisklasse essen gehen.
+    - Haha. Dann möchte ich in der Innenstadt chinesisch essen gehen. Mal sehen, was jetzt passiert.
+    - Hm, wie siehts denn am Dienstag in Weitmar aus?
+    - Ja, Dienstag Abend.
+    - Italienisch essen gehen.
+    - Ja, ich möchte Geflügel essen.
+    - Was möchte ich? Ich möchte gerne in der Mittagspause in der Innenstadt chinesich essen gehen. Bitte.
+    - Ja. Ich möchte abends essen gehen.
+    - Dann möchte ich gerne in Weitmar essen gehen.
+    - Nennen sie mir ein anderes Restaurant der mittleren Preisklasse in Bochum Querenburg.
+    - Chinesisch essen gehen.
 
 - intent: accept 
   example: | 
-    - Ja.   
-    - Ja möchte ich.   
-    - Yo. Ja.   
-    - Ja, hahaha. Ja   
-    - Ja bitte.   
-    - Ja.    
+    - Ja.
+    - Ja möchte ich.
+    - Yo. Ja.
+    - Ja, hahaha. Ja
+    - Ja bitte.
+    - Ja.
 
 - intent: neglect 
   example: | 
-    - Nein.   
-    - Bor ey, nö, nein.   
-    - Nein möchte ich nicht.   
-    - Nein.    
+    - Nein.
+    - Bor ey, nö, nein.
+    - Nein möchte ich nicht.
+    - Nein.
 
 - intent: accept provide 
   example: | 
-    - Ja, preislich.   
-    - Ja. Ich möchte dann in Weitmar essen gehen.   
-    - Ja, den Preis bitte.   
-    - Äh, ja. In der mittleren Preisklasse bitte.   
+    - Ja, preislich.
+    - Ja. Ich möchte dann in Weitmar essen gehen.
+    - Ja, den Preis bitte.
+    - Äh, ja. In der mittleren Preisklasse bitte.
 
 - intent: affirm 
   example: | 
-    - Ja.   
-    - Hmhm.   
-    - Richtig.   
-    - Das ist richtig.   
-    - Jawohl.   
-    - Ja das ist richtig.   
-    - Korrekt.   
-    - Ja, das ist richtig.   
-    - Ja richtig.   
-    - Ja korrekt.   
-    - Ja bitte.   
-    - Richtig, ja.   
-    - Ja. Ich hab ja Geld.   
-    - Hm? Ja.   
-    - Ja   
-    - ja.   
+    - Ja.
+    - Hmhm.
+    - Richtig.
+    - Das ist richtig.
+    - Jawohl.
+    - Ja das ist richtig.
+    - Korrekt.
+    - Ja, das ist richtig.
+    - Ja richtig.
+    - Ja korrekt.
+    - Ja bitte.
+    - Richtig, ja.
+    - Ja. Ich hab ja Geld.
+    - Hm? Ja.
+    - Ja
+    - ja.
 
 - intent: affirm provide 
   example: | 
-    - Ja, am Samstag Abend.    
-    - Nicht unbedingt, eigentlich in der mittleren.    
-    - Wau. Ja.   
-    - Hmhm. Ja von mir aus auch mittags. Ja. Ja.   
-    - Am Dienstag, ja.   
-    - Ja, ich möchte abends.   
+    - Ja, am Samstag Abend.
+    - Nicht unbedingt, eigentlich in der mittleren.
+    - Wau. Ja.
+    - Hmhm. Ja von mir aus auch mittags. Ja. Ja.
+    - Am Dienstag, ja.
+    - Ja, ich möchte abends.
 
 - intent: negate 
   example: | 
-    - Nein.   
-    - Hm, nein.   
-    - Nein, möchte ich nicht.   
-    - Ja.   
+    - Nein.
+    - Hm, nein.
+    - Nein, möchte ich nicht.
+    - Ja.
 
 - intent: 
   example: | 
     - nan 
-    - Andere Möglichkeiten.   
-    - Hallo noch jemand da.   
-    - Kann ich, hallo, zurück?   
-    - Ach leck mich doch am Arsch, zurück.   
-    - Nichts.   
-    - Ja.   
-    - Ähm, wo ist das Restaurant?   
-    - Bitte wiederholen.   
-    - Andere Möglichkeiten.    
-    - Das versteh ich jetzt nicht. Wieso gibt es da kein passendes Restaurant, wenn man Geflügel essen möchte?   
-    - Was? Versteh ich nicht.   
-    - Können sie mir ein anderes Restaurant vorschlagen?   
-    - Nix.   
+    - Andere Möglichkeiten.
+    - Hallo noch jemand da.
+    - Kann ich, hallo, zurück?
+    - Ach leck mich doch am Arsch, zurück.
+    - Nichts.
+    - Ja.
+    - Ähm, wo ist das Restaurant?
+    - Bitte wiederholen.
+    - Andere Möglichkeiten.
+    - Das versteh ich jetzt nicht. Wieso gibt es da kein passendes Restaurant, wenn man Geflügel essen möchte?
+    - Was? Versteh ich nicht.
+    - Können sie mir ein anderes Restaurant vorschlagen?
+    - Nix.
 

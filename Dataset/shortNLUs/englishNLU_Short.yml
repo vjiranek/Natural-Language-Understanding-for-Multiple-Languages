@@ -11,7 +11,6 @@ nlu:
 
 - lookup: localization
   examples: |
-    - Bochum
     - Weitmar
     - city center
     - downtown
@@ -54,7 +53,7 @@ nlu:
     - (M|m)editeran(\w*)
     - (K|k)orean(\w)*
     - (I|i)ndian(\w)
-    - (D|d)uck(\w*)
+    - Duck
     - (T|t)urkey(\w*)
     - (P|p)oultry(\w*)
     - (H|h)ome cook(\w*)
