@@ -4,10 +4,8 @@ intents:
 - provide
 - accept
 - neglect
-- acceptprovide
 - affirm
 - affirmprovide
-- negate
 - uninspiring
 
 session_config:
