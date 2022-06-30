@@ -1,6 +1,6 @@
 ﻿# Natural-Language-Understanding-for-Multiple-Languages
 
-Now you need to do the following steps, so you can use this rasa version (with xlm):
+Now you need to do the following steps, so you can use this rasa version 3.1 (I'm not ready testing 3.2, but it doesn't really matter) (with xlm):
 
 
 Get poetry: 
