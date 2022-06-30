@@ -1,11 +1,7 @@
 recipe: default.v1
-
 language: en
 
 pipeline:
-   - name: SpacyNLP
-     model: en_core_web_md
-
    - name: "WhitespaceTokenizer"
     # Flag to check whether to split intents
      "intent_tokenization_flag": True
@@ -13,6 +9,11 @@ pipeline:
      "intent_split_symbol": "_"
     # Regular expression to detect tokens
      "token_pattern": None
+   - name: LanguageModelFeaturizer
+     model_name: "xlm"
+     model_weights: "xlm-mlm-en-2048"
+     cache_dir: null
+     from_pt: True
    - name: RegexFeaturizer
    - name: EntitySynonymMapper
    - name: DIETClassifier

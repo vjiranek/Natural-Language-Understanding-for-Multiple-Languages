@@ -1,0 +1,19 @@
+recipe: default.v1
+
+language: de
+
+pipeline:
+   - name: SpacyNLP
+     model: de_core_news_md
+
+   - name: "WhitespaceTokenizer"
+    # Flag to check whether to split intents
+     "intent_tokenization_flag": True
+    # Symbol on which intent should be split
+     "intent_split_symbol": "_"
+    # Regular expression to detect tokens
+     "token_pattern": None
+   - name: RegexFeaturizer
+   - name: EntitySynonymMapper
+   - name: DIETClassifier
+     epochs: 200
