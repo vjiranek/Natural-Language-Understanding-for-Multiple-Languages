@@ -13,3 +13,8 @@ make install
 ```
 
 than you can (hopefully) run it :D
+
+To run the config base on the german dataset, you can use this command:
+```bash
+rasa test nlu --nlu data-boris/data/annotatedGermanNLU.yml --config configs/config-base-german.yml --cross-validation --runs 1 --folds 5 --out gridresults/german/config-base
+```
