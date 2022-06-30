@@ -1,0 +1,17 @@
+2022-06-30 20:56:12 INFO     rasa.model_testing  - CV evaluation (n=5)
+2022-06-30 20:56:12 INFO     rasa.model_testing  - Intent evaluation results
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - train Accuracy: 0.995 (0.002)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - train F1-score: 0.995 (0.002)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - train Precision: 0.996 (0.002)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - test Accuracy: 0.952 (0.015)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - test F1-score: 0.943 (0.016)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - test Precision: 0.940 (0.021)
+2022-06-30 20:56:12 INFO     rasa.model_testing  - Entity evaluation results
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - Entity extractor: DIETClassifier
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - train Accuracy: 0.985 (0.002)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - train F1-score: 0.977 (0.003)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - train Precision: 0.974 (0.005)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - Entity extractor: DIETClassifier
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - test Accuracy: 0.956 (0.010)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - test F1-score: 0.932 (0.022)
+2022-06-30 20:56:12 INFO     rasa.nlu.test  - test Precision: 0.942 (0.019)
