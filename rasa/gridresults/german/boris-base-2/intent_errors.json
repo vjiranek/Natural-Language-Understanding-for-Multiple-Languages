@@ -1,0 +1,218 @@
+[
+  {
+    "text": "Nicht wichtig.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9430740475654602
+    }
+  },
+  {
+    "text": "Ja, ich möchte Geflügel essen.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.3486213684082031
+    }
+  },
+  {
+    "text": "Ja. Ich möchte dann in Weitmar essen gehen.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999974966049194
+    }
+  },
+  {
+    "text": "Am Dienstag, ja.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9996286630630493
+    }
+  },
+  {
+    "text": "Ach leck mich doch am Arsch, zurück.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9938923120498657
+    }
+  },
+  {
+    "text": "Nix.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9375162124633789
+    }
+  },
+  {
+    "text": "Ja, dann suche ich eins in Weitmar.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept provide",
+      "confidence": 0.6130465865135193
+    }
+  },
+  {
+    "text": "Hmhm.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "accept provide",
+      "confidence": 0.5134037733078003
+    }
+  },
+  {
+    "text": "Jawohl.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.5313834547996521
+    }
+  },
+  {
+    "text": "Ja, den Preis bitte.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.7420344352722168
+    }
+  },
+  {
+    "text": "Wau. Ja.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.7357491254806519
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.8265992999076843
+    }
+  },
+  {
+    "text": "Andere Möglichkeiten.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "Nichts.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.8640018701553345
+    }
+  },
+  {
+    "text": "Nicht unbedingt, eigentlich in der mittleren.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9966345429420471
+    }
+  },
+  {
+    "text": "Ähm, wo ist das Restaurant?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999731779098511
+    }
+  },
+  {
+    "text": "Bitte wiederholen.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9914764761924744
+    }
+  },
+  {
+    "text": "Das versteh ich jetzt nicht. Wieso gibt es da kein passendes Restaurant, wenn man Geflügel essen möchte?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999983310699463
+    }
+  },
+  {
+    "text": "Kehr, leck mich doch am Arsch. Abendessen.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.7979568243026733
+    }
+  },
+  {
+    "text": "Jeden Tag.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.39843547344207764
+    }
+  },
+  {
+    "text": "Täglich.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9621909856796265
+    }
+  },
+  {
+    "text": "Äh, ja. In der mittleren Preisklasse bitte.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9973127245903015
+    }
+  },
+  {
+    "text": "Hallo noch jemand da.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.7629778981208801
+    }
+  },
+  {
+    "text": "Ja.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9981379508972168
+    }
+  },
+  {
+    "text": "Ja, am Samstag Abend.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9993116855621338
+    }
+  },
+  {
+    "text": "Hmhm. Ja von mir aus auch mittags. Ja. Ja.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.6185068488121033
+    }
+  },
+  {
+    "text": "Können sie mir ein anderes Restaurant vorschlagen?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999982118606567
+    }
+  }
+]
