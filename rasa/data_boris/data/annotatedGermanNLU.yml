@@ -28,13 +28,28 @@ nlu:
     - Ehrenfeld
     - Ruhr-Universität
 
-- regex: time
+- regex: klock
   examples: |
-    - [0-9]*\s*(U|u)hr
+    - [0-9]+\s*(U|u)hr
 
-- regex: pricevalue
+
+- regex: amount-of-money
   examples: |
-    - [0-9]* (E|e)uro
+    - [0-9]*\s*(E|e)uro.
+    - [0-9]*\s*(D-(M|m)|M)ark
+    - [0-9]+
+
+- lookup: date
+  examples: |
+    - (M|m)ontag
+    - (D|d)ientag
+    - (M|m)ittwoch
+    - (D|d)onnerstag
+    - (F|f)reitag
+    - (S|s)amstag
+    - (S|s)onntag
+    - (H|h)eute
+    - (M|m)orgen
 
 - lookup: foodtype
   examples: |
@@ -75,7 +90,6 @@ nlu:
     - Die [griechische](foodtype) Küche würd mich interessieren.
     - Hm, [italienische](foodtype) Küche.
     - Die [italienische](foodtype) Küche.
-    - [Ja](logical), [griechisch](foodtype) wäre ganz prima.
     - Die [griechische](foodtype).
     - Hm, ich bevorzuge die [chinesische](foodtype) Küche.
     - [Italienische](foodtype) Küche
@@ -97,8 +111,6 @@ nlu:
     - [Keine Präferenz](foodtype). Ich möchte [Ente](foodtype) essen gehen.
     - Ich möchte [Ente](foodtype) bzw [Geflügel](foodtype) essen gehen.
     - [Griechische](foodtype).
-    - [Ja](logical), [griechisch](foodtype).
-    - [Ja](logical), [italienisch](foodtype).
     - Ich hätte gern, äh, Napoli.
     - [Italienische](foodtype).
     - [Argentinisch](foodtype).
@@ -106,7 +118,7 @@ nlu:
     - [Griechisch](foodtype).
     - [Chinesisch](foodtype) essen.
     - Ehm, [chinesische](foodtype) Küche.
-    - Hm, keine Präferenz. [15 Euro](pricevalue) pro Person im [Ehrenfeld](location).
+    - Hm, keine Präferenz. [15 Euro](pricevalue) pro Person im [Ehrenfeld](foodtype).
     - Haha, [chinesisch](foodtype).
     - [Deutsche](foodtype) Küche.
     - Das [Mittagessen](time).
@@ -123,8 +135,8 @@ nlu:
     - Kehr, leck mich doch am Arsch. [Abendessen](time).
     - Ähm, [Abendessen](time).
     - [Abends](time).
-    - [22 Uhr](time).
-    - [16 Uhr](time).
+    - [22 Uhr](klock).
+    - [16 Uhr](klock).
     - Ich suche eine [Restaurant](field) in dem man [mittags](time) [Ente](foodtype) essen gehen kann.
     - Für das [Mittagessen](time) wäre prima.
     - Gegen [Mittag](time) wäre schön.
@@ -133,7 +145,7 @@ nlu:
     - Fürs [Mittagessen](time).
     - Für den [Abend](time).
     - [Mittagessen](time) und der [Preis](field) sollte in der [oberen Kategorie](price) liegen.
-    - [21 Uhr](time).
+    - [21 Uhr](klock).
     - [Abend](time).
     - [Abendessen](time). [Abendessen](time).
     - [Abendessen](time).
@@ -149,7 +161,6 @@ nlu:
     - Ich möchte in [Weitmar](location) essen gehen.
     - In [Weitmar](location).
     - Im [Uni-Center](location) in [Querenburg](location).
-    - [Ja](logical) im Stadtteil [Querenburg](location), an der [Querenburger Strasse](location).
     - [Innenstadt](location).
     - [Grumme](location).
     - [Querenburg](location).
@@ -230,9 +241,9 @@ nlu:
     - Die [Art der Küche](field): [Koreanisch](foodtype).
     - Ungefährer [Ort](field): [Weitmar](location).
     - Bitte [italienische](foodtype) Küche, in [Bochum](location) [Querenburg](location), [mittlere Preisklasse](price).
-    - [Mittwoch](date), [13 Uhr](time), [Innenstadt](location) in [Bochum](location), [chinesisch](foodtype) essen gehen und [20 Euro](pricevalue) das Essen.
-    - Ich möchte gerne in [Bochum](location) in der [Innenstadt](location) um [14 Uhr](time) [chinesisch](foodtype) essen gehen.
-    - Am [Samstag](date). Am [Samstag](date) um [16 Uhr](time) [chinesisch](foodtype) essen in [Bochum](location) in der [Innenstadt](location).
+    - [Mittwoch](date), [13 Uhr](klock), [Innenstadt](location) in [Bochum](location), [chinesisch](foodtype) essen gehen und [20 Euro](pricevalue) das Essen.
+    - Ich möchte gerne in [Bochum](location) in der [Innenstadt](location) um [14 Uhr](klock) [chinesisch](foodtype) essen gehen.
+    - Am [Samstag](date). Am [Samstag](date) um [16 Uhr](klock) [chinesisch](foodtype) essen in [Bochum](location) in der [Innenstadt](location).
     - [Ort](field), den [Ort](field) erweitern bitte.
     - Den ungefähren [Ort](field).
     - Die [Zeit](field) ändern.
@@ -244,7 +255,6 @@ nlu:
     - Den [Preis](field) würde ich gerne ändern.
     - [Mittagsause](time), [Innenstadt](location), [chinesisch](foodtype).
     - In [Bochum](location) [Weitmar](location).
-    - [Ja](logical) dann kann ich auch gerne ein [Restaurant](field) nehmen, dass etwas [billiger](price) ist.
     - Ich möchte gerne den [Preis](field) ändern.
     - Ich möchte [Dienstag](date) [Abend](time) in [Grumme](location) [preisgünstig](price) essen gehen.
     - Ich ändere den [Preis](field) auf [20 Euro](pricevalue).
@@ -349,7 +359,6 @@ nlu:
     - Hm, nehme die [mittlere](price).
     - Hm, [20 Euro](pricevalue).
     - Hm, es kann ruhig [etwas teurer](price) sein. Hm, [15 Euro](pricevalue).
-    - [Ja](logical), es können auch ruhig [25 Euro](pricevalue) sein.
     - Hm, [keine Präferenz](price).
     - Hm, so in der [mittleren Klasse](price).
     - Ca [15 Euro](pricevalue).
@@ -417,7 +426,6 @@ nlu:
     - [Täglich](date).
     - Hm, am [Montag](date).
     - Am [Donnerstag](date).
-    - [Ja](logical) ich möchte gerne [Ente](foodtype) essen, und zwar [Montag](date).
     - Ich möchte gerne [Mittag](time) essen, in der [Innenstadt](location). [Montags](date).
     - Hm, [Sonntag](date).
     - Der Tag ist mir [egal](date), ich wollte gerne zum [Mittagessen](time) gehen.
@@ -447,7 +455,6 @@ nlu:
     - Ich möchte gerne in der [Innenstadt](location) [chinesisch](foodtype) essen gehen, zur [Mittagspause](time).
     - Guten Tag ich würde gerne [italienisch](foodtype) essen gehen, im Raum [Querenburg](location), [Querenburg](location) und der [Preis](field) soll in [mittlerer Preisklasse](price) sein.
     - Ich würde gerne [asiatisch](foodtype) essen gehen. Im Umkreis [Altenbochum](location) [Stadtmitte](location), und der [Preis](field) könnte so in der [mittleren Preisklasse](price) liegen, und am besten so [Samstag](date) [Abend](time).
-    - [Ja](logical) ich möchte gerne [Ente](foodtype) essen gehen.
     - Ich möchte heute [Abend](time) in [Grumme](location) [griechisch](foodtype) essen gehen, relativ [günstig](price).
     - Ich möchte in der [Mittagspause](time) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen, relativ [teuer](price).
     - Ich möchte gerne [italienisch](foodtype) essen gehen in [Querenburg](location) in der [mittleren Preisklasse](price).
@@ -455,10 +462,10 @@ nlu:
     - Hm, [Art des Restaurants](field).
     - Wo kann ich [Ente](foodtype) essen gehen?
     - Ich möchte gerne am [Dienstag](date) [Abend](time) in [Bochum](location) [Grumme](location) [griechisch](foodtype) essen gehen in der [unteren Preisklasse](price).
-    - Ich möchte [mittags](time) [ab 12 Uhr](time) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen in der [oberen Preisklasse](price).
+    - Ich möchte [mittags](time) [ab 12 Uhr](klock) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen in der [oberen Preisklasse](price).
     - Ähm, ich suche ein Restaurant mit [italienischer](foodtype) Küche in [mittlerer Preisklasse](price) im Raum [Bochum](location) [Querenburg](location).
     - Ich suche ein [chinesisches](foodtype) Restaurant für den [Mittagstisch](time) im Raum [Innenstadt](location).
-    - Ich möchte ganz gerne gegen [22 Uhr](time) essen gehen.
+    - Ich möchte ganz gerne gegen [22 Uhr](klock) essen gehen.
     - [Art des Restaurants](field) hätte ich gerne.
     - Ich möchte gerne [Dienstag](date) [Abend](time) in [Grumme](location) [griechisch](foodtype) essen.
     - Der [Ort](field).
@@ -476,12 +483,12 @@ nlu:
     - Nach dem [Preis](field).
     - Wo kann ich [Ente](foodtype) essen?
     - Ich möchte ganz gerne [Dienstag](date) [Abend](time) in [Bochum](location) [Grumme](location) [griechisch](foodtype) essen gehen. Der [Preis](field) sollte dabei in der [unteren Kategorie](price) liegen.
-    - Ich möchte ganz gerne [zwischen 12 und 13 Uhr](time) [morgen](date) in der [Innenstadt](location) in [Bochum](location) [chinesisch](foodtype) essen gehen.
+    - Ich möchte ganz gerne [zwischen 12 und 13 Uhr](klock) [morgen](date) in der [Innenstadt](location) in [Bochum](location) [chinesisch](foodtype) essen gehen.
     - Ich möchte ganz gerne in der Nähe der [Ruhr-Universität](location) [Bochum](location) [italienisch](foodtype) essen gehen. Der [Preis](field) sollte dabei in der [mittleren Kategorie](price) liegen. Hallo?
     - Ich möchte ganz gerne in [Bochum](location) [Linden](location) [Putenbrust](foodtype) essen gehen. Die [Preiskategorie](field) sollte im [oberen Bereich](price) liegen.
     - Ich würde gerne heute [Abend](time) in [Bochum](location) [Zentrum](location) [Ente](foodtype) essen.
     - Ich würde gerne heute [Abend](time), ähm, in [Grumme](location) [griechisch](foodtype) essen gehen, zum [Preis](field) von sagen wir [15 Euro](pricevalue).
-    - Ich würde gerne gegen [13 Uhr](time) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen, zum [Preis](field) bis [10 ne 15 Euro](pricevalue).
+    - Ich würde gerne gegen [13 Uhr](klock) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen, zum [Preis](field) bis [10 ne 15 Euro](pricevalue).
     - Ich würde gerne heute [Abend](time) [italienisch](foodtype) essen gehen, in [Querenburg](location).
     - Ich würde gerne heute [Abend](time) in [Bochum](location) [koreanisch](foodtype) oder [asiatisch](foodtype) essen gehen.
     - Ich würde gerne [chinesisch](foodtype) essen.
@@ -489,11 +496,11 @@ nlu:
     - Ich würde gerne [chinesisch](foodtype) essen gehen. [Wo](field) gibt es [chinesisches](foodtype) Essen? [Was](field) gibt es für Essen in der [oberen Preisskala](price)?
     - Ich würde gerne ein [italienische](foodtype) Restaurant in [Bochum](location) [Querenburg](location) in der [mittleren Preislage](price) empfohlen bekommen.
     - Ich hätte gerne im [Bochumer Süden](location) in der [hohen Preisklasse](price) ein Restaurant mit [deutscher](foodtype) Küche, dass am [Wochenende](date) offen hat.
-    - [Ja](logical) schönen guten Tag. Ich hätte gern [Ente](foodtype) gegessen in [Bochum](location), und zwar [mittwochs](date) so um [10 Uhr](time) [vormittags](time).
+    - [Ja](logical) schönen guten Tag. Ich hätte gern [Ente](foodtype) gegessen in [Bochum](location), und zwar [mittwochs](date) so um [10 Uhr](klock) [vormittags](time).
     - Ich möchte gerne in [Grumme](location) in [Bochum](location) am [Dienstag](date) [Abend](time) [griechisch](foodtype) essen gehen, aber [preiswert](price).
-    - Ich möchte gerne in der [Innenstadt](location) um [12 Uhr](time) in der [Woche](date) [chinesisch](foodtype) essen gehen. In einem [guten Restaurant](price).
+    - Ich möchte gerne in der [Innenstadt](location) um [12 Uhr](klock) in der [Woche](date) [chinesisch](foodtype) essen gehen. In einem [guten Restaurant](price).
     - [Ja](logical) ich hätte gerne ein [italienisches](foodtype) Restaurant und zwar in der [mittleren Preisklasse](price) in [Bochum](location) [Querenburg](location).
-    - [Ja](logical) schönen guten Tag. Ich möchte gerne in [Bochum](location) [koreanisch](foodtype) essen gehen, und zwar so um [21 Uhr](time) und [mittlere preisklasse](price). [Wo](field) könnte ich da hin?
+    - [Ja](logical) schönen guten Tag. Ich möchte gerne in [Bochum](location) [koreanisch](foodtype) essen gehen, und zwar so um [21 Uhr](klock) und [mittlere preisklasse](price). [Wo](field) könnte ich da hin?
     - Ich möchte [mittags](time) im [Zentrum](location) [chinesisch](foodtype) essen gehen.
     - Ich möchte in [Querenburg](location) in der [mittleren Preisklasse](price) [italienisch](foodtype) essen.
     - Ich suche ein Restaurant mit [chinesischer](foodtype) Küche, das [preislich](field) recht [günstig](price) ist in der [Bochumer Innenstadt](location).
@@ -566,19 +573,13 @@ nlu:
     - Ich möchte gerne [Samstag](date) [Abend](time) [italienisch](foodtype) essen gehen, in [Bochum](location) [Querenburg](location) in der [mittleren Preisklasse](price).
     - Ich suche ein, ein [gutbürgerliches](foodtype) Restaurant mit guter Küche und einem breit gefächerten Angebot, dass gemütlich ist und ruhig, und eine gute Bedienung hat, und gute [Öffnungszeiten](field).
     - Hm, [20 Euro](pricevalue), den [Preis](field).
-    - [Ja](logical). Ich möchte gerne in [Weitmar](location) essen gehen.
     - [Nein](logical), [chinesisch](foodtype) essen gehen.
     - Hm, dann [nicht ganz so teuer](price).
     - [Nein](logical) [Montag](date).
     - Ich möchte gerne [Dienstag](date) [Abend](time) in [Weitmar](location) essen gehen, [griechisch](foodtype).
     - In [Linden](location).
-    - Gibt es ein [Restaurant](field) in [Weitmar](location) in dem man essen gehen könnte?
-    - [Ja](logical), und zwar [Ente](foodtype).
-    - [Ja](logical), dann möchte ich gerne [20 Euro](pricevalue) ausgeben, und in der [Mittagspause](time) so um [1, 13 uhr](time) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen.
-    - Ich möchte gerne am [Freitag](date) in der [Innenstadt](location) in [Bochum](location) [chinesisch](foodtype) essen gehen, für [10 Euro](pricevalue).
-    - [Ja](logical), ich will gerne in, in [Weitmar](location) dann am [Dienstag](date) [griechisch](foodtype) essen gehen.
+    - Gibt es ein [Restaurant](field) in [Weitmar](location) in dem man essen gehen könnte?    - Ich möchte gerne am [Freitag](date) in der [Innenstadt](location) in [Bochum](location) [chinesisch](foodtype) essen gehen, für [10 Euro](pricevalue).
     - Ähm, [ja](logical), einen anderen [Preis](field).
-    - [Ja](logical), dann suche ich eins in [Weitmar](location).
     - [Gehobene Preiskategorie](price).
     - Dann möchte ich gerne ausweichen nach [Weitmar](location). Ist das möglich?
     - Dann nehme ich die [mittlere Preisklasse](price).
@@ -587,11 +588,8 @@ nlu:
     - Dann möchte ich in der [teuren Preisklasse](price) essen gehen.
     - Haha. Dann möchte ich in der [Innenstadt](location) [chinesisch](foodtype) essen gehen. Mal sehen, was jetzt passiert.
     - Hm, wie siehts denn am [Dienstag](date) in [Weitmar](location) aus?
-    - [Ja](logical), [Dienstag](date) [Abend](time).
     - [Italienisch](foodtype) essen gehen.
-    - [Ja](logical), ich möchte [Geflügel](foodtype) essen.
     - Was möchte ich? Ich möchte gerne in der [Mittagspause](time) in der [Innenstadt](location) [chinesich](foodtype) essen gehen. Bitte.
-    - [Ja](logical). Ich möchte [abends](time) essen gehen.
     - Dann möchte ich gerne in [Weitmar](location) essen gehen.
     - Nennen sie mir ein anderes Restaurant der [mittleren Preisklasse](price) in [Bochum](location) [Querenburg](location).
     - [Chinesisch](foodtype) essen gehen.
@@ -632,13 +630,29 @@ nlu:
     - Hmhm. [Ja](logical) von mir aus auch [mittags](time). [Ja](logical). [Ja](logical).
     - Am [Dienstag](date), [ja](logical).
     - [Ja](logical), ich möchte [abends](time).
+    - [Ja](logical). Ich möchte [abends](time) essen gehen.
+    - [Ja](logical), und zwar [Ente](foodtype).
+    - [Ja](logical), dann möchte ich gerne [20 Euro](pricevalue) ausgeben, und in der [Mittagspause](time) so um [1, 13 uhr](klock) in der [Innenstadt](location) [chinesisch](foodtype) essen gehen.
+    - [Ja](logical), ich will gerne in, in [Weitmar](location) dann am [Dienstag](date) [griechisch](foodtype) essen gehen.
+    - [Ja](logical), dann suche ich eins in [Weitmar](location).
+    - [Ja](logical), [Dienstag](date) [Abend](time).
+    - [Ja](logical), ich möchte [Geflügel](foodtype) essen.
+    - [Ja](logical), [griechisch](foodtype) wäre ganz prima.
+    - [Ja](logical), [griechisch](foodtype).
+    - [Ja](logical), [italienisch](foodtype).
+    - [Ja](logical) im Stadtteil [Querenburg](location), an der [Querenburger Strasse](location).
+    - [Ja](logical) dann kann ich auch gerne ein [Restaurant](field) nehmen, dass etwas [billiger](price) ist.
+    - [Ja](logical), es können auch ruhig [25 Euro](pricevalue) sein.
+    - [Ja](logical) ich möchte gerne [Ente](foodtype) essen, und zwar [Montag](date).
+    - [Ja](logical) ich möchte gerne [Ente](foodtype) essen gehen.
+    - [Ja](logical). Ich möchte gerne in [Weitmar](location) essen gehen.
 
 - intent: negate
   examples: |
     - [Nein](logical).
     - Hm, [nein](logical).
     - [Nein](logical), möchte ich nicht.
-    - Bor ey, nö, [nein](logical).
+    - Bor ey, [nö](logical), [nein](logical).
     - [Nein](logical) möchte ich nicht.
 
 - intent: uninspiring
@@ -654,5 +668,5 @@ nlu:
     - Andere Möglichkeiten.
     - Das versteh ich jetzt nicht. Wieso gibt es da kein passendes Restaurant, wenn man [Geflügel](foodtype) essen möchte?
     - Was? Versteh ich nicht.
-    - Können sie mir ein anderes Restaurant vorschlagen?
+    - Können sie mir ein anderes [Restaurant](field) vorschlagen?
     - Nix.
