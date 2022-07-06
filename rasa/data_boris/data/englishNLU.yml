@@ -36,15 +36,30 @@ nlu:
     - Langendreer
     - center
 
-- regex: pricevalue
+
+- regex: amount-of-money
   examples: |
-    - [0-9]+ [Ee]uro.
-    - [0-9]+.*(M|m)ark.
+    - [0-9]*\s*(E|e)uro.
+    - [0-9]*\s*(D-(M|m)|M)ark
+    - [0-9]+
 
 - regex: klock
   examples: |
-    - [0-9]+.*pm.
-    - [0-9]+.*p\.m\.
+    - [0-9]+\s*(a|p)m
+    - [0-9]+\s*(a|p)\.m\.
+    - [0-9]+\s*(a|p)\.m
+
+- lookup: date
+  examples: |
+    - (M|m)onday
+    - (T|t)uesday
+    - (W|w)ednesday
+    - (T|t)hursday
+    - (F|f)riday
+    - (S|s)aturday
+    - (S|s)unday
+    - (T|t)oday
+    - (T|t)omorrow
 
 - lookup: foodtype
   examples: |
@@ -120,7 +135,7 @@ nlu:
     - [Greek](foodtype).
     - eat [chinese](foodtype).
     - Um, [chinese](foodtype) food.
-    - Hm, no preference. [15 Euros](pricevalue) per person in [Ehrenfeld](localization).
+    - Hm, no preference. [15 Euros](amount-of-money) per person in [Ehrenfeld](localization).
     - Haha, [chinese](foodtype).
     - [German](foodtype) cuisine.
     - [Lunch](time).
@@ -200,10 +215,10 @@ nlu:
     - I want to [change](action) the [location](field).
     - I want to [change](action) the [price](field).
     - Then I would like to eat out in [Weitmar](localization).
-    - The price to [30 euros](pricevalue).
-    - The price to [50 euros](pricevalue).
+    - The price to [30 euros](amount-of-money).
+    - The price to [50 euros](amount-of-money).
     - The place: [Weitmar](localization).
-    - [Increase](action) price [20 euros](pricevalue) to [50](pricevalue).
+    - [Increase](action) price [20 euros](amount-of-money) to [50](amount-of-money).
     - [French](foodtype) cuisine, any [location](field), any [price](field).
     - [Time of day](field).
     - The [approximate location](field).
@@ -244,9 +259,9 @@ nlu:
     - The type of cuisine: [Korean](foodtype).
     - Approximate location: [Weitmar](localization).
     - Please [Italian](foodtype) cuisine, in Bochum [Querenburg](localization), [medium price range](price).
-    - [Wednesday](date), [1 p.m.](klock), [downtown](localization) Bochum, go out to eat [Chinese](foodtype) and [20 euros](pricevalue) meal.
-    - I would like to go to [downtown](localization) Bochum for [Chinese](foodtype) [dinner](time) at [2 p.m.](klock) .
-    - On [Saturday](date). Eating [Chinese](foodtype) on [Saturday](date) at [4 p.m.](klock) in [downtown](localization) Bochum.
+    - [Wednesday](date), [1 p.m](klock)., [downtown](localization) Bochum, go out to eat [Chinese](foodtype) and [20 euros](amount-of-money) meal.
+    - I would like to go to [downtown](localization) Bochum for [Chinese](foodtype) [dinner](time) at [2 p.m](klock)..
+    - On [Saturday](date). Eating [Chinese](foodtype) on [Saturday](date) at [4 p.m](klock). in [downtown](localization) Bochum.
     - Place, please [expand](action) the place.
     - The approximate [location](field).
     - [Change](action) the [time](field).
@@ -254,22 +269,22 @@ nlu:
     - [Location](field) of the Restaurant
     - [Price of the meal](field).
     - A [Greek](foodtype) restaurant in [Weitmar](localization).
-    - Hmm, for [20](pricevalue).
+    - Hmm, for [20](amount-of-money).
     - I would like to [change](action) the [price](field).
     - [Lunch](time) break, [city center](localization), [Chinese](foodtype).
     - In Bochum [Weitmar](localization).
     - [Yes](logical), then I can also choose a restaurant that is a bit [cheaper](price).
     - I want to [change](action) the [price](field).
     - I would like to go to [Grumme](localization) for a [cheap](price) meal on [Tuesday](date) [evening](time).
-    - I am [changing](action) the price to [20 euros](pricevalue).
+    - I am [changing](action) the price to [20 euros](amount-of-money).
     - The [place](field) and the [cuisine](field).
     - I would like to eat out in [Weitmar](localization).
     - The [price](field). I wasn't even asked, haha.
     - [Lunch](time), eat [Chinese](foodtype) in the [city center](localization). On [Monday](date).
     - I'd like to eat [Chinese](foodtype) in Bochum.
-    - I would like to eat [cheaply](price), up to [10 euros](pricevalue).
-    - [Grumme](localization), [Greek](foodtype), [10 euros](pricevalue). Hm?
-    - Price: [20 euros](pricevalue).
+    - I would like to eat [cheaply](price), up to [10 euros](amount-of-money).
+    - [Grumme](localization), [Greek](foodtype), [10 euros](amount-of-money). Hm?
+    - Price: [20 euros](amount-of-money).
     - Location: [Weitmar](localization).
     - [Sicilian](foodtype). Cuisine.
     - Cuisine: [French](foodtype).
@@ -290,114 +305,114 @@ nlu:
     - I would like to have a [Greek](foodtype) meal in Bochum [Weitmar](localization). It can be [cheap](price).
     - I would like to go [downtown](localization) for [Chinese](foodtype) food, in the [middle price range](price).
     - So then I would like to go out to [dinner](time) on [Saturday](date) [night](time), with a [home-style kitchen](foodtype) that is cozy and quiet.
-    - I would like to go to an [Italian](foodtype) restaurant on [Saturday](date) [night](time), at a cost of around [30 euros](pricevalue).
-    - I would like to go to an [Italian](foodtype) restaurant on [Saturday](date) [night](time), for a price of around [20 euros](pricevalue).
-    - I would like to go to an [Italian](foodtype) restaurant in [Bochum](localization) on [Wednesday](date) [evenings](time). At a price of [10 euros](pricevalue).
-    - [30 euros](pricevalue).
-    - [40 euros](pricevalue).
-    - [20 euros](pricevalue).
-    - [10 euros](pricevalue).
-    - [15 euros](pricevalue).
-    - [25 euros](pricevalue).
+    - I would like to go to an [Italian](foodtype) restaurant on [Saturday](date) [night](time), at a cost of around [30 euros](amount-of-money).
+    - I would like to go to an [Italian](foodtype) restaurant on [Saturday](date) [night](time), for a price of around [20 euros](amount-of-money).
+    - I would like to go to an [Italian](foodtype) restaurant in [Bochum](localization) on [Wednesday](date) [evenings](time). At a price of [10 euros](amount-of-money).
+    - [30 euros](amount-of-money).
+    - [40 euros](amount-of-money).
+    - [20 euros](amount-of-money).
+    - [10 euros](amount-of-money).
+    - [15 euros](amount-of-money).
+    - [25 euros](amount-of-money).
     - I want to [choose](action) the [middle price range](price).
-    - I would like to eat out in the [middle price range](price) for say [15 euros](pricevalue).
+    - I would like to eat out in the [middle price range](price) for say [15 euros](amount-of-money).
     - I want a [medium price](price).
     - [Middle price range](price).
-    - About [20 euros](pricevalue).
+    - About [20 euros](amount-of-money).
     - It may already be in the [high price category](price).
     - Any
-    - [50 euros](pricevalue).
+    - [50 euros](amount-of-money).
     - [Upper price range](price).
-    - Hm, about [25 euros](pricevalue).
-    - [25 euros](pricevalue).
-    - [25 euros](pricevalue) per person.
-    - Around [20](pricevalue) to [25 euros](pricevalue).
+    - Hm, about [25 euros](amount-of-money).
+    - [25 euros](amount-of-money).
+    - [25 euros](amount-of-money) per person.
+    - Around [20](amount-of-money) to [25 euros](amount-of-money).
     - [Not so much](price).
     - [Lower category](price).
-    - [20](pricevalue).
-    - Break. [20 Euros](pricevalue).
+    - [20](amount-of-money).
+    - Break. [20 Euros](amount-of-money).
     - [Upper](price) .
     - [Upper](price).
     - [Middle](price).
     - [Lower](price).
     - [Medium price range](price), [medium](price).
-    - [70 euros](pricevalue).
-    - Um, [15 to 20 euros](pricevalue).
-    - Um, about [15 euros](pricevalue).
-    - [15 D-Mark](pricevalue).
-    - [15](pricevalue).
-    - Um, [10 euros](pricevalue).
+    - [70 euros](amount-of-money).
+    - Um, [15 to 20 euros](amount-of-money).
+    - Um, about [15 euros](amount-of-money).
+    - [15 D-Mark](amount-of-money).
+    - [15](amount-of-money).
+    - Um, [10 euros](amount-of-money).
     - [10 Mark](price).
     - [40 Mark](price).
-    - About [30 euros](pricevalue).
-    - [50](pricevalue).
-    - [60](pricevalue).
-    - [30](pricevalue).
-    - [45 euros](pricevalue).
-    - [80](pricevalue).
-    - [90](pricevalue).
+    - About [30 euros](amount-of-money).
+    - [50](amount-of-money).
+    - [60](amount-of-money).
+    - [30](amount-of-money).
+    - [45 euros](amount-of-money).
+    - [80](amount-of-money).
+    - [90](amount-of-money).
     - [Lower price range](price) would be good.
     - [High price range](price).
     - [Medium price level](price).
     - [Upmarket price range](price).
-    - [80 euros](pricevalue).
+    - [80 euros](amount-of-money).
     - [A lot](price).
     - Hm, [lower price range](price).
     - I would like the [lower price range](price). [Lower price range](price).
     - [Upper price range](price) please.
-    - [10 euros](pricevalue) maximum.
-    - [5 euros](pricevalue).
-    - Still [5 euros](pricevalue).
-    - [8 euros](pricevalue).
-    - I would like to spend about [50 euros](pricevalue) per person.
-    - [150 euros](pricevalue).
-    - Oh god. [50 euros](pricevalue).
-    - About [20 euros](pricevalue).
+    - [10 euros](amount-of-money) maximum.
+    - [5 euros](amount-of-money).
+    - Still [5 euros](amount-of-money).
+    - [8 euros](amount-of-money).
+    - I would like to spend about [50 euros](amount-of-money) per person.
+    - [150 euros](amount-of-money).
+    - Oh god. [50 euros](amount-of-money).
+    - About [20 euros](amount-of-money).
     - Not important.
     - [Upper price range](price).
     - [Middle price range](price).
-    - Hmm, [30 euros](pricevalue).
+    - Hmm, [30 euros](amount-of-money).
     - Hmm, [upper price range](price).
-    - [15 to 20 euros](pricevalue).
-    - Hmm, between [10 and 15 euros](pricevalue).
+    - [15 to 20 euros](amount-of-money).
+    - Hmm, between [10 and 15 euros](amount-of-money).
     - Hmm, take the [middle](price) one.
-    - Hm, [20 euros](pricevalue).
-    - Hm, it can be a bit more [expensive](price). Hmm, [15 euros](pricevalue).
-    - [Yes](logical), it can also be [25 euros](pricevalue).
+    - Hm, [20 euros](amount-of-money).
+    - Hm, it can be a bit more [expensive](price). Hmm, [15 euros](amount-of-money).
+    - [Yes](logical), it can also be [25 euros](amount-of-money).
     - Hm, no preference.
     - Hm, so in the [middle class](price).
-    - About [15 euros](pricevalue).
-    - Still [15 euros](pricevalue).
-    - Haha, [15](pricevalue).
-    - I want to spend about [15 euros](pricevalue).
+    - About [15 euros](amount-of-money).
+    - Still [15 euros](amount-of-money).
+    - Haha, [15](amount-of-money).
+    - I want to spend about [15 euros](amount-of-money).
     - I don't care, I want to go eat [duck](foodtype).
-    - Ey, [15 euros](pricevalue).
+    - Ey, [15 euros](amount-of-money).
     - I want to [change](action) the above.
     - The [lower](price) one.
     - The [lower](price) ones.
-    - Maximum per person [12 euros](pricevalue).
-    - Maximum [12 euros](pricevalue) per person.
-    - [12 euros](pricevalue) per person.
-    - [12 euros](pricevalue).
-    - [100 euros](pricevalue).
+    - Maximum per person [12 euros](amount-of-money).
+    - Maximum [12 euros](amount-of-money) per person.
+    - [12 euros](amount-of-money) per person.
+    - [12 euros](amount-of-money).
+    - [100 euros](amount-of-money).
     - [Upper category](price).
     - [Upper price category](price).
     - [Upper price category](price).
     - [Medium](price).
     - [Medium price](price).
     - [Upper](price).
-    - Hm, per person [30 euros](pricevalue).
-    - Upper price range, [30 euros](pricevalue).
-    - Hm, [10 euros](pricevalue).
+    - Hm, per person [30 euros](amount-of-money).
+    - Upper price range, [30 euros](amount-of-money).
+    - Hm, [10 euros](amount-of-money).
     - [More](action).
     - [Upper class](price).
-    - [3 0](pricevalue).
+    - [3 0](amount-of-money).
     - [Upscale dining class](price).
     - [higher class](price).
-    - [2 0](pricevalue).
-    - I can't anymore, haha. [15](pricevalue).
-    - About [10 euros](pricevalue).
-    - Hm, [30 euros](pricevalue).
+    - [2 0](amount-of-money).
+    - I can't anymore, haha. [15](amount-of-money).
+    - About [10 euros](amount-of-money).
+    - Hm, [30 euros](amount-of-money).
     - [Wednesday](date).
     - [Monday](date).
     - On [Tuesday](date).
@@ -490,12 +505,12 @@ nlu:
     - After the [price](field).
     - Where can I eat [duck](foodtype)?
     - I would very much like to eat [greek](foodtype) in Bochum [Grumme](localization) on [Tuesday](date) [evening](time). The price should be in the [low category](price).
-    - I would like to have a [Chinese](foodtype) meal in the [city center](localization) of Bochum between [12 and 1 p.m.](klock) [tomorrow](date).
+    - I would like to have a [Chinese](foodtype) meal in the [city center](localization) of Bochum between [12 and 1 p.m](klock). [tomorrow](date).
     - I would like to eat [italian](foodtype) near the [Ruhr-University](localization) Bochum. The price range schon be [medium](price). Hello?
     - I would like to eat [turkey](foodtype) breast in Bochum [Linden](localization). The price category should be in the [upper range](price).
     - I'd like to eat [duck](foodtype) [tonight](time) in the [city center](localization) of Bochum.
-    - I would like to eat [greek](foodtype), um, [tonight](date) at a price of [15 Euros](pricevalue).
-    - I would like to eat [chinese] in the [city center](localization) at [1 pm](klock) at a price of [10](pricevalue) no [15 euros](pricevalue).
+    - I would like to eat [greek](foodtype), um, [tonight](date) at a price of [15 Euros](amount-of-money).
+    - I would like to eat [chinese] in the [city center](localization) at [1 pm](klock) at a price of [10](amount-of-money) no [15 euros](amount-of-money).
     - I would like to eat [italian](foodtype) [tonight](time) in [Querenburg](localization).
     - I'd like to eat [korean](foodtype) or [asian](foodtype) in [Bochum](localization) [tonight](date).
     - I'd like to eat [Chinese](foodtype).
@@ -522,7 +537,7 @@ nlu:
     - I am looking for a restaurant in Bochum [Grumme](localization) in the [low price category](price) for [Tuesday](date) [evening](time).
     - At [noon](time), in the [center](localization) of Bochum, [high quality](price) interior, [chinese](foodtype).
     - I would like a restaurant at a [medium price range](price), if possible [italian](foodtype) cuisine, near the [Ruhr University](localization) Bochum.
-    - I am looking for a restaurant in Bochum [Langendreer](localization) with good [home cooking](foodtype), up to [17 Euros](pricevalue), and it needs to be open [Sunday](date) at [noon](time). [Yes](logical), what now?
+    - I am looking for a restaurant in Bochum [Langendreer](localization) with good [home cooking](foodtype), up to [17 Euros](amount-of-money), and it needs to be open [Sunday](date) at [noon](time). [Yes](logical), what now?
     - I would like to eat [greek](foodtype) food on [Tuesday](date) [evening](time), at an [affordable price](price).
     - I would like to eat [chinese](foodtype) in the [city center](localization) during my [lunch](time) break. [Higher price](price).
     - I'd like to eat [italian](foodtype) food in the general area of [Querenburg](localization), [Ruhr-University](localization), the price category should be [medium](price).
@@ -539,7 +554,7 @@ nlu:
     - I am looking for an [indian](foodtype) restaurant in the [city center](localization).
     - The [type of cuisine](field).
     - I would like to eat out in [Grumme](localization).
-    - I would like to decide based on the [price](field). I would like [chinese](foodtype) food in the [city](localization) for around [30 Euros](pricevalue).
+    - I would like to decide based on the [price](field). I would like [chinese](foodtype) food in the [city](localization) for around [30 Euros](amount-of-money).
     - I would like to decide based on the [price](field), [cuisine](field) and [location](field).
     - I want to know where I can eat [duck](foodtype).
     - I would like to eat [greek](foodtype) on [Tuesday](date) [evening](time) in [Grumme](localization) at a [low price range](price).
@@ -549,10 +564,10 @@ nlu:
     - I would like to eat [chinese](foodtype) during my [lunch](time) break in the [city center](localization).
     - I would like a [chinese](foodtype) restaurant.
     - Hello, I would like to eat [duck](foodtype) in [Wuppertal](localization).
-    - Good evening, I would like to eat [greek](foodtype) food in [Grumme](localization) on [Tuesday](date) [evening](time). The Price should be up to, um, [20 Euros](pricevalue).
-    - Hello, I would like to eat [chinese](foodtype) food in the [city center](localization) in Bochum. The price range, um, up to [20 Euros](pricevalue).
-    - Hello, I would like to eat [italian](foodtype) food, up to [15 Euros](pricevalue). The location [Querenburg](localization).
-    - I would like to eat at a Gourmet restaurant in Bochum [tonight](time). The price should be starting at [30 Euros](pricevalue).
+    - Good evening, I would like to eat [greek](foodtype) food in [Grumme](localization) on [Tuesday](date) [evening](time). The Price should be up to, um, [20 Euros](amount-of-money).
+    - Hello, I would like to eat [chinese](foodtype) food in the [city center](localization) in Bochum. The price range, um, up to [20 Euros](amount-of-money).
+    - Hello, I would like to eat [italian](foodtype) food, up to [15 Euros](amount-of-money). The location [Querenburg](localization).
+    - I would like to eat at a Gourmet restaurant in Bochum [tonight](time). The price should be starting at [30 Euros](amount-of-money).
     - [Grumme](localization). [Greek](foodtype) food.
     - [Noon](time), [high price range](price), [chinese](foodtype).
     - [Medium price range](price), um, [italian](foodtype), in [Querenburg](localization).
@@ -572,14 +587,14 @@ nlu:
     - I would like to eat [greek](foodtype) food. On [Tuesday](date), [lower price range](price), in the [evening](time).
     - I'd like to eat [lunch](time), [city center](localization) and I would like [chinese](foodtype), [higher price range](price).
     - I would like an [italian](foodtype) restaurant in Bochum [Querenburg](localization) and [medium price range](localization).
-    - I am looking for a restaurant with [german](foodtype) cuisine, [15 Euros](pricevalue) per Person in [Ehrenfeld](localization) or [Wiemelhausen](localization).
+    - I am looking for a restaurant with [german](foodtype) cuisine, [15 Euros](amount-of-money) per Person in [Ehrenfeld](localization) or [Wiemelhausen](localization).
     - Eating [Chinese](foodtype) in the [city center](localization) during the [lunch](time) break.
     - I would like to eat [duck](foodtype) in Bochum [Mitte](localization), on [Wednesday](date) [evening](time).
-    - I would like to eat [greek](foodtype) on [Tuesday](date) [evening](time) in [Grumme](localization). At a price of [20 Euros](pricevalue).
+    - I would like to eat [greek](foodtype) on [Tuesday](date) [evening](time) in [Grumme](localization). At a price of [20 Euros](amount-of-money).
     - I would like, um, [chinese](foodtype) food in Bochum in the [city center](localization) at [noon](time). It can be [expensive](price).
     - I would like to eat [italian](foodtype) food on [Saturday](date) [Evening](time) in Bochum, [Querenburg](localization) at a [medium price range](price).
     - I am, looking for a [home style](foodtype) restaurant with good cuisine and a large variety that is comfortable and quiet and has good service and good openening hours.
-    - Hm, [20 euros](pricevalue), the price.
+    - Hm, [20 euros](amount-of-money), the price.
     - [Yes](logical). I would like to go out to eat in [Weitmar](localization).
     - [No](logical), go out to eat [Chinese](foodtype).
     - Hmm, [not that expensive](action) then.
@@ -588,8 +603,8 @@ nlu:
     - In [Linden](localization).
     - Is there a restaurant in [Weitmar](localization) where I could eat?
     - [Yes](logical), that is [duck](foodtype).
-    - [Yes](logical), then I would like to spend [20 euros](pricevalue) and have a [Chinese](foodtype) meal in the [city center](localization) at around [1 p.m.](klock) during the [lunch](time) break.
-    - I would like to have a [Chinese](foodtype) meal in the [city center](localization) in Bochum on Friday for [10 euros](pricevalue).
+    - [Yes](logical), then I would like to spend [20 euros](amount-of-money) and have a [Chinese](foodtype) meal in the [city center](localization) at around [1 p.m](klock). during the [lunch](time) break.
+    - I would like to have a [Chinese](foodtype) meal in the [city center](localization) in Bochum on Friday for [10 euros](amount-of-money).
     - [Yes](logical), I would like to have a [Greek](foodtype) meal in [Weitmar](localization) on [Tuesday](date).
     - Um, [yes](logical), a [different price](action).
     - Yes, then I'll look for one in [Weitmar](localization).
