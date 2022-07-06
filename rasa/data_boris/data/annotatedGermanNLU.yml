@@ -106,7 +106,7 @@ nlu:
     - [Griechisch](foodtype).
     - [Chinesisch](foodtype) essen.
     - Ehm, [chinesische](foodtype) Küche.
-    - Hm, keine Präferenz. [15 Euro](pricevalue) pro Person im [Ehrenfeld](foodtype).
+    - Hm, keine Präferenz. [15 Euro](pricevalue) pro Person im [Ehrenfeld](location).
     - Haha, [chinesisch](foodtype).
     - [Deutsche](foodtype) Küche.
     - Das [Mittagessen](time).
