@@ -1,0 +1,178 @@
+[
+  {
+    "text": "Nein Montag.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.9452151656150818
+    }
+  },
+  {
+    "text": "Hmhm.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9369860291481018
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.7749186754226685
+    }
+  },
+  {
+    "text": "Andere Möglichkeiten.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Können sie mir ein anderes Restaurant vorschlagen?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Ente. Ich will Ente.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept provide",
+      "confidence": 0.9982471466064453
+    }
+  },
+  {
+    "text": "Täglich.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9544059634208679
+    }
+  },
+  {
+    "text": "Ähm, ja, einen anderen Preis.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept provide",
+      "confidence": 0.9980328679084778
+    }
+  },
+  {
+    "text": "Wau. Ja.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9998929500579834
+    }
+  },
+  {
+    "text": "Ja, dann möchte ich gerne 20 Euro ausgeben, und in der Mittagspause so um 1, 13 uhr in der Innenstadt chinesisch essen gehen.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Ja im Stadtteil Querenburg, an der Querenburger Strasse.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Nix.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9946985244750977
+    }
+  },
+  {
+    "text": "Äh, ja. In der mittleren Preisklasse bitte.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.8893759250640869
+    }
+  },
+  {
+    "text": "Ja, ich möchte Geflügel essen.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9597446918487549
+    }
+  },
+  {
+    "text": "Das Restaurant.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9999982118606567
+    }
+  },
+  {
+    "text": "Nicht wichtig.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9985659718513489
+    }
+  },
+  {
+    "text": "Nicht unbedingt, eigentlich in der mittleren.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "Bitte wiederholen.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.999550998210907
+    }
+  },
+  {
+    "text": "Ich möchte ca 15 Euro ausgeben.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept provide",
+      "confidence": 0.99378901720047
+    }
+  },
+  {
+    "text": "Ja, ich will gerne in, in Weitmar dann am Dienstag griechisch essen gehen.",
+    "intent": "accept provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9930582046508789
+    }
+  },
+  {
+    "text": "Ähm, wo ist das Restaurant?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Das versteh ich jetzt nicht. Wieso gibt es da kein passendes Restaurant, wenn man Geflügel essen möchte?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999294281005859
+    }
+  }
+]
