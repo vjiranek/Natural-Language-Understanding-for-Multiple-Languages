@@ -1,0 +1,242 @@
+[
+  {
+    "text": "yes, Italian.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept_provide",
+      "confidence": 0.8612416982650757
+    }
+  },
+  {
+    "text": "Yes, I would like in the evening.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999996423721313
+    }
+  },
+  {
+    "text": "Uh yeah In the middle price range please.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999651908874512
+    }
+  },
+  {
+    "text": "I do not get it. Why isn't there a suitable restaurant if you want to eat poultry?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can you suggest me another restaurant?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9981498718261719
+    }
+  },
+  {
+    "text": "Yes, on Saturday night.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Other options.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999713897705078
+    }
+  },
+  {
+    "text": "Oh fuck you too.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "Any",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.8186119198799133
+    }
+  },
+  {
+    "text": "Not important.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9989890456199646
+    }
+  },
+  {
+    "text": "Yes, Tuesday night.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept_provide",
+      "confidence": 0.8694078922271729
+    }
+  },
+  {
+    "text": "Yes, I want to eat poultry.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.6870887279510498
+    }
+  },
+  {
+    "text": "On Tuesday, yes.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.7854834198951721
+    }
+  },
+  {
+    "text": "nan",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999996423721313
+    }
+  },
+  {
+    "text": "Um, where is the restaurant?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Please repeat that.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "accept_provide",
+      "confidence": 0.5619876384735107
+    }
+  },
+  {
+    "text": "Yes, I would.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "accept_provide",
+      "confidence": 0.9267725944519043
+    }
+  },
+  {
+    "text": "Yes please.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "accept_provide",
+      "confidence": 0.5851134061813354
+    }
+  },
+  {
+    "text": "Not necessarily, actually in the middle.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999734163284302
+    }
+  },
+  {
+    "text": "Yes. I would then like to go out to eat in Weitmar.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "What? I do not understand.",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9999343156814575
+    }
+  },
+  {
+    "text": "The restaurant.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9959832429885864
+    }
+  },
+  {
+    "text": "16th, 17th.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9425841569900513
+    }
+  },
+  {
+    "text": "Yes. I would like to go out to eat in Weitmar.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept_provide",
+      "confidence": 0.542665421962738
+    }
+  },
+  {
+    "text": "Is there a restaurant in Weitmar where I could eat?",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "uninspiring",
+      "confidence": 0.9955314993858337
+    }
+  },
+  {
+    "text": "Yes, that is duck.",
+    "intent": "provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9265297651290894
+    }
+  },
+  {
+    "text": "Hmhm.",
+    "intent": "accept",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 0.9997286200523376
+    }
+  },
+  {
+    "text": "Wow. Yes.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.9999347925186157
+    }
+  },
+  {
+    "text": "Yes, the price please.",
+    "intent": "accept_provide",
+    "intent_prediction": {
+      "name": "accept",
+      "confidence": 0.5574696660041809
+    }
+  },
+  {
+    "text": "Can I, hello, back?",
+    "intent": "uninspiring",
+    "intent_prediction": {
+      "name": "provide",
+      "confidence": 1.0
+    }
+  }
+]
