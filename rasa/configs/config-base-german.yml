@@ -13,7 +13,12 @@ pipeline:
      "intent_split_symbol": "_"
     # Regular expression to detect tokens
      "token_pattern": None
+   - name: CountVectorsFeaturizer
+   - name: CountVectorsFeaturizer
+     analyzer: "char_wb"
+     min_ngram: 1
+     max_ngram: 4
    - name: RegexFeaturizer
-   - name: EntitySynonymMapper
    - name: DIETClassifier
      epochs: 200
+     batch_strategy: sequence
