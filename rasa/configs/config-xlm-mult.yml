@@ -1,5 +1,6 @@
 recipe: default.v1
-language: en
+
+language: xx
 
 pipeline:
  - name: "WhitespaceTokenizer"
@@ -10,9 +11,10 @@ pipeline:
     # Regular expression to detect tokens
    "token_pattern": None
  - name: LanguageModelFeaturizer
-   model_weights: "bert-base-cased"
-   model_name: "bert"
+   model_name: "xlm"
+   model_weights: "xlm-mlm-ende-1024"
    cache_dir: null
+   from_pt: True
  - name: CountVectorsFeaturizer
  - name: CountVectorsFeaturizer
    analyzer: "char_wb"

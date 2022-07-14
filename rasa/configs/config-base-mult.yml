@@ -1,10 +1,10 @@
 recipe: default.v1
 
-language: de
+language: xx
 
 pipeline:
    - name: SpacyNLP
-     model: de_core_news_md
+     model: xx_ent_wiki_sm
 
    - name: "WhitespaceTokenizer"
     # Flag to check whether to split intents

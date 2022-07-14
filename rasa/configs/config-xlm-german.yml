@@ -3,19 +3,24 @@ recipe: default.v1
 language: de
 
 pipeline:
-   - name: "WhitespaceTokenizer"
+ - name: "WhitespaceTokenizer"
     # Flag to check whether to split intents
-     "intent_tokenization_flag": True
+   "intent_tokenization_flag": True
     # Symbol on which intent should be split
-     "intent_split_symbol": "_"
+   "intent_split_symbol": "_"
     # Regular expression to detect tokens
-     "token_pattern": None
-   - name: LanguageModelFeaturizer
-     model_name: "xlm"
-     model_weights: "xlm-mlm-ende-1024"
-     cache_dir: null
-     from_pt: True
-   - name: RegexFeaturizer
-   - name: EntitySynonymMapper
-   - name: DIETClassifier
-     epochs: 200
+   "token_pattern": None
+ - name: LanguageModelFeaturizer
+   model_name: "xlm"
+   model_weights: "xlm-mlm-ende-1024"
+   cache_dir: null
+   from_pt: True
+ - name: CountVectorsFeaturizer
+ - name: CountVectorsFeaturizer
+   analyzer: "char_wb"
+   min_ngram: 1
+   max_ngram: 4
+ - name: RegexFeaturizer
+ - name: DIETClassifier
+   epochs: 200
+   batch_strategy: sequence
