@@ -547,7 +547,11 @@ nlu:
     - Yo. Ja.   
     - Ja, hahaha. Ja   
     - Ja bitte.   
-    - Ja.    
+    - Ja.  
+    - Naklar.
+    - Okay.
+    - Will ich.
+    - Alles klar.
 
 - intent: neglect 
   example: | 
@@ -555,6 +559,12 @@ nlu:
     - Bor ey, nö, nein.   
     - Nein möchte ich nicht.   
     - Nein.    
+    - Hmm, ne.
+    - Hä, was?
+    - Nicht schon wieder.
+    - Ach man nein.
+    - Mist.
+    - Ja okay, Hm schwierig.
 
 - intent: accept provide 
   example: | 
@@ -562,6 +572,13 @@ nlu:
     - Ja. Ich möchte dann in Weitmar essen gehen.   
     - Ja, den Preis bitte.   
     - Äh, ja. In der mittleren Preisklasse bitte.   
+    - Genau, den Preis bitte.
+    - Ja. Wie viel kostet es dort?
+    - Okay, zu welchem Preis?
+    - Genau. Welche Küche gibt es?
+    - Ja, die Öffnungszeiten bitte.
+    - Genau, die Restaurants in der Innenstadt.
+    
 
 - intent: affirm 
   example: | 
@@ -590,13 +607,23 @@ nlu:
     - Hmhm. Ja von mir aus auch mittags. Ja. Ja.   
     - Am Dienstag, ja.   
     - Ja, ich möchte abends.   
+    - Gerne mittags.
+    - Ja bitte.
+    - Genau, in der Innenstadt.
+    - Richtig, Mittwoch abend.
 
 - intent: negate 
   example: | 
     - Nein.   
     - Hm, nein.   
     - Nein, möchte ich nicht.   
-    - Ja.   
+    - Ja.
+    - Nein, will ich nicht.
+    - Nö.
+    - Nope.
+    - Ne.
+    - Ähm, Nein.
+    - Nein, das will ich nicht.
 
 - intent: 
   example: | 
