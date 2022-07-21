@@ -653,7 +653,12 @@ nlu:
     - Hm, [nein](logical).
     - [Nein](logical), möchte ich nicht.
     - Bor ey, [nö](logical), [nein](logical).
-    - [Nein](logical) möchte ich nicht.
+    - [Nein](logical) will ich nicht.
+    - [Nö](logical).
+    - [Nope](logical).
+    - [Ne](logical).
+    - Ähm, [Nein](logical).
+    - Also [nein](logical), will ich nicht.
 
 - intent: uninspiring
   examples: |
@@ -670,3 +675,7 @@ nlu:
     - Was? Versteh ich nicht.
     - Können sie mir ein anderes [Restaurant](field) vorschlagen?
     - Nix.
+    - Hä, was?
+    - Nicht schon wieder.
+    - Mist.
+    - Hm schwierig.
