@@ -652,10 +652,12 @@ nlu:
     - Bor ey, [nope](logical), [no](logical).
     - [No](logical) I do not want to.
     - [No](logical).
-    - [No](logical).
     - Hm, [no](logical).
-    - [No](logical) I do not want to.
-
+    - [No](logical) I would rather not.
+    - [Nope](logical).
+    - Well [no](logical).
+    - Um, [no](logical).
+    - Like [no](logical).
 
 - intent: accept_provide
   examples: |
@@ -670,7 +672,6 @@ nlu:
     - [Yes](logical), the [price](price) please.
     - Uh [yeah](logical) In the [middle price range](price) please.
 
-
 - intent: uninspiring
   examples: |
     - nan
@@ -684,5 +685,9 @@ nlu:
     - [Other options](action).
     - I do not get it. Why isn't there a suitable restaurant if you want to eat [poultry](foodtype)?
     - [What](action)? I do not understand.
-    - Can you [suggest](action) me another restaurant?
+    - Is there another restaurant you can [suggest](action)?
     - [Nothing](action).
+    - Um, what?
+    - Not [again](again).
+    - Crap.
+    - Hm, tricky.
